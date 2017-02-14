@@ -53,7 +53,7 @@ public:
   std::pair<TooN::Vector<6>, TooN::Vector<6> > GetMousePoseUpdate();
 
 #ifdef __ANDROID__
-  CVD::ImageRef size() const;
+    CVD::ImageRef size() const;
     
     void on_mouse_down(int x, int y);
     void on_key_down(int keycode);

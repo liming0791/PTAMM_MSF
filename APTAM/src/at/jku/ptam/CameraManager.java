@@ -183,10 +183,15 @@ class CameraManager implements Camera.PreviewCallback, SensorEventListener {
 			if (camparams.isVideoStabilizationSupported())
 				camparams.setVideoStabilization(false);
 			
-			if(camparams.getSupportedFocusModes().contains(Camera.Parameters.FOCUS_MODE_CONTINUOUS_VIDEO))
-				camparams.setFocusMode(Camera.Parameters.FOCUS_MODE_CONTINUOUS_VIDEO);
-			//camparams.setFocusMode(Camera.Parameters.FOCUS_MODE_INFINITY);
-			
+			//if(camparams.getSupportedFocusModes().contains(Camera.Parameters.FOCUS_MODE_CONTINUOUS_VIDEO))
+			//	camparams.setFocusMode(Camera.Parameters.FOCUS_MODE_CONTINUOUS_VIDEO);
+
+			if(camparams.getSupportedFocusModes().contains(Camera.Parameters.FOCUS_MODE_FIXED))
+				camparams.setFocusMode(Camera.Parameters.FOCUS_MODE_FIXED);
+
+			if(camparams.getSupportedFocusModes().contains(Camera.Parameters.FOCUS_MODE_INFINITY))
+				camparams.setFocusMode(Camera.Parameters.FOCUS_MODE_INFINITY);
+
 			if(!camparams.isAutoExposureLockSupported())
 				Log.w("Camera", "No auto exposure lock!");
 			
@@ -300,9 +305,14 @@ class CameraManager implements Camera.PreviewCallback, SensorEventListener {
 					params.setAutoExposureLock(dolock);
 				
 				//params.setFocusMode(Camera.Parameters.FOCUS_MODE_FIXED);
-				
-				if(params.getSupportedFocusModes().contains(Camera.Parameters.FOCUS_MODE_AUTO))
-					params.setFocusMode(Camera.Parameters.FOCUS_MODE_AUTO);
+				if(params.getSupportedFocusModes().contains(Camera.Parameters.FOCUS_MODE_FIXED))
+					params.setFocusMode(Camera.Parameters.FOCUS_MODE_FIXED);
+
+				if(params.getSupportedFocusModes().contains(Camera.Parameters.FOCUS_MODE_INFINITY))
+					params.setFocusMode(Camera.Parameters.FOCUS_MODE_INFINITY);
+
+				//if(params.getSupportedFocusModes().contains(Camera.Parameters.FOCUS_MODE_AUTO))
+				//	params.setFocusMode(Camera.Parameters.FOCUS_MODE_AUTO);
 				
 				//params.setAutoWhiteBalanceLock(true);
 				

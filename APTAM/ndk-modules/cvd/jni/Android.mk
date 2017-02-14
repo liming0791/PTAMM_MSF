@@ -100,14 +100,15 @@ LOCAL_SRC_FILES += ../installfiles/cvd_src/bayer.cxx                      \
 ../installfiles/cvd_src/image_io/text_write.cc                      \
 ../installfiles/cvd_src/image_io/bmp_read.cc                      \
 ../installfiles/cvd_src/image_io/png.cc                      \
+../installfiles/cvd_src/gltext.cpp                      
 #../installfiles/cvd_src/image_io/jpeg.cxx                      \
 #../installfiles/cvd_src/glwindow.cc                      \
-../installfiles/cvd_src/gltext.cc                      \
 
 
 LOCAL_STATIC_LIBRARIES += TooN
 LOCAL_STATIC_LIBRARIES += cpufeatures
 LOCAL_STATIC_LIBRARIES += png
+LOCAL_STATIC_LIBRARIES += gl4es
 LOCAL_LDLIBS    += -landroid -llog
 
 LOCAL_EXPORT_C_INCLUDES := $(LOCAL_C_INCLUDES) #export includes
@@ -122,3 +123,4 @@ $(call import-module,android/cpufeatures)
 $(call import-add-path,../../)
 $(call import-module,TooN)
 $(call import-module,libpng)
+$(call import-module,gl4es)

@@ -144,8 +144,7 @@ public class PTAM extends Activity implements GLSurfaceView.Renderer,OnTouchList
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		
-		
+
 		preferences = PreferenceManager.getDefaultSharedPreferences(this);
 		cameraManager = new CameraManager(preferences);
 		
@@ -171,14 +170,13 @@ public class PTAM extends Activity implements GLSurfaceView.Renderer,OnTouchList
 		
 		copyAssets();
 		
-		
 		glText = null;
 		
 		boolean docalibration = preferences.getBoolean("docalibration", false);
 		nativeInit(docalibration);
 		
 		glSurfaceView = new GLSurfaceView(this);
-		glSurfaceView.setEGLContextClientVersion(2);
+		glSurfaceView.setEGLContextClientVersion(1);
 		glSurfaceView.setEGLConfigChooser(8, 8, 8, 8, 16, 0);
 		glSurfaceView.setPreserveEGLContextOnPause(true);
 		glSurfaceView.setRenderer(this);
@@ -188,8 +186,10 @@ public class PTAM extends Activity implements GLSurfaceView.Renderer,OnTouchList
 		setContentView(glSurfaceView);
 		
 		registerForContextMenu(glSurfaceView);
-		
-		cameraManager.setFrameListener(this);
+
+		cameraManager.setFrameListener(this);	// Set the camera frameListener
+
+		nativeInitGL();
 	}
 	
 	@Override
@@ -313,7 +313,7 @@ public class PTAM extends Activity implements GLSurfaceView.Renderer,OnTouchList
 		{
 			android.os.Process.setThreadPriority(android.os.Process.THREAD_PRIORITY_AUDIO); //probably does not help
 			
-			//wait for new camera frame
+			// Wait for new camera frame
 			int count = 0;
 			while(!cameraManager.isCameraImageReady() && count < 100)
 			{
@@ -326,17 +326,19 @@ public class PTAM extends Activity implements GLSurfaceView.Renderer,OnTouchList
 			}
 			if(count==100)
 				Log.e("Timeout","Timeout while waiting for next camera image!");
+
+			// When frame ready
 			if(cameraManager.isCameraImageReady())
 			{
-				GLES20.glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
-				GLES20.glClear(GLES10.GL_COLOR_BUFFER_BIT|GLES10.GL_DEPTH_BUFFER_BIT);
+				GLES10.glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
+				GLES10.glClear(GLES10.GL_COLOR_BUFFER_BIT|GLES10.GL_DEPTH_BUFFER_BIT);
 				//gl.glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
 				//gl.glClear(GLES10.GL_COLOR_BUFFER_BIT|GLES10.GL_DEPTH_BUFFER_BIT);
 				if(requestExit)
 				{
 					if(nativeFinish())
 					{
-						//wait some ms
+						// Wait some ms
 						try {
 							Thread.sleep(100);
 						} catch (InterruptedException e) {
@@ -349,8 +351,8 @@ public class PTAM extends Activity implements GLSurfaceView.Renderer,OnTouchList
 				else
 					nativeRender();
 			}
-		      /*gl.glMatrixMode( GL10.GL_MODELVIEW );      
-		      gl.glLoadIdentity();*/      
+			/* gl.glMatrixMode( GL10.GL_MODELVIEW );
+		       gl.glLoadIdentity(); */
 			//gl.glColor4f(1, 0, 0, 1);
 			//drawText("test",100,10);
 		}

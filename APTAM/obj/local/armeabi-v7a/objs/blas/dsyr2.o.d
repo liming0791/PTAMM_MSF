@@ -1,0 +1,14 @@
+obj/local/armeabi-v7a/objs/blas/dsyr2.o: \
+ jni/../ndk-modules/lapack/jni/clapack/BLAS/SRC/dsyr2.c \
+ jni/../ndk-modules/lapack/jni/clapack/BLAS/SRC/f2c.h \
+ jni/../ndk-modules/lapack/jni/clapack/BLAS/SRC/../../INCLUDE/f2c.h \
+ jni/../ndk-modules/lapack/jni/clapack/BLAS/SRC/blaswrap.h \
+ jni/../ndk-modules/lapack/jni/clapack/BLAS/SRC/../../INCLUDE/blaswrap.h
+
+jni/../ndk-modules/lapack/jni/clapack/BLAS/SRC/f2c.h:
+
+jni/../ndk-modules/lapack/jni/clapack/BLAS/SRC/../../INCLUDE/f2c.h:
+
+jni/../ndk-modules/lapack/jni/clapack/BLAS/SRC/blaswrap.h:
+
+jni/../ndk-modules/lapack/jni/clapack/BLAS/SRC/../../INCLUDE/blaswrap.h:

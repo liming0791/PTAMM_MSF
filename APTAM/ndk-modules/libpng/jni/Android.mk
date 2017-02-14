@@ -31,11 +31,12 @@ LOCAL_SRC_FILES :=\
 	arm/filter_neon.S \
 	arm/filter_neon_intrinsics.c
 	
-LOCAL_LDLIBS := -lz
+LOCAL_LDLIBS := -lz -landroid
 LOCAL_EXPORT_LDLIBS := $(LOCAL_LDLIBS) #export linker cmds
 
 LOCAL_C_INCLUDES += $(LOCAL_PATH)
 LOCAL_EXPORT_C_INCLUDES := $(LOCAL_C_INCLUDES) #export includes
+$(info $(LOCAL_C_INCLUDES))
 
 #include $(BUILD_SHARED_LIBRARY)
 include $(BUILD_STATIC_LIBRARY)

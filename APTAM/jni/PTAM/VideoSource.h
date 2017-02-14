@@ -42,6 +42,5 @@ class VideoSource
 #endif
 };
 
-
 }
 #endif

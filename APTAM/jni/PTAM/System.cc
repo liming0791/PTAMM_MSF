@@ -16,7 +16,6 @@
 //#define ENABLE_TIMING
 #include "Timing.h"
 
-
 namespace APTAM {
 
 using namespace CVD;
@@ -53,6 +52,7 @@ System::System()
   vTest = GV3::get<Vector<NUMTRACKERCAMPARAMETERS> >("Camera.Parameters", ATANCamera::mvDefaultParams, HIDDEN);
   mpCamera = new ATANCamera("Camera");
   mpCamera->SetImageSize(mVideoSource.Size()); // test
+
   if(vTest == ATANCamera::mvDefaultParams)
   {
     cout << endl;

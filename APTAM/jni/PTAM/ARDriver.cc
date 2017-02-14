@@ -104,16 +104,16 @@ void ARDriver::Render(Image<Rgb<CVD::byte> > &imFrame, SE3<> se3CfromW)
   		  imFrame.data());
     CheckGLError("ARDriver Load Texture");
 
-        glBindTexture(GL_TEXTURE_2D, mnFrameTexUV);
-        glTexSubImage2D(GL_TEXTURE_2D,
-      		  0, 0, 0,
-      		  mirFrameSize.x/2, mirFrameSize.y/2,
-      		  //GL_RGBA,
-      		  GL_LUMINANCE_ALPHA,
-      		  GL_UNSIGNED_BYTE,
-      		  ((byte*)imFrame.data())+mirFrameSize.x*mirFrameSize.y);
+    glBindTexture(GL_TEXTURE_2D, mnFrameTexUV);
+    glTexSubImage2D(GL_TEXTURE_2D,
+          0, 0, 0,
+          mirFrameSize.x/2, mirFrameSize.y/2,
+          //GL_RGBA,
+          GL_LUMINANCE_ALPHA,
+          GL_UNSIGNED_BYTE,
+          ((byte*)imFrame.data())+mirFrameSize.x*mirFrameSize.y);
 
-        CheckGLError("ARDriver Load Texture UV");
+    CheckGLError("ARDriver Load Texture UV");
     TIMER_STOP("Upload image")
     TIMER_START
 
@@ -158,16 +158,10 @@ void ARDriver::Render(Image<Rgb<CVD::byte> > &imFrame, SE3<> se3CfromW)
   glLoadIdentity();
 
   glMultMatrix(mCamera.MakeUFBLinearFrustumMatrix(0.005, 1000));
-
-  //glMatrixMode(GL_MODELVIEW); //WARNING: this might stop other Games than SamplingOverlay to work
-  //glLoadIdentity();
   glMultMatrix(se3CfromW);
 
- DrawFadingGrid();
-
+  DrawFadingGrid();
   mGame.DrawStuff(se3CfromW,mMap);
-  
-  
 
   glDisable(GL_DEPTH_TEST);
   glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
