@@ -177,44 +177,44 @@ namespace PTAMM {
 
             CKECK_ABORTS;
             // Should we run local bundle adjustment?
-            TIME_BEGIN;
+            //TIME_BEGIN;
             if(!mpMap->bBundleConverged_Recent && mpMap->QueueSize() == 0)
                 BundleAdjustRecent();
-            TIME_END("Run local BA");
+            //TIME_END("Run local BA");
 
             CKECK_ABORTS;
             // Are there any newly-made map points which need more measurements from older key-frames?
-            TIME_BEGIN;
+            //TIME_BEGIN;
             if(mpMap->bBundleConverged_Recent && mpMap->QueueSize() == 0)
                 ReFindNewlyMade();  
-            TIME_END("Find more measurements for newly-made map points");
+            //TIME_END("Find more measurements for newly-made map points");
 
             //CKECK_ABORTS;
             // Run global bundle adjustment?
             //TIME_BEGIN;
-            //if(mpMap->bBundleConverged_Recent && !mpMap->bBundleConverged_Full && mpMap->QueueSize() == 0)
-            //    BundleAdjustAll();
+            if(mpMap->bBundleConverged_Recent && !mpMap->bBundleConverged_Full && mpMap->QueueSize() == 0)
+                BundleAdjustAll();
             //TIME_END("Global BA");
 
             CKECK_ABORTS;
             // Very low priorty: re-find measurements marked as outliers
-            TIME_BEGIN;
-            mpMap->bBundleConverged_Full = true;
+            //TIME_BEGIN;
+            //mpMap->bBundleConverged_Full = true;
             if(mpMap->bBundleConverged_Recent && mpMap->bBundleConverged_Full && rand()%20 == 0 && mpMap->QueueSize() == 0)
                 ReFindFromFailureQueue();
-            TIME_END("Refind outliers");
+            //TIME_END("Refind outliers");
 
             CKECK_ABORTS;
-            TIME_BEGIN;
+            //TIME_BEGIN;
             HandleBadPoints();
-            TIME_END("Handle bad points");
+            //TIME_END("Handle bad points");
 
             CKECK_ABORTS;
             // Any new key-frames to be added?
-            TIME_BEGIN;
+            //TIME_BEGIN;
             if(mpMap->QueueSize() > 0)
                 AddKeyFrameFromTopOfQueue(); // Integrate into map data struct, and process
-            TIME_END("=== Add new KeyFrame");
+            //TIME_END("=== Add new KeyFrame");
         }
     }
 
@@ -363,6 +363,7 @@ namespace PTAMM {
     bool MapMaker::InitFromStereo(KeyFrame &kF,
             KeyFrame &kS,
             vector<pair<ImageRef, ImageRef> > &vTrailMatches,
+            const SO3<> &imuInitPos,
             SE3<> &se3TrackerPose)
     {
         mdWiggleScale = *mgvdWiggleScale; // Cache this for the new map.
@@ -403,11 +404,17 @@ namespace PTAMM {
         KeyFrame *pkFirst = new KeyFrame(kF);
         KeyFrame *pkSecond = new KeyFrame(kS);
 
+        SO3<> R_ci = SO3<>::exp(makeVector(0, -3.1415926,0))*SO3<>::exp(makeVector(0,0,-3.1415926/2));  // LiMing add it, compute C_ci
+        Vector<3> zeroT = makeVector(0,0,0);
+        SE3<> C_ci = SE3<>(R_ci, zeroT);
+        
         pkFirst->bFixed = true;
         pkFirst->se3CfromW = SE3<>();
-
+        //pkFirst->se3CfromW = SE3<>(imuInitPos, zeroT)*C_ci;     // LiMing change it, use imu init pose
+        
         pkSecond->bFixed = false;
         pkSecond->se3CfromW = se3;
+        //pkSecond->se3CfromW = (pkFirst->se3CfromW)*se3;     // LiMing change it, compute second pose
 
         // Construct map from the stereo matches.
         PatchFinder finder;
@@ -888,8 +895,8 @@ namespace PTAMM {
 
         double thres = 0.005;
 
-	    __android_log_print(ANDROID_LOG_INFO,
-	            "MapMaker::NeedNewKeyFrame" , "dDist : %f, dist thres : %f\n", dDist, thres);
+	    //__android_log_print(ANDROID_LOG_INFO,
+	    //        "MapMaker::NeedNewKeyFrame" , "dDist : %f, dist thres : %f\n", dDist, thres);
 
         if(dDist > thres)
             return true;
@@ -944,51 +951,28 @@ namespace PTAMM {
         {
             map<MapPoint*,Measurement> &mKFMeas = (*iter)->mMeasurements;
             for(meas_it jiter = mKFMeas.begin(); jiter!= mKFMeas.end(); jiter++)
-            {
                 sMapPoints.insert(jiter->first);
-            }
         };
-
-        //map<MapPoint*,Measurement> &mKFMeas = vClosest[4]->mMeasurements;
-        //for(meas_it jiter = mKFMeas.begin(); jiter!= mKFMeas.end(); jiter++)
-        //{
-        //    sMapPoints.insert(jiter->first);
-        //}
 
         // Finally, add all keyframes which measure above points as fixed keyframes
         set<KeyFrame*> sFixedSet;
-        //sFixedSet.insert(vClosest[4]);
-        int fixedFrameCount = 0;
         for(vector<KeyFrame*>::iterator it = mpMap->vpKeyFrames.begin(); it!=mpMap->vpKeyFrames.end(); it++)
         {
             if(sAdjustSet.count(*it))
                 continue;
             bool bInclude = false;
-            ///////////////////////////////
-            int pcount = 0;
             for(meas_it jiter = (*it)->mMeasurements.begin(); jiter!= (*it)->mMeasurements.end(); jiter++)
                 if(sMapPoints.count(jiter->first))
-                    pcount++;
-            if (pcount > 100)
-                bInclude = true;
-            ///////////////////////////////
-            //for(meas_it jiter = (*it)->mMeasurements.begin(); jiter!= (*it)->mMeasurements.end(); jiter++)
-            //    if(sMapPoints.count(jiter->first))
-            //    {
-            //        bInclude = true;
-            //        break;
-            //    }
-            ///////////////////////////////
-            if (bInclude) {
+                {
+                    bInclude = true;
+                    break;
+                }
+            if(bInclude)
                 sFixedSet.insert(*it);
-                fixedFrameCount++;
-            }
-
-            if (fixedFrameCount > 2)
-                break;
         }
 
-        BundleAdjust(sAdjustSet, sFixedSet, sMapPoints, true);
+        BundleAdjust(sAdjustSet, sFixedSet,
+                sMapPoints, true);
     }
 
 

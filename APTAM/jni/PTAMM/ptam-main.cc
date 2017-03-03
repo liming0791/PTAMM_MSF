@@ -44,7 +44,7 @@ Java_at_jku_ptam_PTAM_nativeInit( JNIEnv* env, jobject thiz , jboolean calib)
 	env->GetJavaVM(&jvm);
 
 	//redirect cout and cerr for debugging purposes
-	filestr.open(GLWindow2::getFDir()+"coutlog.txt", std::ofstream::out | std::ofstream::app);
+	filestr.open(GLWindow2::getFDir()+"coutlog.txt", std::ofstream::out /*| std::ofstream::app*/);
 	__android_log_print(ANDROID_LOG_INFO, "coutfile", "%s", (GLWindow2::getFDir()+"coutlog.txt").c_str());
 
 	// back up old streambuffers
@@ -139,21 +139,52 @@ static int framecount = 0;
 
 //render and process a new frame
 JNIEXPORT void JNICALL
-Java_at_jku_ptam_PTAM_nativeRender( JNIEnv* env, jobject thiz )
+Java_at_jku_ptam_PTAM_nativeRender( JNIEnv* env, jobject thiz, jfloatArray q )
 {
 	framecount++;
-	if(now_ms()-last>1000)
+	if(now_ms()-last> 3000)
 	{
-		__android_log_print(ANDROID_LOG_INFO, "FPS", "%d",framecount);
-		cout << "FPS: " << framecount << endl;
+		__android_log_print(ANDROID_LOG_INFO, "FPS", "%f",framecount/3.);
+		cout << "FPS: " << framecount/3. << endl;
 		last = now_ms();
 		framecount = 0;
 	}
 
+	float* pq = env->GetFloatArrayElements(q, 0);
+
 	if(docalibration)
 		mcal->Run();
 	else
-		msys->Run();
+		msys->Run(pq);
+
+	env->ReleaseFloatArrayElements(q, pq, 0);
+}
+
+//render and process a new frame
+JNIEXPORT void JNICALL
+Java_at_jku_ptam_PTAM_nativePredictIMU( JNIEnv* env, jobject thiz, jfloatArray imuval )
+{
+    static int imucount = 0;
+
+    imucount++;
+    if(now_ms()-last>3000)
+    {
+        __android_log_print(ANDROID_LOG_INFO, "FPS", "%f",framecount/3.);
+        cout << "FPS: " << framecount/3. << endl;
+        last = now_ms();
+        imucount = 0;
+    }
+
+    float* pimuval = env->GetFloatArrayElements(imuval, 0);
+
+    if(docalibration){
+
+    }
+    else{
+        msys->predict(pimuval);
+    }
+
+    env->ReleaseFloatArrayElements(imuval, pimuval, 0);
 }
 
 //check if finished
@@ -164,8 +195,9 @@ Java_at_jku_ptam_PTAM_nativeFinish( JNIEnv* env, jobject thiz )
 		return true;
 	else
 	{
+        float tem[4] = {0, 0, 0, 0}; // no use
 		msys->requestFinish = true;
-		msys->Run();
+		msys->Run(tem);
 		return msys->finished;
 	}
 }

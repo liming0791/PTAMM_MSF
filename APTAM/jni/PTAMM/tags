@@ -35,6 +35,7 @@ Advance	ShooterGame.cc	/^void ShooterGame::Advance()$/;"	f	class:PTAMM::ShooterG
 AdvanceLogic	ARDriver.cc	/^    void ARDriver::AdvanceLogic()$/;"	f	class:PTAMM::ARDriver
 ApplyGlobalScaleToMap	MapMaker.cc	/^    void MapMaker::ApplyGlobalScaleToMap(double dScale)$/;"	f	class:PTAMM::MapMaker
 ApplyGlobalTransformationToMap	MapMaker.cc	/^    void MapMaker::ApplyGlobalTransformationToMap(SE3<> se3NewFromOld)$/;"	f	class:PTAMM::MapMaker
+ApplyIMUModel	Tracker.cc	/^    void Tracker::ApplyIMUModel()$/;"	f	class:PTAMM::Tracker
 ApplyMotionModel	Tracker.cc	/^    void Tracker::ApplyMotionModel()$/;"	f	class:PTAMM::Tracker
 AssessTrackingQuality	Tracker.cc	/^    void Tracker::AssessTrackingQuality()$/;"	f	class:PTAMM::Tracker
 AttemptRecovery	Relocaliser.cc	/^bool Relocaliser::AttemptRecovery(Map & currentMap, KeyFrame &kCurrent)$/;"	f	class:PTAMM::Relocaliser
@@ -387,7 +388,7 @@ Java_at_jku_ptam_PTAM_nativeFinish	ptam-main.cc	/^Java_at_jku_ptam_PTAM_nativeFi
 Java_at_jku_ptam_PTAM_nativeInit	ptam-main.cc	/^Java_at_jku_ptam_PTAM_nativeInit( JNIEnv* env, jobject thiz , jboolean calib)$/;"	f
 Java_at_jku_ptam_PTAM_nativeInitGL	ptam-main.cc	/^Java_at_jku_ptam_PTAM_nativeInitGL( JNIEnv* env, jobject thiz )$/;"	f
 Java_at_jku_ptam_PTAM_nativeKey	ptam-main.cc	/^Java_at_jku_ptam_PTAM_nativeKey( JNIEnv* env, jobject thiz , jint keycode)$/;"	f
-Java_at_jku_ptam_PTAM_nativeRender	ptam-main.cc	/^Java_at_jku_ptam_PTAM_nativeRender( JNIEnv* env, jobject thiz )$/;"	f
+Java_at_jku_ptam_PTAM_nativeRender	ptam-main.cc	/^Java_at_jku_ptam_PTAM_nativeRender( JNIEnv* env, jobject thiz, jfloatArray q )$/;"	f
 Java_at_jku_ptam_PTAM_nativeResize	ptam-main.cc	/^Java_at_jku_ptam_PTAM_nativeResize( JNIEnv* env, jobject thiz , jint w, jint h)$/;"	f
 KeyFrame	KeyFrame.cc	/^KeyFrame::KeyFrame(const ATANCamera &cam)$/;"	f	class:PTAMM::KeyFrame
 KeyFrame	KeyFrame.cc	/^KeyFrame::KeyFrame(const KeyFrame &rhs)$/;"	f	class:PTAMM::KeyFrame
@@ -739,6 +740,9 @@ QueryIntValue	tinyxml.cc	/^int TiXmlAttribute::QueryIntValue( int* ival ) const$
 QueryValueAttribute	tinyxml.h	/^	template< typename T > int QueryValueAttribute( const std::string& name, T* outValue ) const$/;"	f	class:PTAMM::TiXmlElement
 QueueSize	Map.h	/^    int  QueueSize() { return static_cast<int>(vpKeyFrameQueue.size()); } \/\/ How many KFs in the queue waiting to be added?$/;"	f	class:PTAMM::Map
 ROTATE_LEFT	MD5.cc	71;"	d	file:
+RPrediction	Tracker.h	/^  SO3<> RPrediction;$/;"	m	class:PTAMM::Tracker
+Rbinv	Tracker.h	/^  SO3<> Rbinv;$/;"	m	class:PTAMM::Tracker
+Rc2i	Tracker.h	/^  SO3<> Rc2i;$/;"	m	class:PTAMM::Tracker
 ReFindFromFailureQueue	MapMaker.cc	/^    void MapMaker::ReFindFromFailureQueue()$/;"	f	class:PTAMM::MapMaker
 ReFindInSingleKeyFrame	MapMaker.cc	/^    int MapMaker::ReFindInSingleKeyFrame(KeyFrame &k)$/;"	f	class:PTAMM::MapMaker
 ReFindNewlyMade	MapMaker.cc	/^    void MapMaker::ReFindNewlyMade()$/;"	f	class:PTAMM::MapMaker
@@ -791,7 +795,7 @@ RootElement	tinyxml.h	/^	TiXmlElement* RootElement()					{ return FirstChildElem
 RootElement	tinyxml.h	/^	const TiXmlElement* RootElement() const		{ return FirstChildElement(); }$/;"	f	class:PTAMM::TiXmlDocument
 Row	tinyxml.h	/^	int Row() const			{ return location.row + 1; }$/;"	f	class:PTAMM::TiXmlBase
 Run	CameraCalibrator.cc	/^void CameraCalibrator::Run()$/;"	f	class:CameraCalibrator
-Run	System.cc	/^void System::Run()$/;"	f	class:PTAMM::System
+Run	System.cc	/^void System::Run(float* q)$/;"	f	class:PTAMM::System
 S11	MD5.cc	41;"	d	file:
 S12	MD5.cc	42;"	d	file:
 S13	MD5.cc	43;"	d	file:
@@ -974,6 +978,7 @@ TIXML_UTF_LEAD_0	tinyxmlparser.cc	/^const unsigned char TIXML_UTF_LEAD_0 = 0xefU
 TIXML_UTF_LEAD_1	tinyxmlparser.cc	/^const unsigned char TIXML_UTF_LEAD_1 = 0xbbU;$/;"	m	namespace:PTAMM	file:
 TIXML_UTF_LEAD_2	tinyxmlparser.cc	/^const unsigned char TIXML_UTF_LEAD_2 = 0xbfU;$/;"	m	namespace:PTAMM	file:
 TIXML_WRONG_TYPE	tinyxml.h	/^	TIXML_WRONG_TYPE$/;"	e	enum:PTAMM::__anon3
+TPrediction	Tracker.h	/^  Vector<3> TPrediction;$/;"	m	class:PTAMM::Tracker
 TRAIL_TRACKING_COMPLETE	Tracker.h	/^	TRAIL_TRACKING_COMPLETE} mnInitialStage;  \/\/ How far are we towards making the initial map?$/;"	e	enum:PTAMM::Tracker::__anon6
 TRAIL_TRACKING_NOT_STARTED	Tracker.h	/^  enum {TRAIL_TRACKING_NOT_STARTED, $/;"	e	enum:PTAMM::Tracker::__anon6
 TRAIL_TRACKING_STARTED	Tracker.h	/^	TRAIL_TRACKING_STARTED, $/;"	e	enum:PTAMM::Tracker::__anon6
@@ -1064,7 +1069,7 @@ ToggleControls_cb	ModelControls.cc	/^void ToggleControls_cb( ModelsGameData & da
 TogglePoints_cb	ModelControls.cc	/^void TogglePoints_cb( ModelsGameData & data )$/;"	f	namespace:PTAMM
 ToggleSnapTo_cb	ModelControls.cc	/^void ToggleSnapTo_cb( ModelsGameData & data )$/;"	f	namespace:PTAMM
 TrackForInitialMap	Tracker.cc	/^    void Tracker::TrackForInitialMap()$/;"	f	class:PTAMM::Tracker
-TrackFrame	Tracker.cc	/^    void Tracker::TrackFrame(Image<CVD::byte> &imFrame, bool bDraw)$/;"	f	class:PTAMM::Tracker
+TrackFrame	Tracker.cc	/^    void Tracker::TrackFrame(Image<CVD::byte> &imFrame, float* q, bool bDraw)$/;"	f	class:PTAMM::Tracker
 TrackMap	Tracker.cc	/^    void Tracker::TrackMap()$/;"	f	class:PTAMM::Tracker
 Tracker	Tracker.cc	/^    Tracker::Tracker(ImageRef irVideoSize, const ATANCamera &c, std::vector<Map*> &maps, Map *m, MapMaker &mm) :$/;"	f	class:PTAMM::Tracker
 Tracker	Tracker.h	/^class Tracker$/;"	c	namespace:PTAMM
@@ -1087,6 +1092,7 @@ UnRegister	MapLockManager.cc	/^void MapLockManager::UnRegister( void * t)$/;"	f	
 Unknown	tinyxml.h	/^	TiXmlUnknown* Unknown() const	{ return ToUnknown(); }$/;"	f	class:PTAMM::TiXmlHandle
 UnlockMap	MapLockManager.cc	/^bool MapLockManager::UnlockMap( void * t)$/;"	f	class:PTAMM::MapLockManager
 Update	ShooterGameTarget.cc	/^void ShooterGameTarget::Update()$/;"	f	class:PTAMM::ShooterGameTarget
+UpdateIMUModel	Tracker.cc	/^    void Tracker::UpdateIMUModel()$/;"	f	class:PTAMM::Tracker
 UpdateMotionModel	Tracker.cc	/^    void Tracker::UpdateMotionModel()$/;"	f	class:PTAMM::Tracker
 UpdateParams	ATANCamera.cc	/^void ATANCamera::UpdateParams(Vector<5> vUpdate)$/;"	f	class:PTAMM::ATANCamera
 V	yuv2rgb.c	/^static long U[256], V[256], Y1[256], Y2[256];$/;"	v	file:
@@ -1612,6 +1618,8 @@ mse3MfromW	Model3ds.h	/^    SE3<> mse3MfromW;               \/\/ Model's pose an
 mse3ModelOffset	Model3ds.h	/^    SE3<> mse3ModelOffset;          \/\/ Initial rotation of model to line up with the axes$/;"	m	class:PTAMM::Model3DS
 mse3StartPos	Tracker.h	/^  SE3<> mse3StartPos;               \/\/ What the camera pose was at the start of the frame.$/;"	m	class:PTAMM::Tracker
 mse3ViewerFromWorld	MapViewer.h	/^    SE3<> mse3ViewerFromWorld;$/;"	m	class:PTAMM::MapViewer
+mso3IMUInit	Tracker.h	/^  SO3<> mso3IMUInit;$/;"	m	class:PTAMM::Tracker
+mso3IMUNow	Tracker.h	/^  SO3<> mso3IMUNow;$/;"	m	class:PTAMM::Tracker
 msys	ptam-main.cc	/^System* msys;$/;"	v
 mv2CoarsePos	PatchFinder.h	/^  Vector<2> mv2CoarsePos;     \/\/ In the scale of level 0; hence the use of vector rather than ImageRef$/;"	m	class:PTAMM::PatchFinder
 mv2SubPixPos	PatchFinder.h	/^  Vector<2> mv2SubPixPos;     \/\/ In the scale of level 0$/;"	m	class:PTAMM::PatchFinder
@@ -1762,6 +1770,7 @@ timeEnd	timer.h	/^inline void timeEnd(std::string NAME)$/;"	f
 tstart	MapMaker.cc	/^struct timeval tstart, tend;$/;"	v	typeref:struct:timeval
 type	GLWindowMenu.h	/^    MenuItemType type;$/;"	m	struct:PTAMM::GLWindowMenu::MenuItem
 type	tinyxml.h	/^	NodeType		type;$/;"	m	class:PTAMM::TiXmlNode
+updateIMURotation	Tracker.cc	/^    void Tracker::updateIMURotation(float* q) {$/;"	f	class:PTAMM::Tracker
 useMicrosoftBOM	tinyxml.h	/^	bool useMicrosoftBOM;		\/\/ the UTF-8 BOM were found when read. Note this, and try to write.$/;"	m	class:PTAMM::TiXmlDocument
 userData	tinyxml.h	/^	void*			userData;$/;"	m	class:PTAMM::TiXmlBase
 utf8ByteTable	tinyxml.h	/^	static const int utf8ByteTable[256];$/;"	m	class:PTAMM::TiXmlBase

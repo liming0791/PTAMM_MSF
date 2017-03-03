@@ -1,14 +1,14 @@
-obj/local/armeabi-v7a/objs/clapack/zgelqf.o: \
- jni/../ndk-modules/lapack/jni/clapack/SRC/zgelqf.c \
- jni/../ndk-modules/lapack/jni/clapack/SRC/f2c.h \
- jni/../ndk-modules/lapack/jni/clapack/SRC/../INCLUDE/f2c.h \
- jni/../ndk-modules/lapack/jni/clapack/SRC/blaswrap.h \
- jni/../ndk-modules/lapack/jni/clapack/SRC/../INCLUDE/blaswrap.h
+/home/liming/APTAM-GPL/APTAM/obj/local/armeabi-v7a/objs/clapack/zgelqf.o: \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/lapack/jni/clapack/SRC/zgelqf.c \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/lapack/jni/clapack/SRC/f2c.h \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/lapack/jni/clapack/SRC/../INCLUDE/f2c.h \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/lapack/jni/clapack/SRC/blaswrap.h \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/lapack/jni/clapack/SRC/../INCLUDE/blaswrap.h
 
-jni/../ndk-modules/lapack/jni/clapack/SRC/f2c.h:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/lapack/jni/clapack/SRC/f2c.h:
 
-jni/../ndk-modules/lapack/jni/clapack/SRC/../INCLUDE/f2c.h:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/lapack/jni/clapack/SRC/../INCLUDE/f2c.h:
 
-jni/../ndk-modules/lapack/jni/clapack/SRC/blaswrap.h:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/lapack/jni/clapack/SRC/blaswrap.h:
 
-jni/../ndk-modules/lapack/jni/clapack/SRC/../INCLUDE/blaswrap.h:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/lapack/jni/clapack/SRC/../INCLUDE/blaswrap.h:

@@ -34,6 +34,7 @@ class MapMaker : protected CVD::Thread
     // Make a map from scratch. Called by the tracker.
     bool InitFromStereo(KeyFrame &kFirst, KeyFrame &kSecond, 
                         std::vector<std::pair<CVD::ImageRef, CVD::ImageRef> > &vMatches,
+                        const SO3<> &imuInitPos,
                         SE3<> &se3CameraPos);
    
     

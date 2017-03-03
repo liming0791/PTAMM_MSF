@@ -1,161 +1,169 @@
-obj/local/armeabi-v7a/objs/PTAM/./PTAMM/Tracker.o: jni/./PTAMM/Tracker.cc \
- jni/./PTAMM/OpenGL.h jni/../ndk-modules/gl4es/include/GL/gl.h \
- jni/../ndk-modules/gl4es/include/GL/glext.h \
- jni/../ndk-modules/gl4es/include/GL/glu.h \
- jni/../ndk-modules/cvd/jni/../installfiles/cvd/gl_helpers.h \
+/home/liming/APTAM-GPL/APTAM/obj/local/armeabi-v7a/objs/PTAM/./PTAMM/Tracker.o: \
+ /home/liming/APTAM-GPL/APTAM/jni/./PTAMM/Tracker.cc \
+ /home/liming/APTAM-GPL/APTAM/jni/./PTAMM/OpenGL.h \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/gl4es/include/GL/gl.h \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/gl4es/include/GL/glext.h \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/gl4es/include/GL/glu.h \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/cvd/jni/../installfiles/cvd/gl_helpers.h \
  /home/liming/Projects/android-ndk-r13b/sources/cxx-stl/gnu-libstdc++/4.9/include/iostream \
  /home/liming/Projects/android-ndk-r13b/sources/cxx-stl/gnu-libstdc++/4.9/include/map \
- jni/../ndk-modules/cvd/jni/../installfiles/cvd/image_ref.h \
- jni/../ndk-modules/cvd/jni/../installfiles/cvd/exceptions.h \
- jni/../ndk-modules/cvd/jni/../installfiles/cvd/internal/image_ref_implementation.hh \
- jni/../ndk-modules/cvd/jni/../installfiles/cvd/image.h \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/cvd/jni/../installfiles/cvd/image_ref.h \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/cvd/jni/../installfiles/cvd/exceptions.h \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/cvd/jni/../installfiles/cvd/internal/image_ref_implementation.hh \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/cvd/jni/../installfiles/cvd/image.h \
  /home/liming/Projects/android-ndk-r13b/sources/cxx-stl/gnu-libstdc++/4.9/include/iterator \
- jni/../ndk-modules/cvd/jni/../installfiles/cvd/internal/aligned_mem.h \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/cvd/jni/../installfiles/cvd/internal/aligned_mem.h \
  /home/liming/Projects/android-ndk-r13b/sources/cxx-stl/gnu-libstdc++/4.9/include/cassert \
- jni/../ndk-modules/cvd/jni/../installfiles/cvd/config.h \
- jni/../ndk-modules/cvd/jni/../installfiles/cvd/byte.h \
- jni/../ndk-modules/cvd/jni/../installfiles/cvd/rgb.h \
- jni/../ndk-modules/cvd/jni/../installfiles/cvd/internal/is_pod.h \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/cvd/jni/../installfiles/cvd/config.h \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/cvd/jni/../installfiles/cvd/byte.h \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/cvd/jni/../installfiles/cvd/rgb.h \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/cvd/jni/../installfiles/cvd/internal/is_pod.h \
  /home/liming/Projects/android-ndk-r13b/sources/cxx-stl/gnu-libstdc++/4.9/include/limits \
- jni/../ndk-modules/cvd/jni/../installfiles/cvd/rgb8.h \
- jni/../ndk-modules/cvd/jni/../installfiles/cvd/rgba.h \
- jni/../ndk-modules/cvd/jni/../installfiles/cvd/internal/gl_types.h \
- jni/../ndk-modules/cvd/jni/../installfiles/cvd/internal/gles1_types.h \
- jni/../ndk-modules/cvd/jni/../installfiles/cvd/la.h \
- jni/../ndk-modules/TooN/jni/../include/TooN/TooN.h \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/cvd/jni/../installfiles/cvd/rgb8.h \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/cvd/jni/../installfiles/cvd/rgba.h \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/cvd/jni/../installfiles/cvd/internal/gl_types.h \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/cvd/jni/../installfiles/cvd/internal/gles1_types.h \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/cvd/jni/../installfiles/cvd/la.h \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/TooN/jni/../include/TooN/TooN.h \
  /home/liming/Projects/android-ndk-r13b/sources/cxx-stl/gnu-libstdc++/4.9/include/cstdlib \
  /home/liming/Projects/android-ndk-r13b/sources/cxx-stl/gnu-libstdc++/4.9/include/vector \
  /home/liming/Projects/android-ndk-r13b/sources/cxx-stl/gnu-libstdc++/4.9/include/complex \
- jni/../ndk-modules/TooN/jni/../include/TooN/internal/config.hh \
- jni/../ndk-modules/TooN/jni/../include/TooN/internal/typeof.hh \
- jni/../ndk-modules/TooN/jni/../include/TooN/internal/deprecated.hh \
- jni/../ndk-modules/TooN/jni/../include/TooN/internal/debug.hh \
- jni/../ndk-modules/TooN/jni/../include/TooN/internal/introspection.hh \
- jni/../ndk-modules/TooN/jni/../include/TooN/internal/dchecktest.hh \
- jni/../ndk-modules/TooN/jni/../include/TooN/internal/allocator.hh \
- jni/../ndk-modules/TooN/jni/../include/TooN/internal/size_mismatch.hh \
- jni/../ndk-modules/TooN/jni/../include/TooN/internal/overfill_error.hh \
- jni/../ndk-modules/TooN/jni/../include/TooN/internal/slice_error.hh \
- jni/../ndk-modules/TooN/jni/../include/TooN/internal/comma.hh \
- jni/../ndk-modules/TooN/jni/../include/TooN/internal/vbase.hh \
- jni/../ndk-modules/TooN/jni/../include/TooN/internal/vector.hh \
- jni/../ndk-modules/TooN/jni/../include/TooN/internal/mbase.hh \
- jni/../ndk-modules/TooN/jni/../include/TooN/internal/matrix.hh \
- jni/../ndk-modules/TooN/jni/../include/TooN/internal/reference.hh \
- jni/../ndk-modules/TooN/jni/../include/TooN/internal/make_vector.hh \
- jni/../ndk-modules/TooN/jni/../include/TooN/internal/operators.hh \
- jni/../ndk-modules/TooN/jni/../include/TooN/internal/objects.h \
- jni/../ndk-modules/TooN/jni/../include/TooN/internal/diagmatrix.h \
- jni/../ndk-modules/TooN/jni/../include/TooN/internal/data.hh \
- jni/../ndk-modules/TooN/jni/../include/TooN/internal/data_functions.hh \
- jni/../ndk-modules/TooN/jni/../include/TooN/helpers.h \
- jni/../ndk-modules/TooN/jni/../include/TooN/gaussian_elimination.h \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/TooN/jni/../include/TooN/internal/config.hh \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/TooN/jni/../include/TooN/internal/typeof.hh \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/TooN/jni/../include/TooN/internal/deprecated.hh \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/TooN/jni/../include/TooN/internal/debug.hh \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/TooN/jni/../include/TooN/internal/introspection.hh \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/TooN/jni/../include/TooN/internal/dchecktest.hh \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/TooN/jni/../include/TooN/internal/allocator.hh \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/TooN/jni/../include/TooN/internal/size_mismatch.hh \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/TooN/jni/../include/TooN/internal/overfill_error.hh \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/TooN/jni/../include/TooN/internal/slice_error.hh \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/TooN/jni/../include/TooN/internal/comma.hh \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/TooN/jni/../include/TooN/internal/vbase.hh \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/TooN/jni/../include/TooN/internal/vector.hh \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/TooN/jni/../include/TooN/internal/mbase.hh \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/TooN/jni/../include/TooN/internal/matrix.hh \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/TooN/jni/../include/TooN/internal/reference.hh \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/TooN/jni/../include/TooN/internal/make_vector.hh \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/TooN/jni/../include/TooN/internal/operators.hh \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/TooN/jni/../include/TooN/internal/objects.h \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/TooN/jni/../include/TooN/internal/diagmatrix.h \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/TooN/jni/../include/TooN/internal/data.hh \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/TooN/jni/../include/TooN/internal/data_functions.hh \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/TooN/jni/../include/TooN/helpers.h \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/TooN/jni/../include/TooN/gaussian_elimination.h \
  /home/liming/Projects/android-ndk-r13b/sources/cxx-stl/gnu-libstdc++/4.9/include/functional \
- jni/../ndk-modules/TooN/jni/../include/TooN/determinant.h \
- jni/../ndk-modules/TooN/jni/../include/TooN/LU.h \
- jni/../ndk-modules/TooN/jni/../include/TooN/lapack.h \
- jni/../ndk-modules/TooN/jni/../include/TooN/se3.h \
- jni/../ndk-modules/TooN/jni/../include/TooN/so3.h \
- jni/../ndk-modules/TooN/jni/../include/TooN/se2.h \
- jni/../ndk-modules/TooN/jni/../include/TooN/so2.h jni/./PTAMM/Tracker.h \
- jni/./PTAMM/MapMaker.h \
- jni/../ndk-modules/cvd/jni/../installfiles/cvd/thread.h \
- jni/../ndk-modules/cvd/jni/../installfiles/cvd/runnable.h \
- jni/./PTAMM/Map.h \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/TooN/jni/../include/TooN/determinant.h \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/TooN/jni/../include/TooN/LU.h \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/TooN/jni/../include/TooN/lapack.h \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/TooN/jni/../include/TooN/se3.h \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/TooN/jni/../include/TooN/so3.h \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/TooN/jni/../include/TooN/se2.h \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/TooN/jni/../include/TooN/so2.h \
+ /home/liming/APTAM-GPL/APTAM/jni/./PTAMM/Tracker.h \
+ /home/liming/APTAM-GPL/APTAM/jni/./PTAMM/MapMaker.h \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/cvd/jni/../installfiles/cvd/thread.h \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/cvd/jni/../installfiles/cvd/runnable.h \
+ /home/liming/APTAM-GPL/APTAM/jni/./PTAMM/Map.h \
  /home/liming/Projects/android-ndk-r13b/sources/cxx-stl/gnu-libstdc++/4.9/include/deque \
- jni/./PTAMM/MapLockManager.h jni/./PTAMM/KeyFrame.h \
+ /home/liming/APTAM-GPL/APTAM/jni/./PTAMM/MapLockManager.h \
+ /home/liming/APTAM-GPL/APTAM/jni/./PTAMM/KeyFrame.h \
  /home/liming/Projects/android-ndk-r13b/sources/cxx-stl/gnu-libstdc++/4.9/include/set \
- jni/./PTAMM/ATANCamera.h \
- jni/../ndk-modules/cvd/jni/../installfiles/cvd/vector_image_ref.h \
- jni/../ndk-modules/gvars3/jni/../installfiles/gvars3/gvars3.h \
+ /home/liming/APTAM-GPL/APTAM/jni/./PTAMM/ATANCamera.h \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/cvd/jni/../installfiles/cvd/vector_image_ref.h \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/gvars3/jni/../installfiles/gvars3/gvars3.h \
  /home/liming/Projects/android-ndk-r13b/sources/cxx-stl/gnu-libstdc++/4.9/include/list \
- jni/../ndk-modules/gvars3/jni/../installfiles/gvars3/config.h \
- jni/../ndk-modules/gvars3/jni/../installfiles/gvars3/default.h \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/gvars3/jni/../installfiles/gvars3/config.h \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/gvars3/jni/../installfiles/gvars3/default.h \
  /home/liming/Projects/android-ndk-r13b/sources/cxx-stl/gnu-libstdc++/4.9/include/memory \
- jni/../ndk-modules/gvars3/jni/../installfiles/gvars3/type_name.h \
- jni/../ndk-modules/gvars3/jni/../installfiles/gvars3/serialize.h \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/gvars3/jni/../installfiles/gvars3/type_name.h \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/gvars3/jni/../installfiles/gvars3/serialize.h \
  /home/liming/Projects/android-ndk-r13b/sources/cxx-stl/gnu-libstdc++/4.9/include/cstdio \
  /home/liming/Projects/android-ndk-r13b/sources/cxx-stl/gnu-libstdc++/4.9/include/iomanip \
- jni/../ndk-modules/gvars3/jni/../installfiles/gvars3/gv3_implementation.hh \
- jni/./PTAMM/MiniPatch.h \
- jni/../ndk-modules/cvd/jni/../installfiles/cvd/utility.h \
- jni/../ndk-modules/cvd/jni/../installfiles/cvd/internal/pixel_traits.h \
- jni/../ndk-modules/cvd/jni/../installfiles/cvd/internal/convert_pixel_types.h \
- jni/../ndk-modules/cvd/jni/../installfiles/cvd/abs.h \
- jni/../ndk-modules/cvd/jni/../installfiles/cvd/internal/scalar_convert.h \
- jni/../ndk-modules/cvd/jni/../installfiles/cvd/internal/builtin_components.h \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/gvars3/jni/../installfiles/gvars3/gv3_implementation.hh \
+ /home/liming/APTAM-GPL/APTAM/jni/./PTAMM/MiniPatch.h \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/cvd/jni/../installfiles/cvd/utility.h \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/cvd/jni/../installfiles/cvd/internal/pixel_traits.h \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/cvd/jni/../installfiles/cvd/internal/convert_pixel_types.h \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/cvd/jni/../installfiles/cvd/abs.h \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/cvd/jni/../installfiles/cvd/internal/scalar_convert.h \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/cvd/jni/../installfiles/cvd/internal/builtin_components.h \
  /home/liming/Projects/android-ndk-r13b/sources/cxx-stl/gnu-libstdc++/4.9/include/cstddef \
- jni/../ndk-modules/cvd/jni/../installfiles/cvd/internal/rgb_components.h \
- jni/../ndk-modules/cvd/jni/../installfiles/cvd/argb.h \
- jni/../ndk-modules/cvd/jni/../installfiles/cvd/bgrx.h \
- jni/./PTAMM/Relocaliser.h jni/./PTAMM/SmallBlurryImage.h \
- jni/./PTAMM/MEstimator.h \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/cvd/jni/../installfiles/cvd/internal/rgb_components.h \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/cvd/jni/../installfiles/cvd/argb.h \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/cvd/jni/../installfiles/cvd/bgrx.h \
+ /home/liming/APTAM-GPL/APTAM/jni/./PTAMM/Relocaliser.h \
+ /home/liming/APTAM-GPL/APTAM/jni/./PTAMM/SmallBlurryImage.h \
+ /home/liming/APTAM-GPL/APTAM/jni/./PTAMM/MEstimator.h \
  /home/liming/Projects/android-ndk-r13b/sources/cxx-stl/gnu-libstdc++/4.9/include/algorithm \
- jni/./PTAMM/ShiTomasi.h jni/./PTAMM/SmallMatrixOpts.h \
- jni/./PTAMM/PatchFinder.h jni/./PTAMM/MapPoint.h \
- jni/../ndk-modules/cvd/jni/../installfiles/cvd/timer.h \
- jni/./PTAMM/LevelHelpers.h jni/./PTAMM/TrackerData.h \
- jni/../ndk-modules/cvd/jni/../installfiles/cvd/fast_corner.h \
- jni/../ndk-modules/cvd/jni/../installfiles/cvd/vision.h \
- jni/../ndk-modules/cvd/jni/../installfiles/cvd/vision_exceptions.h \
- jni/../ndk-modules/cvd/jni/../installfiles/cvd/internal/pixel_operations.h \
- jni/../ndk-modules/TooN/jni/../include/TooN/wls.h \
- jni/../ndk-modules/TooN/jni/../include/TooN/Cholesky.h \
- jni/../ndk-modules/gvars3/jni/../installfiles/gvars3/instances.h \
- jni/../ndk-modules/gvars3/jni/../installfiles/gvars3/GUI.h \
- jni/../ndk-modules/gvars3/jni/../installfiles/gvars3/GUI_Widgets.h \
- jni/../ndk-modules/gvars3/jni/../installfiles/gvars3/GStringUtil.h \
+ /home/liming/APTAM-GPL/APTAM/jni/./PTAMM/ShiTomasi.h \
+ /home/liming/APTAM-GPL/APTAM/jni/./PTAMM/SmallMatrixOpts.h \
+ /home/liming/APTAM-GPL/APTAM/jni/./PTAMM/PatchFinder.h \
+ /home/liming/APTAM-GPL/APTAM/jni/./PTAMM/MapPoint.h \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/cvd/jni/../installfiles/cvd/timer.h \
+ /home/liming/APTAM-GPL/APTAM/jni/./PTAMM/LevelHelpers.h \
+ /home/liming/APTAM-GPL/APTAM/jni/./PTAMM/TrackerData.h \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/cvd/jni/../installfiles/cvd/fast_corner.h \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/cvd/jni/../installfiles/cvd/vision.h \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/cvd/jni/../installfiles/cvd/vision_exceptions.h \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/cvd/jni/../installfiles/cvd/internal/pixel_operations.h \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/TooN/jni/../include/TooN/wls.h \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/TooN/jni/../include/TooN/Cholesky.h \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/gvars3/jni/../installfiles/gvars3/instances.h \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/gvars3/jni/../installfiles/gvars3/GUI.h \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/gvars3/jni/../installfiles/gvars3/GUI_Widgets.h \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/gvars3/jni/../installfiles/gvars3/GStringUtil.h \
  /home/liming/Projects/android-ndk-r13b/sources/cxx-stl/gnu-libstdc++/4.9/include/fstream
 
-jni/./PTAMM/OpenGL.h:
+/home/liming/APTAM-GPL/APTAM/jni/./PTAMM/OpenGL.h:
 
-jni/../ndk-modules/gl4es/include/GL/gl.h:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/gl4es/include/GL/gl.h:
 
-jni/../ndk-modules/gl4es/include/GL/glext.h:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/gl4es/include/GL/glext.h:
 
-jni/../ndk-modules/gl4es/include/GL/glu.h:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/gl4es/include/GL/glu.h:
 
-jni/../ndk-modules/cvd/jni/../installfiles/cvd/gl_helpers.h:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/cvd/jni/../installfiles/cvd/gl_helpers.h:
 
 /home/liming/Projects/android-ndk-r13b/sources/cxx-stl/gnu-libstdc++/4.9/include/iostream:
 
 /home/liming/Projects/android-ndk-r13b/sources/cxx-stl/gnu-libstdc++/4.9/include/map:
 
-jni/../ndk-modules/cvd/jni/../installfiles/cvd/image_ref.h:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/cvd/jni/../installfiles/cvd/image_ref.h:
 
-jni/../ndk-modules/cvd/jni/../installfiles/cvd/exceptions.h:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/cvd/jni/../installfiles/cvd/exceptions.h:
 
-jni/../ndk-modules/cvd/jni/../installfiles/cvd/internal/image_ref_implementation.hh:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/cvd/jni/../installfiles/cvd/internal/image_ref_implementation.hh:
 
-jni/../ndk-modules/cvd/jni/../installfiles/cvd/image.h:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/cvd/jni/../installfiles/cvd/image.h:
 
 /home/liming/Projects/android-ndk-r13b/sources/cxx-stl/gnu-libstdc++/4.9/include/iterator:
 
-jni/../ndk-modules/cvd/jni/../installfiles/cvd/internal/aligned_mem.h:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/cvd/jni/../installfiles/cvd/internal/aligned_mem.h:
 
 /home/liming/Projects/android-ndk-r13b/sources/cxx-stl/gnu-libstdc++/4.9/include/cassert:
 
-jni/../ndk-modules/cvd/jni/../installfiles/cvd/config.h:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/cvd/jni/../installfiles/cvd/config.h:
 
-jni/../ndk-modules/cvd/jni/../installfiles/cvd/byte.h:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/cvd/jni/../installfiles/cvd/byte.h:
 
-jni/../ndk-modules/cvd/jni/../installfiles/cvd/rgb.h:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/cvd/jni/../installfiles/cvd/rgb.h:
 
-jni/../ndk-modules/cvd/jni/../installfiles/cvd/internal/is_pod.h:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/cvd/jni/../installfiles/cvd/internal/is_pod.h:
 
 /home/liming/Projects/android-ndk-r13b/sources/cxx-stl/gnu-libstdc++/4.9/include/limits:
 
-jni/../ndk-modules/cvd/jni/../installfiles/cvd/rgb8.h:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/cvd/jni/../installfiles/cvd/rgb8.h:
 
-jni/../ndk-modules/cvd/jni/../installfiles/cvd/rgba.h:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/cvd/jni/../installfiles/cvd/rgba.h:
 
-jni/../ndk-modules/cvd/jni/../installfiles/cvd/internal/gl_types.h:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/cvd/jni/../installfiles/cvd/internal/gl_types.h:
 
-jni/../ndk-modules/cvd/jni/../installfiles/cvd/internal/gles1_types.h:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/cvd/jni/../installfiles/cvd/internal/gles1_types.h:
 
-jni/../ndk-modules/cvd/jni/../installfiles/cvd/la.h:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/cvd/jni/../installfiles/cvd/la.h:
 
-jni/../ndk-modules/TooN/jni/../include/TooN/TooN.h:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/TooN/jni/../include/TooN/TooN.h:
 
 /home/liming/Projects/android-ndk-r13b/sources/cxx-stl/gnu-libstdc++/4.9/include/cstdlib:
 
@@ -163,174 +171,174 @@ jni/../ndk-modules/TooN/jni/../include/TooN/TooN.h:
 
 /home/liming/Projects/android-ndk-r13b/sources/cxx-stl/gnu-libstdc++/4.9/include/complex:
 
-jni/../ndk-modules/TooN/jni/../include/TooN/internal/config.hh:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/TooN/jni/../include/TooN/internal/config.hh:
 
-jni/../ndk-modules/TooN/jni/../include/TooN/internal/typeof.hh:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/TooN/jni/../include/TooN/internal/typeof.hh:
 
-jni/../ndk-modules/TooN/jni/../include/TooN/internal/deprecated.hh:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/TooN/jni/../include/TooN/internal/deprecated.hh:
 
-jni/../ndk-modules/TooN/jni/../include/TooN/internal/debug.hh:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/TooN/jni/../include/TooN/internal/debug.hh:
 
-jni/../ndk-modules/TooN/jni/../include/TooN/internal/introspection.hh:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/TooN/jni/../include/TooN/internal/introspection.hh:
 
-jni/../ndk-modules/TooN/jni/../include/TooN/internal/dchecktest.hh:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/TooN/jni/../include/TooN/internal/dchecktest.hh:
 
-jni/../ndk-modules/TooN/jni/../include/TooN/internal/allocator.hh:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/TooN/jni/../include/TooN/internal/allocator.hh:
 
-jni/../ndk-modules/TooN/jni/../include/TooN/internal/size_mismatch.hh:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/TooN/jni/../include/TooN/internal/size_mismatch.hh:
 
-jni/../ndk-modules/TooN/jni/../include/TooN/internal/overfill_error.hh:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/TooN/jni/../include/TooN/internal/overfill_error.hh:
 
-jni/../ndk-modules/TooN/jni/../include/TooN/internal/slice_error.hh:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/TooN/jni/../include/TooN/internal/slice_error.hh:
 
-jni/../ndk-modules/TooN/jni/../include/TooN/internal/comma.hh:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/TooN/jni/../include/TooN/internal/comma.hh:
 
-jni/../ndk-modules/TooN/jni/../include/TooN/internal/vbase.hh:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/TooN/jni/../include/TooN/internal/vbase.hh:
 
-jni/../ndk-modules/TooN/jni/../include/TooN/internal/vector.hh:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/TooN/jni/../include/TooN/internal/vector.hh:
 
-jni/../ndk-modules/TooN/jni/../include/TooN/internal/mbase.hh:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/TooN/jni/../include/TooN/internal/mbase.hh:
 
-jni/../ndk-modules/TooN/jni/../include/TooN/internal/matrix.hh:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/TooN/jni/../include/TooN/internal/matrix.hh:
 
-jni/../ndk-modules/TooN/jni/../include/TooN/internal/reference.hh:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/TooN/jni/../include/TooN/internal/reference.hh:
 
-jni/../ndk-modules/TooN/jni/../include/TooN/internal/make_vector.hh:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/TooN/jni/../include/TooN/internal/make_vector.hh:
 
-jni/../ndk-modules/TooN/jni/../include/TooN/internal/operators.hh:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/TooN/jni/../include/TooN/internal/operators.hh:
 
-jni/../ndk-modules/TooN/jni/../include/TooN/internal/objects.h:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/TooN/jni/../include/TooN/internal/objects.h:
 
-jni/../ndk-modules/TooN/jni/../include/TooN/internal/diagmatrix.h:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/TooN/jni/../include/TooN/internal/diagmatrix.h:
 
-jni/../ndk-modules/TooN/jni/../include/TooN/internal/data.hh:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/TooN/jni/../include/TooN/internal/data.hh:
 
-jni/../ndk-modules/TooN/jni/../include/TooN/internal/data_functions.hh:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/TooN/jni/../include/TooN/internal/data_functions.hh:
 
-jni/../ndk-modules/TooN/jni/../include/TooN/helpers.h:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/TooN/jni/../include/TooN/helpers.h:
 
-jni/../ndk-modules/TooN/jni/../include/TooN/gaussian_elimination.h:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/TooN/jni/../include/TooN/gaussian_elimination.h:
 
 /home/liming/Projects/android-ndk-r13b/sources/cxx-stl/gnu-libstdc++/4.9/include/functional:
 
-jni/../ndk-modules/TooN/jni/../include/TooN/determinant.h:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/TooN/jni/../include/TooN/determinant.h:
 
-jni/../ndk-modules/TooN/jni/../include/TooN/LU.h:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/TooN/jni/../include/TooN/LU.h:
 
-jni/../ndk-modules/TooN/jni/../include/TooN/lapack.h:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/TooN/jni/../include/TooN/lapack.h:
 
-jni/../ndk-modules/TooN/jni/../include/TooN/se3.h:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/TooN/jni/../include/TooN/se3.h:
 
-jni/../ndk-modules/TooN/jni/../include/TooN/so3.h:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/TooN/jni/../include/TooN/so3.h:
 
-jni/../ndk-modules/TooN/jni/../include/TooN/se2.h:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/TooN/jni/../include/TooN/se2.h:
 
-jni/../ndk-modules/TooN/jni/../include/TooN/so2.h:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/TooN/jni/../include/TooN/so2.h:
 
-jni/./PTAMM/Tracker.h:
+/home/liming/APTAM-GPL/APTAM/jni/./PTAMM/Tracker.h:
 
-jni/./PTAMM/MapMaker.h:
+/home/liming/APTAM-GPL/APTAM/jni/./PTAMM/MapMaker.h:
 
-jni/../ndk-modules/cvd/jni/../installfiles/cvd/thread.h:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/cvd/jni/../installfiles/cvd/thread.h:
 
-jni/../ndk-modules/cvd/jni/../installfiles/cvd/runnable.h:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/cvd/jni/../installfiles/cvd/runnable.h:
 
-jni/./PTAMM/Map.h:
+/home/liming/APTAM-GPL/APTAM/jni/./PTAMM/Map.h:
 
 /home/liming/Projects/android-ndk-r13b/sources/cxx-stl/gnu-libstdc++/4.9/include/deque:
 
-jni/./PTAMM/MapLockManager.h:
+/home/liming/APTAM-GPL/APTAM/jni/./PTAMM/MapLockManager.h:
 
-jni/./PTAMM/KeyFrame.h:
+/home/liming/APTAM-GPL/APTAM/jni/./PTAMM/KeyFrame.h:
 
 /home/liming/Projects/android-ndk-r13b/sources/cxx-stl/gnu-libstdc++/4.9/include/set:
 
-jni/./PTAMM/ATANCamera.h:
+/home/liming/APTAM-GPL/APTAM/jni/./PTAMM/ATANCamera.h:
 
-jni/../ndk-modules/cvd/jni/../installfiles/cvd/vector_image_ref.h:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/cvd/jni/../installfiles/cvd/vector_image_ref.h:
 
-jni/../ndk-modules/gvars3/jni/../installfiles/gvars3/gvars3.h:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/gvars3/jni/../installfiles/gvars3/gvars3.h:
 
 /home/liming/Projects/android-ndk-r13b/sources/cxx-stl/gnu-libstdc++/4.9/include/list:
 
-jni/../ndk-modules/gvars3/jni/../installfiles/gvars3/config.h:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/gvars3/jni/../installfiles/gvars3/config.h:
 
-jni/../ndk-modules/gvars3/jni/../installfiles/gvars3/default.h:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/gvars3/jni/../installfiles/gvars3/default.h:
 
 /home/liming/Projects/android-ndk-r13b/sources/cxx-stl/gnu-libstdc++/4.9/include/memory:
 
-jni/../ndk-modules/gvars3/jni/../installfiles/gvars3/type_name.h:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/gvars3/jni/../installfiles/gvars3/type_name.h:
 
-jni/../ndk-modules/gvars3/jni/../installfiles/gvars3/serialize.h:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/gvars3/jni/../installfiles/gvars3/serialize.h:
 
 /home/liming/Projects/android-ndk-r13b/sources/cxx-stl/gnu-libstdc++/4.9/include/cstdio:
 
 /home/liming/Projects/android-ndk-r13b/sources/cxx-stl/gnu-libstdc++/4.9/include/iomanip:
 
-jni/../ndk-modules/gvars3/jni/../installfiles/gvars3/gv3_implementation.hh:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/gvars3/jni/../installfiles/gvars3/gv3_implementation.hh:
 
-jni/./PTAMM/MiniPatch.h:
+/home/liming/APTAM-GPL/APTAM/jni/./PTAMM/MiniPatch.h:
 
-jni/../ndk-modules/cvd/jni/../installfiles/cvd/utility.h:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/cvd/jni/../installfiles/cvd/utility.h:
 
-jni/../ndk-modules/cvd/jni/../installfiles/cvd/internal/pixel_traits.h:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/cvd/jni/../installfiles/cvd/internal/pixel_traits.h:
 
-jni/../ndk-modules/cvd/jni/../installfiles/cvd/internal/convert_pixel_types.h:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/cvd/jni/../installfiles/cvd/internal/convert_pixel_types.h:
 
-jni/../ndk-modules/cvd/jni/../installfiles/cvd/abs.h:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/cvd/jni/../installfiles/cvd/abs.h:
 
-jni/../ndk-modules/cvd/jni/../installfiles/cvd/internal/scalar_convert.h:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/cvd/jni/../installfiles/cvd/internal/scalar_convert.h:
 
-jni/../ndk-modules/cvd/jni/../installfiles/cvd/internal/builtin_components.h:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/cvd/jni/../installfiles/cvd/internal/builtin_components.h:
 
 /home/liming/Projects/android-ndk-r13b/sources/cxx-stl/gnu-libstdc++/4.9/include/cstddef:
 
-jni/../ndk-modules/cvd/jni/../installfiles/cvd/internal/rgb_components.h:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/cvd/jni/../installfiles/cvd/internal/rgb_components.h:
 
-jni/../ndk-modules/cvd/jni/../installfiles/cvd/argb.h:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/cvd/jni/../installfiles/cvd/argb.h:
 
-jni/../ndk-modules/cvd/jni/../installfiles/cvd/bgrx.h:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/cvd/jni/../installfiles/cvd/bgrx.h:
 
-jni/./PTAMM/Relocaliser.h:
+/home/liming/APTAM-GPL/APTAM/jni/./PTAMM/Relocaliser.h:
 
-jni/./PTAMM/SmallBlurryImage.h:
+/home/liming/APTAM-GPL/APTAM/jni/./PTAMM/SmallBlurryImage.h:
 
-jni/./PTAMM/MEstimator.h:
+/home/liming/APTAM-GPL/APTAM/jni/./PTAMM/MEstimator.h:
 
 /home/liming/Projects/android-ndk-r13b/sources/cxx-stl/gnu-libstdc++/4.9/include/algorithm:
 
-jni/./PTAMM/ShiTomasi.h:
+/home/liming/APTAM-GPL/APTAM/jni/./PTAMM/ShiTomasi.h:
 
-jni/./PTAMM/SmallMatrixOpts.h:
+/home/liming/APTAM-GPL/APTAM/jni/./PTAMM/SmallMatrixOpts.h:
 
-jni/./PTAMM/PatchFinder.h:
+/home/liming/APTAM-GPL/APTAM/jni/./PTAMM/PatchFinder.h:
 
-jni/./PTAMM/MapPoint.h:
+/home/liming/APTAM-GPL/APTAM/jni/./PTAMM/MapPoint.h:
 
-jni/../ndk-modules/cvd/jni/../installfiles/cvd/timer.h:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/cvd/jni/../installfiles/cvd/timer.h:
 
-jni/./PTAMM/LevelHelpers.h:
+/home/liming/APTAM-GPL/APTAM/jni/./PTAMM/LevelHelpers.h:
 
-jni/./PTAMM/TrackerData.h:
+/home/liming/APTAM-GPL/APTAM/jni/./PTAMM/TrackerData.h:
 
-jni/../ndk-modules/cvd/jni/../installfiles/cvd/fast_corner.h:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/cvd/jni/../installfiles/cvd/fast_corner.h:
 
-jni/../ndk-modules/cvd/jni/../installfiles/cvd/vision.h:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/cvd/jni/../installfiles/cvd/vision.h:
 
-jni/../ndk-modules/cvd/jni/../installfiles/cvd/vision_exceptions.h:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/cvd/jni/../installfiles/cvd/vision_exceptions.h:
 
-jni/../ndk-modules/cvd/jni/../installfiles/cvd/internal/pixel_operations.h:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/cvd/jni/../installfiles/cvd/internal/pixel_operations.h:
 
-jni/../ndk-modules/TooN/jni/../include/TooN/wls.h:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/TooN/jni/../include/TooN/wls.h:
 
-jni/../ndk-modules/TooN/jni/../include/TooN/Cholesky.h:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/TooN/jni/../include/TooN/Cholesky.h:
 
-jni/../ndk-modules/gvars3/jni/../installfiles/gvars3/instances.h:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/gvars3/jni/../installfiles/gvars3/instances.h:
 
-jni/../ndk-modules/gvars3/jni/../installfiles/gvars3/GUI.h:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/gvars3/jni/../installfiles/gvars3/GUI.h:
 
-jni/../ndk-modules/gvars3/jni/../installfiles/gvars3/GUI_Widgets.h:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/gvars3/jni/../installfiles/gvars3/GUI_Widgets.h:
 
-jni/../ndk-modules/gvars3/jni/../installfiles/gvars3/GStringUtil.h:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/gvars3/jni/../installfiles/gvars3/GStringUtil.h:
 
 /home/liming/Projects/android-ndk-r13b/sources/cxx-stl/gnu-libstdc++/4.9/include/fstream:

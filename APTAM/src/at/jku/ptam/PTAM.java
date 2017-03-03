@@ -43,6 +43,7 @@ import at.jku.ptam.CameraManager.FrameListener;
 
 public class PTAM extends Activity implements GLSurfaceView.Renderer,OnTouchListener,FrameListener{
 	private CameraManager cameraManager;
+	private SensorController mSensorController;
 	private static VideoSource vs;
 	
 	private GLSurfaceView glSurfaceView;
@@ -147,6 +148,7 @@ public class PTAM extends Activity implements GLSurfaceView.Renderer,OnTouchList
 
 		preferences = PreferenceManager.getDefaultSharedPreferences(this);
 		cameraManager = new CameraManager(preferences);
+		mSensorController = new SensorController(this, this);
 		
 		getWindow().addFlags(WindowManager.LayoutParams.FLAG_DISMISS_KEYGUARD |
 			    WindowManager.LayoutParams.FLAG_SHOW_WHEN_LOCKED |
@@ -238,6 +240,7 @@ public class PTAM extends Activity implements GLSurfaceView.Renderer,OnTouchList
 	@Override
 	public void onStop() {
 		cameraManager.stopCamera();
+		mSensorController.onStop();
 		nativeDestroy();
 		super.onStop();
 		System.exit(0);//hack
@@ -332,8 +335,12 @@ public class PTAM extends Activity implements GLSurfaceView.Renderer,OnTouchList
 			{
 				GLES10.glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
 				GLES10.glClear(GLES10.GL_COLOR_BUFFER_BIT|GLES10.GL_DEPTH_BUFFER_BIT);
-				//gl.glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
-				//gl.glClear(GLES10.GL_COLOR_BUFFER_BIT|GLES10.GL_DEPTH_BUFFER_BIT);
+
+				float[] q = mSensorController.getQuaternion();
+
+				//Log.d("MainActivity", "qauternion q0: " + q[0] + " q1: " + q[1] + " q2: " + q[2]
+				//		+ " q3: " + q[3]);
+
 				if(requestExit)
 				{
 					if(nativeFinish())
@@ -349,12 +356,8 @@ public class PTAM extends Activity implements GLSurfaceView.Renderer,OnTouchList
 					}
 				}
 				else
-					nativeRender();
+					nativeRender(q);
 			}
-			/* gl.glMatrixMode( GL10.GL_MODELVIEW );
-		       gl.glLoadIdentity(); */
-			//gl.glColor4f(1, 0, 0, 1);
-			//drawText("test",100,10);
 		}
 	}
 	
@@ -372,7 +375,13 @@ public class PTAM extends Activity implements GLSurfaceView.Renderer,OnTouchList
 	        glText.DisableGLSettings();
 		}
 	}
-	
+
+	public void predictIMU(float[] imuval)
+	{
+		float val [] = {imuval[0], imuval[1], imuval[2], imuval[3], imuval[4], imuval[5]};
+		nativePredictIMU(val);
+	}
+
 	/*
 	 * A native method that is implemented by the 'hello-ptam' native library,
 	 * which is packaged with this application.
@@ -381,7 +390,8 @@ public class PTAM extends Activity implements GLSurfaceView.Renderer,OnTouchList
 	private native void nativeDestroy();
 	private native void nativeInitGL();
 	private native void nativeResize(int w, int h);
-    private native void nativeRender();
+    private native void nativeRender(float[] q);
+	private native void nativePredictIMU(float[] imuval);
     private native boolean nativeFinish();
     //private static native void nativeDone();
     private native void nativeClick(int x, int y);

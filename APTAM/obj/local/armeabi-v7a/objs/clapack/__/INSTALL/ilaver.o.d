@@ -1,14 +1,14 @@
-obj/local/armeabi-v7a/objs/clapack/__/INSTALL/ilaver.o: \
- jni/../ndk-modules/lapack/jni/clapack/SRC/../INSTALL/ilaver.c \
- jni/../ndk-modules/lapack/jni/clapack/SRC/../INSTALL/f2c.h \
- jni/../ndk-modules/lapack/jni/clapack/SRC/../INSTALL/../INCLUDE/f2c.h \
- jni/../ndk-modules/lapack/jni/clapack/SRC/../INSTALL/blaswrap.h \
- jni/../ndk-modules/lapack/jni/clapack/SRC/../INSTALL/../INCLUDE/blaswrap.h
+/home/liming/APTAM-GPL/APTAM/obj/local/armeabi-v7a/objs/clapack/__/INSTALL/ilaver.o: \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/lapack/jni/clapack/SRC/../INSTALL/ilaver.c \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/lapack/jni/clapack/SRC/../INSTALL/f2c.h \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/lapack/jni/clapack/SRC/../INSTALL/../INCLUDE/f2c.h \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/lapack/jni/clapack/SRC/../INSTALL/blaswrap.h \
+ /home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/lapack/jni/clapack/SRC/../INSTALL/../INCLUDE/blaswrap.h
 
-jni/../ndk-modules/lapack/jni/clapack/SRC/../INSTALL/f2c.h:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/lapack/jni/clapack/SRC/../INSTALL/f2c.h:
 
-jni/../ndk-modules/lapack/jni/clapack/SRC/../INSTALL/../INCLUDE/f2c.h:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/lapack/jni/clapack/SRC/../INSTALL/../INCLUDE/f2c.h:
 
-jni/../ndk-modules/lapack/jni/clapack/SRC/../INSTALL/blaswrap.h:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/lapack/jni/clapack/SRC/../INSTALL/blaswrap.h:
 
-jni/../ndk-modules/lapack/jni/clapack/SRC/../INSTALL/../INCLUDE/blaswrap.h:
+/home/liming/APTAM-GPL/APTAM/jni/../ndk-modules/lapack/jni/clapack/SRC/../INSTALL/../INCLUDE/blaswrap.h:

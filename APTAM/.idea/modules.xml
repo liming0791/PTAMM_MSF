@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/APTAM.iml" filepath="$PROJECT_DIR$/.idea/APTAM.iml" />
+      <module fileurl="file://$PROJECT_DIR$/imu_mahony_pose/imu_mahony_pose.iml" filepath="$PROJECT_DIR$/imu_mahony_pose/imu_mahony_pose.iml" />
     </modules>
   </component>
 </project>

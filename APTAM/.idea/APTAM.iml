@@ -7,6 +7,9 @@
         <option name="RES_FOLDER_RELATIVE_PATH" value="/../res" />
         <option name="ASSETS_FOLDER_RELATIVE_PATH" value="/../assets" />
         <option name="LIBS_FOLDER_RELATIVE_PATH" value="/../libs" />
+        <proGuardCfgFiles>
+          <file>file://$USER_HOME$/jdk1.8.0_112/tools/proguard/proguard-android.txt</file>
+        </proGuardCfgFiles>
       </configuration>
     </facet>
   </component>
@@ -18,8 +21,9 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/res" type="java-resource" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="Android API 19 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="armeabi-v7a1" level="project" />
+    <orderEntry type="module" module-name="imu_mahony_pose" exported="" />
   </component>
 </module>

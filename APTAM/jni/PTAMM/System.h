@@ -34,7 +34,8 @@ class System
   public:
     System();
     ~System();
-    void Run();
+    void Run(float* q);
+    void predict(float* imuval);
 
   private:
     VideoSource mVideoSource;                       // The video image source

@@ -56,6 +56,18 @@ namespace PTAMM {
         mpSBILastFrame = NULL;
         mpSBIThisFrame = NULL;
 
+        // Rotation from Camera to IMU
+        Vector<3> C2I1;
+        C2I1[0] = 0;
+        C2I1[1] = 0;
+        C2I1[2] = 3.1415926/2;
+        Vector<3> C2I2;
+        C2I2[0] = 0;
+        C2I2[1] = 3.1415926;
+        C2I2[2] = 0;
+        Rc2i = SO3<>::exp(C2I1)*SO3<>::exp(C2I2);
+        cout << "camera to IMU: " << endl << Rc2i << endl;
+
         // Most of the initialisation is done in Reset()
         Reset();
     }
@@ -118,7 +130,7 @@ namespace PTAMM {
     // It figures out what state the tracker is in, and calls appropriate internal tracking
     // functions. bDraw tells the tracker wether it should output any GL graphics
     // or not (it should not draw, for example, when AR stuff is being shown.)
-    void Tracker::TrackFrame(Image<CVD::byte> &imFrame, bool bDraw)
+    void Tracker::TrackFrame(Image<CVD::byte> &imFrame, float* q, bool bDraw)
     {
         mbDraw = bDraw;
         mMessageForUser.str("");   // Wipe the user message clean
@@ -149,13 +161,14 @@ namespace PTAMM {
             mpSBIThisFrame = new SmallBlurryImage(mCurrentKF, *gvdSBIBlur);
         }
 
+        // update the IMU Rotation
+        updateIMURotation(q);
+
         // From now on we only use the keyframe struct!
         mnFrame++;
 
-
         if(mbDraw)
         {
-
             //__android_log_print(ANDROID_LOG_INFO, "Tracker::TrackFrame",
             //                "KeyFrame Info, size : %d %d, first pointer data : %d",
             //                mCurrentKF.aLevels[0].im.size().x, mCurrentKF.aLevels[0].im.size().y,
@@ -188,8 +201,10 @@ namespace PTAMM {
                 if(mbUseSBIInit)
                     CalcSBIRotation();
                 ApplyMotionModel();       // 
+                //ApplyIMUModel();
                 TrackMap();               //  These three lines do the main tracking work.
                 UpdateMotionModel();      // 
+                //UpdateIMUModel();
 
                 AssessTrackingQuality();  //  Check if we're lost or if tracking is poor.
 
@@ -425,7 +440,16 @@ namespace PTAMM {
                 for(list<Trail>::iterator i = mlTrails.begin(); i!=mlTrails.end(); i++)
                     vMatches.push_back(pair<ImageRef, ImageRef>(i->irInitialPos,
                                 i->irCurrentPos));
-                mMapMaker.InitFromStereo(mFirstKF, mCurrentKF, vMatches, mse3CamFromWorld);  // This will take some time!
+                mMapMaker.InitFromStereo(mFirstKF, mCurrentKF, 
+                        vMatches, mso3IMUInit, mse3CamFromWorld);  // This will take some time!
+                // log to debug
+                //cout << "imu second: " << endl << mso3IMUNow << endl;
+                //cout << "camera second: " << endl << mse3CamFromWorld.get_rotation() << endl;
+
+                //Rbinv = mse3CamFromWorld.get_rotation()*Rc2i*mso3IMUInit.inverse()*mso3IMUNow*Rc2i.inverse();
+                //cout << "should be I: " << endl << Rbinv << endl;
+                //cout << "Rbinv * Rb: " << endl << Rbinv * Rbinv.inverse() << endl;
+
                 mnInitialStage = TRAIL_TRACKING_COMPLETE;
             }
             else
@@ -438,6 +462,11 @@ namespace PTAMM {
      */
     void Tracker::TrailTracking_Start()
     {
+
+        // set the IMU Rotation init
+        mso3IMUInit = mso3IMUNow;
+        cout << "imu init :" << endl << mso3IMUInit << endl; // debug log  
+
         mCurrentKF.MakeKeyFrame_Rest();  // This populates the Candidates list, which is Shi-Tomasi thresholded.
         mFirstKF = mCurrentKF; 
         vector<pair<double,ImageRef> > vCornersAndSTScores;
@@ -800,6 +829,8 @@ namespace PTAMM {
         // needed if the KF gets added to MapMaker. Do it anyway.
         // Export pose to current keyframe:
         mCurrentKF.se3CfromW = mse3CamFromWorld;
+        Vector<3, double> t = mse3CamFromWorld.get_translation();
+        //__android_log_print(ANDROID_LOG_INFO, "Tracker::TrackMap", "t: %f %f %f", t[0], t[1], t[2] );
 
         // Record successful measurements. Use the KeyFrame-Measurement struct for this.
         mCurrentKF.mMeasurements.clear();
@@ -1006,26 +1037,89 @@ namespace PTAMM {
         return wls.get_mu();
     }
 
+    // update IMU Rotation
+    void Tracker::updateIMURotation(float* q) {
+        double radians = acos(q[0]) *2;
+        double len = sqrt(q[1]*q[1] + q[2]*q[2] + q[3]*q[3]);
+        double n_q1 = q[1]/len;
+        double n_q2 = q[2]/len;
+        double n_q3 = q[3]/len;
+
+        Vector<3> v3Velocity; 
+        v3Velocity[0] = n_q1*radians;
+        v3Velocity[1] = n_q2*radians;
+        v3Velocity[2] = n_q3*radians;
+
+        mso3IMUNow = SO3<>::exp(v3Velocity);
+    }
 
     // Use the rotation from IMU 
-    void Tracker::ApplyIMUMotion(float q0, float q1, float q2, float q3)
+    void Tracker::ApplyIMUModel()
     {
-        mse3StartPos = mse3CamFromWorld;
+        // old motion model for translation
+        //mse3StartPos = mse3CamFromWorld;
+        //Vector<6> v6Velocity = mv6CameraVelocity;
+        //if(mbUseSBIInit)
+        //{
+        //    v6Velocity.slice<3,3>() = mv6SBIRot.slice<3,3>();
+        //    v6Velocity[0] = 0.0;
+        //    v6Velocity[1] = 0.0;
+        //}
+        //SE3<> predictCamFromWorld = SE3<>::exp(v6Velocity) * mse3StartPos;
+        //mse3CamFromWorld.get_translation() = predictCamFromWorld.get_translation();
 
-        float radians = acos(q0) *2;
-        float len = sqrt(q1*q1 + q2*q2 + q3*q3);
-        float n_q1 = q1/len;
-        float n_q2 = q2/len;
-        float n_q3 = q3/len;
+        // new imu model for rotation
+        //SO3<> RinvPredict = Rc2i * mso3IMUInit.inverse() * mso3IMUNow * Rc2i.inverse() * Rbinv.inverse();
+        //mse3CamFromWorld.get_rotation() = RinvPredict.inverse();
+        //cout << "imu now: " << endl << mso3IMUNow << endl;
+        
+        //RPrediction = mse3CamFromWorld.get_rotation();
+        //TPrediction = mse3CamFromWorld.get_translation();
+        //cout << "Rotation predict: " << endl << RPrediction << endl;
+        //cout << "Translation predict: " << endl << TPrediction << endl << endl;
+    }
 
-        float[] data = {0, 0, 0, n_q1*radians, n_q2*radians, n_a3*radians};
-        Vector<6> v6Velocity(data); 
+    void Tracker::UpdateIMUModel()
+    {
+        // old motion model
+        //
+        //SE3<> se3NewFromOld = mse3CamFromWorld * mse3StartPos.inverse();
+        //Vector<6> v6Motion = SE3<>::ln(se3NewFromOld);
+        //Vector<6> v6OldVel = mv6CameraVelocity;
 
-        mse3CamFromWorld = SE3<>::exp(v6Velocity);
+        //mv6CameraVelocity = 0.9 * (0.5 * v6Motion + 0.5 * v6OldVel);
+        //mdVelocityMagnitude = sqrt(mv6CameraVelocity * mv6CameraVelocity);
+
+        //// Also make an estimate of this which has been scaled by the mean scene depth.
+        //// This is used to decide if we should use a coarse tracking stage.
+        //// We can tolerate more translational vel when far away from scene!
+        //Vector<6> v6 = mv6CameraVelocity;
+        //v6.slice<0,3>() *= 1.0 / mCurrentKF.dSceneDepthMean;
+        //mdMSDScaledVelocityMagnitude = sqrt(v6*v6);
+
+        // new IMU model
+
+        // caculate prediction bias
+        //SO3<> RTracked = mse3CamFromWorld.get_rotation();
+        //Vector<3> TTracked = mse3CamFromWorld.get_translation();
+        //cout << "Rotation tracked: " << endl << RTracked << endl;
+        //cout << "Translation tracked: " << endl << TTracked << endl << endl;
+
+        //Vector<3> rdis = (RTracked*RPrediction.inverse()).ln();
+        //Vector<3> tdis = TTracked - TPrediction;
+
+        //cout << "R predict bias: " << sqrt(rdis * rdis) << endl;
+        //cout << "T predict bias: " << sqrt(tdis * tdis) << endl;
+
+        Rbinv = mse3CamFromWorld.get_rotation() * Rc2i * mso3IMUInit.inverse() * mso3IMUNow * Rc2i.inverse();
+        Vector<3> imudis = Rbinv.ln();
+        cout << "IMU bias: " << sqrt(imudis*imudis) << endl << endl;
+        cout << "IMU Bias_axis: " << imudis << endl;
+        //cout << "should be I, Rbinv: " << endl << Rbinv << endl;
+        //cout << "Rbinv * Rb: " << endl << Rbinv * Rbinv.inverse() << endl;
     }
 
     // Tracker::
-
 
     /**
      * Just add the current velocity to the current pose.
@@ -1044,9 +1138,12 @@ namespace PTAMM {
             v6Velocity[1] = 0.0;
         }
         mse3CamFromWorld = SE3<>::exp(v6Velocity) * mse3StartPos;
+
+        //RPrediction = mse3CamFromWorld.get_rotation();
+        //TPrediction = mse3CamFromWorld.get_translation();
+        //cout << "Rotation predict: " << endl << RPrediction << endl;
+        //cout << "Translation predict: " << endl << TPrediction << endl << endl;
     };
-
-
 
     /**
      * The motion model is entirely the tracker's, and is kept as a decaying
@@ -1067,6 +1164,18 @@ namespace PTAMM {
         Vector<6> v6 = mv6CameraVelocity;
         v6.slice<0,3>() *= 1.0 / mCurrentKF.dSceneDepthMean;
         mdMSDScaledVelocityMagnitude = sqrt(v6*v6);
+
+        // caculate prediction bias
+        //SO3<> RTracked = mse3CamFromWorld.get_rotation();
+        //Vector<3> TTracked = mse3CamFromWorld.get_translation();
+        //cout << "Rotation tracked: " << endl << RTracked << endl;
+        //cout << "Translation tracked: " << endl << TTracked << endl << endl;
+
+        //Vector<3> rdis = (RTracked*RPrediction.inverse()).ln();
+        //Vector<3> tdis = TTracked - TPrediction;
+
+        //cout << "R predict bias: " << sqrt(rdis * rdis) << endl;
+        //cout << "T predict bias: " << sqrt(tdis * tdis) << endl;    
     }
 
 

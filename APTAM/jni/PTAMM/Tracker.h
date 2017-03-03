@@ -48,7 +48,7 @@ public:
   Tracker(CVD::ImageRef irVideoSize, const ATANCamera &c, std::vector<Map*> &maps, Map *m, MapMaker &mm);
   
   // TrackFrame is the main working part of the tracker: call this every frame.
-  void TrackFrame(CVD::Image<CVD::byte> &imFrame, bool bDraw); 
+  void TrackFrame(CVD::Image<CVD::byte> &imFrame, float* q, bool bDraw);
 
   inline SE3<> GetCurrentPose() { return mse3CamFromWorld; }
   inline bool IsLost() { return (mnLostFrames > NUM_LOST_FRAMES); }
@@ -92,7 +92,6 @@ protected:
   // Methods for tracking the map once it has been made:
   void TrackMap();                // Called by TrackFrame if there is a map.
   void AssessTrackingQuality();   // Heuristics to choose between good, poor, bad.
-  void ApplyIMUMotion(float q0, float q1, float q2, float q3);
   void ApplyMotionModel();        // Decaying velocity motion model applied prior to TrackMap
   void UpdateMotionModel();       // Motion model is updated after TrackMap
   int SearchForPoints(std::vector<TrackerData*> &vTD, 
@@ -109,6 +108,20 @@ protected:
   bool mbDidCoarse;               // Did tracking use the coarse tracking stage?
   
   bool mbDraw;                    // Should the tracker draw anything to OpenGL?
+
+  // imu data
+  SO3<> mso3IMUInit;
+  SO3<> mso3IMUNow;
+  void updateIMURotation(float* q);
+  void ApplyIMUModel();
+  void UpdateIMUModel();
+
+  SO3<> Rc2i;
+  SO3<> Rbinv;
+
+  // predict error
+  SO3<> RPrediction;
+  Vector<3> TPrediction;
   
   // Interface with map maker:
   int mnFrame;                    // Frames processed since last reset

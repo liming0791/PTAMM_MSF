@@ -147,12 +147,27 @@ System::~System()
 
 }
 
+/**
+ * Predict use msf.
+ * This handles the pose sensor fusion.
+ */
+void System::predict(float* imuval)
+{
+    static int predictcount = 0;
+
+    if (predictcount == 300) {
+        __android_log_print(ANDROID_LOG_INFO, "System::predict",
+                " predict imu a: %f %f %f g: %f %f %f", imuval[0], imuval[1], imuval[2], imuval[3], imuval[4], imuval[5]);
+        predictcount = 0;
+    }
+    predictcount++;
+}
 
 /**
  * Run the main system thread.
  * This handles the tracker and the map viewer.
  */
-void System::Run()
+void System::Run(float* q)
 {
   {
       //Check if the map has been locked by another thread, and wait for release.
@@ -217,7 +232,7 @@ void System::Run()
           bool bDrawAR = mpMap->IsGood() && *gvnDrawAR;
 
           //__android_log_print(ANDROID_LOG_INFO, "System::Run", "TrackFrame ...");
-          mpTracker->TrackFrame(mimFrameBW, !bDrawAR && !bDrawMap);
+          mpTracker->TrackFrame(mimFrameBW, q, !bDrawAR && !bDrawMap);
           //__android_log_print(ANDROID_LOG_INFO, "System::Run", "TrackFrame done");
 
           //__android_log_print(ANDROID_LOG_INFO, "System::Run", "Draw Map or AR ...");
