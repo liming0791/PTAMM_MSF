@@ -137,22 +137,22 @@ class MSF_Measurement : public MSF_MeasurementBase<EKFState_T> {
     this->time = timestamp;
     MakeFromSensorReadingImpl(reading);
 
-    printf("Pose Measurement covariance:\n"
-           "%f %f %f %f %f %f %f\n"
-           "%f %f %f %f %f %f %f\n"
-           "%f %f %f %f %f %f %f\n"
-           "%f %f %f %f %f %f %f\n"
-           "%f %f %f %f %f %f %f\n"
-           "%f %f %f %f %f %f %f\n"
-           "%f %f %f %f %f %f %f\n",
-           R_(0,0), R_(0,1), R_(0,2), R_(0,3), R_(0,4), R_(0,5), R_(0,6),
-           R_(1,0), R_(1,1), R_(1,2), R_(1,3), R_(1,4), R_(1,5), R_(1,6),
-           R_(2,0), R_(2,1), R_(2,2), R_(2,3), R_(2,4), R_(2,5), R_(2,6),
-           R_(3,0), R_(3,1), R_(3,2), R_(3,3), R_(3,4), R_(3,5), R_(3,6),
-           R_(4,0), R_(4,1), R_(4,2), R_(4,3), R_(4,4), R_(4,5), R_(4,6),
-           R_(5,0), R_(5,1), R_(5,2), R_(5,3), R_(5,4), R_(5,5), R_(5,6),
-           R_(6,0), R_(6,1), R_(6,2), R_(6,3), R_(6,4), R_(6,5), R_(6,6)
-           );
+    //printf("Pose Measurement covariance:\n"
+    //       "%f %f %f %f %f %f %f\n"
+    //       "%f %f %f %f %f %f %f\n"
+    //       "%f %f %f %f %f %f %f\n"
+    //       "%f %f %f %f %f %f %f\n"
+    //       "%f %f %f %f %f %f %f\n"
+    //       "%f %f %f %f %f %f %f\n"
+    //       "%f %f %f %f %f %f %f\n",
+    //       R_(0,0), R_(0,1), R_(0,2), R_(0,3), R_(0,4), R_(0,5), R_(0,6),
+    //       R_(1,0), R_(1,1), R_(1,2), R_(1,3), R_(1,4), R_(1,5), R_(1,6),
+    //       R_(2,0), R_(2,1), R_(2,2), R_(2,3), R_(2,4), R_(2,5), R_(2,6),
+    //       R_(3,0), R_(3,1), R_(3,2), R_(3,3), R_(3,4), R_(3,5), R_(3,6),
+    //       R_(4,0), R_(4,1), R_(4,2), R_(4,3), R_(4,4), R_(4,5), R_(4,6),
+    //       R_(5,0), R_(5,1), R_(5,2), R_(5,3), R_(5,4), R_(5,5), R_(5,6),
+    //       R_(6,0), R_(6,1), R_(6,2), R_(6,3), R_(6,4), R_(6,5), R_(6,6)
+    //       );
 
     // Check whether the user has set R.
     if (R_.minCoeff() == 0.0 && R_.maxCoeff() == 0.0) {

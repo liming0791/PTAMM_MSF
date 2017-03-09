@@ -19,8 +19,6 @@
 #include <fstream>
 #include <algorithm>
 
-#include <android/log.h>
-
 #ifdef WIN32
 #define WIN32_LEAN_AND_MEAN
 #include <windows.h>
@@ -177,44 +175,43 @@ namespace PTAMM {
 
             CKECK_ABORTS;
             // Should we run local bundle adjustment?
-            //TIME_BEGIN;
+            TIME_BEGIN;
             if(!mpMap->bBundleConverged_Recent && mpMap->QueueSize() == 0)
-                BundleAdjustRecent();
-            //TIME_END("Run local BA");
+                BundleAdjustRecent();   
+            TIME_END("Run local BA");
 
             CKECK_ABORTS;
             // Are there any newly-made map points which need more measurements from older key-frames?
-            //TIME_BEGIN;
+            TIME_BEGIN;
             if(mpMap->bBundleConverged_Recent && mpMap->QueueSize() == 0)
                 ReFindNewlyMade();  
-            //TIME_END("Find more measurements for newly-made map points");
+            TIME_END("Find more measurements for newly-made map points");
 
-            //CKECK_ABORTS;
+            CKECK_ABORTS;
             // Run global bundle adjustment?
-            //TIME_BEGIN;
+            TIME_BEGIN;
             if(mpMap->bBundleConverged_Recent && !mpMap->bBundleConverged_Full && mpMap->QueueSize() == 0)
                 BundleAdjustAll();
-            //TIME_END("Global BA");
+            TIME_END("Global BA");
 
             CKECK_ABORTS;
             // Very low priorty: re-find measurements marked as outliers
-            //TIME_BEGIN;
-            //mpMap->bBundleConverged_Full = true;
+            TIME_BEGIN;
             if(mpMap->bBundleConverged_Recent && mpMap->bBundleConverged_Full && rand()%20 == 0 && mpMap->QueueSize() == 0)
                 ReFindFromFailureQueue();
-            //TIME_END("Refind outliers");
+            TIME_END("Refind outliers");
 
             CKECK_ABORTS;
-            //TIME_BEGIN;
+            TIME_BEGIN;
             HandleBadPoints();
-            //TIME_END("Handle bad points");
+            TIME_END("Handle bad points");
 
             CKECK_ABORTS;
             // Any new key-frames to be added?
-            //TIME_BEGIN;
+            TIME_BEGIN;
             if(mpMap->QueueSize() > 0)
                 AddKeyFrameFromTopOfQueue(); // Integrate into map data struct, and process
-            //TIME_END("=== Add new KeyFrame");
+            TIME_END("=== Add new KeyFrame");
         }
     }
 
@@ -363,7 +360,6 @@ namespace PTAMM {
     bool MapMaker::InitFromStereo(KeyFrame &kF,
             KeyFrame &kS,
             vector<pair<ImageRef, ImageRef> > &vTrailMatches,
-            const SO3<> &imuInitPos,
             SE3<> &se3TrackerPose)
     {
         mdWiggleScale = *mgvdWiggleScale; // Cache this for the new map.
@@ -404,20 +400,11 @@ namespace PTAMM {
         KeyFrame *pkFirst = new KeyFrame(kF);
         KeyFrame *pkSecond = new KeyFrame(kS);
 
-        SO3<> R_ci = SO3<>::exp(makeVector(0, -3.1415926,0)) * SO3<>::exp(makeVector(0,0,-3.1415926/2));  // LiMing add it, compute C_ci
-        Vector<3> zeroT = makeVector(0,0,0);
-        SE3<> C_ci = SE3<>(R_ci, zeroT);
-        
         pkFirst->bFixed = true;
         pkFirst->se3CfromW = SE3<>();
-        //cout << "C_ci:" << endl << C_ci << endl << endl;
-        //cout << "imuInitPos:" << endl << imuInitPos << endl << endl;
 
-        //pkFirst->se3CfromW = C_ci.inverse()*SE3<>(imuInitPos, zeroT);     // LiMing change it, use imu init pose
-        
         pkSecond->bFixed = false;
         pkSecond->se3CfromW = se3;
-        //pkSecond->se3CfromW = se3*(pkFirst->se3CfromW);     // LiMing change it, compute second pose
 
         // Construct map from the stereo matches.
         PatchFinder finder;
@@ -452,9 +439,6 @@ namespace PTAMM {
             // Triangulate point:
             Vector<2> v2SecondPos = finder.GetSubPixPos();
             p->v3WorldPos = ReprojectPoint(se3, Camera.UnProject(v2SecondPos), vMatches[i].v2CamPlaneFirst);
-            
-            //p->v3WorldPos = pkSecond->se3CfromW.inverse()*se3*p->v3WorldPos;    // LiMing add it, used for align to world
-
             if(p->v3WorldPos[2] < 0.0)
             {
                 delete p; continue;
@@ -896,13 +880,10 @@ namespace PTAMM {
         double dDist = KeyFrameLinearDist(kCurrent, *pClosest);
         dDist *= (1.0 / kCurrent.dSceneDepthMean);
 
-        //double thres = GV2.GetDouble("MapMaker.MaxKFDistWiggleMult",0.1,SILENT)
-        //        * mdWiggleScaleDepthNormalized;
+        double thres = GV2.GetDouble("MapMaker.MaxKFDistWiggleMult",0.1,SILENT) 
+            * mdWiggleScaleDepthNormalized;
 
-        double thres = 0.005;
-
-	    //__android_log_print(ANDROID_LOG_INFO,
-	    //        "MapMaker::NeedNewKeyFrame" , "dDist : %f, dist thres : %f\n", dDist, thres);
+        printf("MapMaker::NeedNewKeyFrame, dDist : %f, dist thres : %f\n", dDist, thres);
 
         if(dDist > thres)
             return true;
@@ -977,8 +958,7 @@ namespace PTAMM {
                 sFixedSet.insert(*it);
         }
 
-        BundleAdjust(sAdjustSet, sFixedSet,
-                sMapPoints, true);
+        BundleAdjust(sAdjustSet, sFixedSet, sMapPoints, true);
     }
 
 

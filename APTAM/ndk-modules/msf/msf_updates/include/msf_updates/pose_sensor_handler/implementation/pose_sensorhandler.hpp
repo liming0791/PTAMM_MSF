@@ -36,7 +36,7 @@ namespace msf_pose_sensor {
     {
             provides_absolute_measurements_ = true;
             measurement_world_sensor_ = true;
-            use_fixed_covariance_ = true;
+            use_fixed_covariance_ = false;
             pose_measurement_minimum_dt_ = 0.05;
             enable_mah_outlier_rejection_ = false;
             mah_threshold_ = msf_core::kDefaultMahThreshold_;

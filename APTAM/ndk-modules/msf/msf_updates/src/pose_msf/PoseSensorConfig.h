@@ -35,7 +35,7 @@ class PoseSensorConfig
             core_height(1),
 
             pose_initial_scale(1),
-            pose_fixed_scale(false),
+            pose_fixed_scale(true),
             pose_fixed_p_ic(true),
             pose_fixed_q_ic(true),
             pose_fixed_p_wv(true),

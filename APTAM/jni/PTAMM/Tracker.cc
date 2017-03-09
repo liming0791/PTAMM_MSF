@@ -295,39 +295,41 @@ namespace PTAMM {
         sprintf(log, "Qwv_m %d %f %f %f\n", PoseCount, m_R_wv_w[0], m_R_wv_w[1], m_R_wv_w[2]);
         cout << log;
 
-        if (abs(m_R_wv_w[0]-e_R_wv_w[0]) + abs(m_R_wv_w[1]-e_R_wv_w[1])+abs(m_R_wv_w[2]-e_R_wv_w[2]) < 0.5)
-        {
-            // LiMing add it, update msf
-            cout << "Update Pose ..." << endl << endl; 
+        // LiMing add it, update msf
+        cout << "Update Pose ..." << endl << endl; 
 
-            // Transformation mat
-            SE3<> C_wv(R_wv, makeVector(0,0,0));
-            SE3<> C_ic(R_ic, makeVector(0,0,0));
+        // Transformation mat
+        SE3<> C_wv(R_wv, makeVector(0,0,0));
+        SE3<> C_ic(R_ic, makeVector(0,0,0));
 
-            // ProcessPose
-            SE3<> e_pose = C_wv.inverse() * mse3CamFromWorld.inverse() * C_ic;
-            Vector<3> T = e_pose.get_translation();
-            Vector<4> Q = QfromSO3(e_pose.get_rotation());
+        // ProcessPose
+        SE3<> e_pose = C_wv.inverse() * mse3CamFromWorld.inverse() * C_ic;
+        Vector<3> T = e_pose.get_translation();
+        Vector<4> Q = QfromSO3(e_pose.get_rotation());
 
-            boost::shared_ptr< MyPose > pose_( new MyPose() );
-            pose_->position[0] = T[0];
-            pose_->position[1] = T[1];
-            pose_->position[2] = T[2];
-            pose_->orientation[0] = Q[0];
-            pose_->orientation[1] = Q[1];
-            pose_->orientation[2] = Q[2];
-            pose_->orientation[3] = Q[3];
-            pose_->timeStamp = msf_timing::GetTimeNow();
-
-            msf.ProcessPose(pose_);
-
-            cout << "Update Pose done" << endl << endl;
-
-            // set MSF_Pose
-            this->Pose_Estimated_MSF_out = Pose_Estimated_PTAM;
+        boost::shared_ptr< MyPose > pose_( new MyPose() );
+        pose_->position[0] = T[0];
+        pose_->position[1] = T[1];
+        pose_->position[2] = T[2];
+        pose_->orientation[0] = Q[0];
+        pose_->orientation[1] = Q[1];
+        pose_->orientation[2] = Q[2];
+        pose_->orientation[3] = Q[3];
+        if (abs(m_R_wv_w[0]-e_R_wv_w[0]) + abs(m_R_wv_w[1]-e_R_wv_w[1])+abs(m_R_wv_w[2]-e_R_wv_w[2]) < 0.5){
+            pose_->covariance = (Eigen::Matrix<double, 6, 1>() 
+                                            << 0.000025, 0.000025, 0.000025, 0.000025, 0.000025, 0.000025, 1e-6).finished().asDiagonal();
         } else {
-            this->Pose_Estimated_MSF_out = SE3<>(Pose_Estimated_PTAM.get_rotation(),translation_old);
+            pose_->covariance = (Eigen::Matrix<double, 6, 1>() 
+                                            << 0.00025, 0.00025, 0.00025, 0.00005, 0.00005, 0.00005, 1e-6).finished().asDiagonal();
         }
+        pose_->timeStamp = msf_timing::GetTimeNow();
+
+        msf.ProcessPose(pose_);
+
+        cout << "Update Pose done" << endl << endl;
+
+        // set MSF_Pose
+        this->Pose_Estimated_MSF_out = Pose_Estimated_PTAM;
 
         translation_old = Pose_Estimated_MSF_out.get_translation();
 
@@ -668,7 +670,7 @@ namespace PTAMM {
                     vMatches.push_back(pair<ImageRef, ImageRef>(i->irInitialPos,
                                 i->irCurrentPos));
                 mMapMaker.InitFromStereo(mFirstKF, mCurrentKF, 
-                        vMatches, mso3IMUInit, mse3CamFromWorld);  // This will take some time!
+                        vMatches, mse3CamFromWorld);  // This will take some time!
                 // log to debug
                 //cout << "imu second: " << endl << mso3IMUNow << endl;
                 //cout << "camera second: " << endl << mse3CamFromWorld.get_rotation() << endl;

@@ -59,8 +59,8 @@ public:
   void update();
   //void PublishPose(const Eigen::Matrix<double, 3, 1> & p, const Eigen::Matrix<double, 4, 1> & q);
 
-  inline SE3<> GetCurrentPose() { return mse3CamFromWorld; }
-  //inline SE3<> GetCurrentPose() { return Pose_Estimated_MSF_out; }
+  //inline SE3<> GetCurrentPose() { return mse3CamFromWorld; }
+  inline SE3<> GetCurrentPose() { return Pose_Estimated_MSF_out; }
   inline bool IsLost() { return (mnLostFrames > NUM_LOST_FRAMES); }
   
   // Gets messages to be printed on-screen for the user.
