@@ -93,6 +93,8 @@ LOCAL_STATIC_LIBRARIES += glm
 LOCAL_STATIC_LIBRARIES += tinyxml2
 LOCAL_STATIC_LIBRARIES += lib3ds
 LOCAL_STATIC_LIBRARIES += ndkprof
+LOCAL_STATIC_LIBRARIES += eigen
+LOCAL_STATIC_LIBRARIES += msf
 LOCAL_LDLIBS    += -llog -landroid -lGLESv2 -lEGL
 LOCAL_CFLAGS += -D GL_GLEXT_PROTOTYPES -g -pg
 
@@ -108,7 +110,7 @@ LOCAL_EXPORT_CXXFLAGS := $(LOCAL_CXXFLAGS) #export cpp flgs
 include $(BUILD_SHARED_LIBRARY)
  
 #define prebuilt lapack because this takes forever to build or even check if it should be rebuilt!!!
-ifeq (false,true) 
+ifeq (true,true) 
     include $(CLEAR_VARS)
     LOCAL_MODULE := lapack
     LOCAL_SRC_FILES := ../prebuild-libs/$(TARGET_ARCH_ABI)/liblapack.a
@@ -148,5 +150,7 @@ $(call import-module,lib3ds)
 $(call import-module,gl4es)
 $(call import-module,glues)
 $(call import-module,ndkprof)
+$(call import-module,eigen)
+$(call import-module,msf)
 
 $(call import-module,android/cpufeatures)

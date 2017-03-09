@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.6)
+add_subdirectory(msf_core)
+add_subdirectory(msf_timing)
+add_subdirectory(msf_updates)
+add_subdirectory(test)

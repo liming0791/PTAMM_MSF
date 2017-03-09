@@ -404,17 +404,20 @@ namespace PTAMM {
         KeyFrame *pkFirst = new KeyFrame(kF);
         KeyFrame *pkSecond = new KeyFrame(kS);
 
-        SO3<> R_ci = SO3<>::exp(makeVector(0, -3.1415926,0))*SO3<>::exp(makeVector(0,0,-3.1415926/2));  // LiMing add it, compute C_ci
+        SO3<> R_ci = SO3<>::exp(makeVector(0, -3.1415926,0)) * SO3<>::exp(makeVector(0,0,-3.1415926/2));  // LiMing add it, compute C_ci
         Vector<3> zeroT = makeVector(0,0,0);
         SE3<> C_ci = SE3<>(R_ci, zeroT);
         
         pkFirst->bFixed = true;
         pkFirst->se3CfromW = SE3<>();
-        //pkFirst->se3CfromW = SE3<>(imuInitPos, zeroT)*C_ci;     // LiMing change it, use imu init pose
+        //cout << "C_ci:" << endl << C_ci << endl << endl;
+        //cout << "imuInitPos:" << endl << imuInitPos << endl << endl;
+
+        //pkFirst->se3CfromW = C_ci.inverse()*SE3<>(imuInitPos, zeroT);     // LiMing change it, use imu init pose
         
         pkSecond->bFixed = false;
         pkSecond->se3CfromW = se3;
-        //pkSecond->se3CfromW = (pkFirst->se3CfromW)*se3;     // LiMing change it, compute second pose
+        //pkSecond->se3CfromW = se3*(pkFirst->se3CfromW);     // LiMing change it, compute second pose
 
         // Construct map from the stereo matches.
         PatchFinder finder;
@@ -449,6 +452,9 @@ namespace PTAMM {
             // Triangulate point:
             Vector<2> v2SecondPos = finder.GetSubPixPos();
             p->v3WorldPos = ReprojectPoint(se3, Camera.UnProject(v2SecondPos), vMatches[i].v2CamPlaneFirst);
+            
+            //p->v3WorldPos = pkSecond->se3CfromW.inverse()*se3*p->v3WorldPos;    // LiMing add it, used for align to world
+
             if(p->v3WorldPos[2] < 0.0)
             {
                 delete p; continue;

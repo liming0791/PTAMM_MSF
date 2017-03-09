@@ -17,6 +17,9 @@
 #include <gvars3/instances.h>
 #include <gvars3/GStringUtil.h>
 
+#include <Eigen/Dense>
+#include <boost/shared_ptr.hpp>
+
 #include <fstream>
 #include <fcntl.h>
 
@@ -27,6 +30,135 @@ namespace PTAMM {
     using namespace CVD;
     using namespace std;
     using namespace GVars3;
+
+    static int PoseCount = 0;
+    SE3<> Pose_Estimated, Pose_Estimated_PTAM;
+    SE3<> _C_wv, _C_ic;
+
+    bool first_updated = false;
+    bool useIMUModel=false;
+
+    Vector<3> WfromQ(Vector<4> q) {
+        double rad = acos(q[0])*2;
+        double len = sqrt(q[1]*q[1]+q[2]*q[2]+q[3]*q[3]);
+        return makeVector(q[1]*rad/len, q[2]*rad/len, q[3]*rad/len);
+    }
+
+    Vector<4> QfromW(Vector<3> w) {
+        double rad = sqrt(w[0]*w[0]+w[1]*w[1]+w[2]*w[2]);
+        double sin_rad_2 = sin(rad/2);
+        return makeVector(cos(rad/2), w[0]/rad*sin_rad_2, w[1]/rad*sin_rad_2, w[2]/rad*sin_rad_2);
+    }
+
+    Vector<4> QfromSO3(const SO3<> so3) {
+        return QfromW(so3.ln());
+    }
+
+    SO3<> SO3fromQ(const Vector<4> q) {
+        return SO3<>::exp( WfromQ(q) );
+    }
+
+    
+
+    namespace MedianFilter {
+        int winSize = 5;
+        double r[20], p[20], y[20];
+        int idx = 0;
+
+        double findHalfMin(double* val, int sz) {
+            
+            double v[20];
+            memcpy(v, val, sz*sizeof(double));
+
+            int hsz = sz/2;
+            for(int i = 0; i <= hsz; i++) {
+                int minIdx = i;
+                for (int j = i; j < sz; j++) {
+                   if (v[j]<v[minIdx]) {
+                       minIdx = j; 
+                   }
+                }
+                double tmp = v[i];
+                v[i] = v[minIdx];
+                v[minIdx] = tmp;
+            }
+            return v[hsz];
+        }
+        
+        Vector<3> addAndGet(Vector<3> w) {
+           r[idx] = w[0];
+           p[idx] = w[1];
+           y[idx] = w[2];
+
+           ++idx;
+           if (idx==winSize)
+               idx = 0;
+
+           return makeVector(findHalfMin(r, winSize), findHalfMin(p, winSize), findHalfMin(y, winSize));
+        }
+
+    }
+
+    namespace MedianFilterPosition {
+        int winSize = 5;
+        double r[20], p[20], y[20];
+        int idx = 0;
+
+        double findHalfMin(double* val, int sz) {
+            
+            double v[20];
+            memcpy(v, val, sz*sizeof(double));
+
+            int hsz = sz/2;
+            for(int i = 0; i <= hsz; i++) {
+                int minIdx = i;
+                for (int j = i; j < sz; j++) {
+                   if (v[j]<v[minIdx]) {
+                       minIdx = j; 
+                   }
+                }
+                double tmp = v[i];
+                v[i] = v[minIdx];
+                v[minIdx] = tmp;
+            }
+            return v[hsz];
+        }
+        
+        Vector<3> addAndGet(Vector<3> w) {
+           r[idx] = w[0];
+           p[idx] = w[1];
+           y[idx] = w[2];
+
+           ++idx;
+           if (idx==winSize)
+               idx = 0;
+
+           return makeVector(findHalfMin(r, winSize), findHalfMin(p, winSize), findHalfMin(y, winSize));
+        }
+
+    }
+
+    void PublishPose (const Eigen::Matrix<double, 3, 1> & p, const Eigen::Matrix<double, 4, 1> & q) {
+
+        // set Pose_Estimated
+        Pose_Estimated = SE3<>(SO3fromQ(makeVector(q[0], q[1], q[2], q[3])), makeVector(p[0], p[1], p[2]));
+        Pose_Estimated_PTAM = _C_ic * 
+            Pose_Estimated.inverse() * 
+            _C_wv.inverse();
+
+        // median filter position
+        Pose_Estimated_PTAM.get_translation() = MedianFilterPosition::addAndGet(Pose_Estimated_PTAM.get_translation());
+
+        Vector<3> T = Pose_Estimated_PTAM.get_translation();
+        Vector<3> w = Pose_Estimated_PTAM.get_rotation().ln();
+
+        char log[100] = "";
+        sprintf(log ,"MSFPose %d %f %f %f %f %f %f\n", PoseCount, T[0], T[1], T[2], w[0], w[1], w[2]);
+        cout << log;
+
+        ++PoseCount;
+
+    }
 
     /**
      * The constructor mostly sets up interal reference variables to the other classes..
@@ -57,22 +189,20 @@ namespace PTAMM {
         mpSBIThisFrame = NULL;
 
         // Rotation from Camera to IMU
-        Vector<3> C2I1;
-        C2I1[0] = 0;
-        C2I1[1] = 0;
-        C2I1[2] = 3.1415926/2;
-        Vector<3> C2I2;
-        C2I2[0] = 0;
-        C2I2[1] = 3.1415926;
-        C2I2[2] = 0;
-        Rc2i = SO3<>::exp(C2I1)*SO3<>::exp(C2I2);
-        cout << "camera to IMU: " << endl << Rc2i << endl;
+        R_ic = SO3<>::exp(makeVector(0, 0, 3.14159265359/2))
+                *SO3<>::exp(makeVector(0, 3.14159265359, 0));
+        cout << "camera to IMU: " << endl << R_ic << endl;
+
+        // set global _C_ic
+        _C_ic = SE3<>(R_ic, makeVector(0,0,0));
+
+        Vector<4> q_ic = QfromSO3(R_ic);
+        //msf.Set_q_ic(q_ic[0],q_ic[1],q_ic[2],q_ic[3]);
+        msf.Set_q_ic(1,0,0,0);
 
         // Most of the initialisation is done in Reset()
         Reset();
     }
-
-
 
     /**
      * Common reset code for Reset() and ResetAll()
@@ -125,6 +255,95 @@ namespace PTAMM {
 #endif
     }
 
+
+    // Predict use imu information
+    void Tracker::predict(float* imuval) {
+
+        static int seq = 0;
+        if (mnInitialStage == TRAIL_TRACKING_COMPLETE) {
+            cout << "Predict IMU..." << endl << endl;
+
+            Eigen::Matrix<double, 3, 1> linear_acceleration, angular_velocity;
+
+            linear_acceleration[0] = imuval[0];
+            linear_acceleration[1] = imuval[1];
+            linear_acceleration[2] = imuval[2];
+
+            angular_velocity[0] = imuval[3];
+            angular_velocity[1] = imuval[4];
+            angular_velocity[2] = imuval[5];
+
+            double msg_stamp = msf_timing::GetTimeNow();
+            size_t msg_seq = ++seq;
+
+            msf.ProcessIMU(linear_acceleration, angular_velocity, msg_stamp, msg_seq);
+            cout << "Predict IMU done" << endl << endl;
+        }
+
+    }
+
+    void Tracker::update() {
+
+        char log[100] = "";
+
+        // compute estimated q_wv
+        SO3<> e_R_wv = mse3CamFromWorld.get_rotation().inverse() * R_ic * Pose_Estimated.get_rotation().inverse();
+        Vector<3> e_R_wv_w = e_R_wv.ln();
+        sprintf(log, "Qwv %d %f %f %f\n", PoseCount, e_R_wv_w[0], e_R_wv_w[1], e_R_wv_w[2]);
+        cout << log;
+        Vector<3> m_R_wv_w = MedianFilter::addAndGet(e_R_wv_w);
+        sprintf(log, "Qwv_m %d %f %f %f\n", PoseCount, m_R_wv_w[0], m_R_wv_w[1], m_R_wv_w[2]);
+        cout << log;
+
+        if (abs(m_R_wv_w[0]-e_R_wv_w[0]) + abs(m_R_wv_w[1]-e_R_wv_w[1])+abs(m_R_wv_w[2]-e_R_wv_w[2]) < 0.5)
+        {
+            // LiMing add it, update msf
+            cout << "Update Pose ..." << endl << endl; 
+
+            // Transformation mat
+            SE3<> C_wv(R_wv, makeVector(0,0,0));
+            SE3<> C_ic(R_ic, makeVector(0,0,0));
+
+            // ProcessPose
+            SE3<> e_pose = C_wv.inverse() * mse3CamFromWorld.inverse() * C_ic;
+            Vector<3> T = e_pose.get_translation();
+            Vector<4> Q = QfromSO3(e_pose.get_rotation());
+
+            boost::shared_ptr< MyPose > pose_( new MyPose() );
+            pose_->position[0] = T[0];
+            pose_->position[1] = T[1];
+            pose_->position[2] = T[2];
+            pose_->orientation[0] = Q[0];
+            pose_->orientation[1] = Q[1];
+            pose_->orientation[2] = Q[2];
+            pose_->orientation[3] = Q[3];
+            pose_->timeStamp = msf_timing::GetTimeNow();
+
+            msf.ProcessPose(pose_);
+
+            cout << "Update Pose done" << endl << endl;
+
+            // set MSF_Pose
+            this->Pose_Estimated_MSF_out = Pose_Estimated_PTAM;
+        } else {
+            this->Pose_Estimated_MSF_out = SE3<>(Pose_Estimated_PTAM.get_rotation(),translation_old);
+        }
+
+        translation_old = Pose_Estimated_MSF_out.get_translation();
+
+        // print log
+        Vector<3> e_T = mse3CamFromWorld.get_translation();
+        Vector<3> e_w = mse3CamFromWorld.get_rotation().ln();
+
+        sprintf(log, "PTAMPose %d %f %f %f %f %f %f\n", PoseCount, e_T[0], e_T[1], e_T[2], e_w[0], e_w[1], e_w[2]);
+        cout << log;
+
+        Vector<3> poseDis = (mse3CamFromWorld.get_rotation()*Pose_Estimated_PTAM.get_rotation().inverse()).ln();
+        sprintf(log, "PTAM MSF diff: %d %f\n", PoseCount, sqrt(poseDis*poseDis));
+        cout << log;
+        
+        
+    }
 
     // TrackFrame is called by System.cc with each incoming video frame.
     // It figures out what state the tracker is in, and calls appropriate internal tracking
@@ -221,6 +440,9 @@ namespace PTAMM {
                         << mpMap->vpPoints.size() << "P, " << mpMap->vpKeyFrames.size() << "KF";
                 }
 
+                //if (PoseCount > 300)
+                //    mse3CamFromWorld = Pose_Estimated; // use MSF Pose, added by LiMing
+
                 // Heuristics to check if a key-frame should be added to the map:
                 if(mTrackingQuality == GOOD &&
                         mMapMaker.NeedNewKeyFrame(mCurrentKF) &&
@@ -240,8 +462,13 @@ namespace PTAMM {
                     AssessTrackingQuality();
                 }
             }
+
             if(mbDraw)
                 RenderGrid();
+
+            // update MSF, added by LiMing
+            //if (mTrackingQuality == GOOD)
+                    update();
         } 
         else // If there is no map, try to make one.
             TrackForInitialMap();
@@ -450,6 +677,9 @@ namespace PTAMM {
                 //cout << "should be I: " << endl << Rbinv << endl;
                 //cout << "Rbinv * Rb: " << endl << Rbinv * Rbinv.inverse() << endl;
 
+                msf.InitScale(1);   // LiMing add it, init msf
+                msf.SetCallback(PublishPose);
+
                 mnInitialStage = TRAIL_TRACKING_COMPLETE;
             }
             else
@@ -463,9 +693,22 @@ namespace PTAMM {
     void Tracker::TrailTracking_Start()
     {
 
-        // set the IMU Rotation init
+        // set the IMU Rotation init, add by LiMing
         mso3IMUInit = mso3IMUNow;
         cout << "imu init :" << endl << mso3IMUInit << endl; // debug log  
+
+        // set msf q_wv , q_wv = q_cv * q_ic * q_wi, add by LiMing
+        R_wv = R_ic * mso3IMUInit.inverse();
+        Vector<4> q_wv = QfromSO3(R_wv);
+        //msf.Set_q_wv(q_wv[0], q_wv[1], q_wv[2], q_wv[3]);
+        msf.Set_q_wv(1, 0, 0, 0);
+
+        // set global _C_wv
+        _C_wv = SE3<>(R_wv, makeVector(0,0,0));
+
+        // add by LiMing
+        qIMUInit = qIMUNow;
+        cout << "imu init :" << endl << qIMUInit << endl; // debug log  
 
         mCurrentKF.MakeKeyFrame_Rest();  // This populates the Candidates list, which is Shi-Tomasi thresholded.
         mFirstKF = mCurrentKF; 
@@ -1039,6 +1282,12 @@ namespace PTAMM {
 
     // update IMU Rotation
     void Tracker::updateIMURotation(float* q) {
+
+        qIMUNow[0] = q[0];
+        qIMUNow[1] = q[1];
+        qIMUNow[2] = q[2];
+        qIMUNow[3] = q[3];
+
         double radians = acos(q[0]) *2;
         double len = sqrt(q[1]*q[1] + q[2]*q[2] + q[3]*q[3]);
         double n_q1 = q[1]/len;
@@ -1073,10 +1322,15 @@ namespace PTAMM {
         //mse3CamFromWorld.get_rotation() = RinvPredict.inverse();
         //cout << "imu now: " << endl << mso3IMUNow << endl;
         
-        //RPrediction = mse3CamFromWorld.get_rotation();
-        //TPrediction = mse3CamFromWorld.get_translation();
-        //cout << "Rotation predict: " << endl << RPrediction << endl;
-        //cout << "Translation predict: " << endl << TPrediction << endl << endl;
+        if (mTrackingQuality == GOOD && PoseCount > 100) {
+            mse3CamFromWorld = SE3<>(Pose_Estimated.get_rotation(), mse3CamFromWorld.get_translation());
+            RPrediction = mse3CamFromWorld.get_rotation();
+            TPrediction = mse3CamFromWorld.get_translation();
+            //cout << "Rotation predict: " << endl << RPrediction << endl;
+            //cout << "Translation predict: " << endl << TPrediction << endl << endl;
+
+            useIMUModel = true;
+        }
     }
 
     void Tracker::UpdateIMUModel()
@@ -1111,12 +1365,17 @@ namespace PTAMM {
         //cout << "R predict bias: " << sqrt(rdis * rdis) << endl;
         //cout << "T predict bias: " << sqrt(tdis * tdis) << endl;
 
-        Rbinv = mse3CamFromWorld.get_rotation() * Rc2i * mso3IMUInit.inverse() * mso3IMUNow * Rc2i.inverse();
-        Vector<3> imudis = Rbinv.ln();
-        cout << "IMU bias: " << sqrt(imudis*imudis) << endl << endl;
-        cout << "IMU Bias_axis: " << imudis << endl;
-        //cout << "should be I, Rbinv: " << endl << Rbinv << endl;
-        //cout << "Rbinv * Rb: " << endl << Rbinv * Rbinv.inverse() << endl;
+        if (useIMUModel) {
+            SO3<> Rdis = mse3CamFromWorld.get_rotation() * RPrediction.inverse();
+            Vector<3> wdis = Rdis.ln();
+            Vector<3> tdis = mse3CamFromWorld.get_translation() - TPrediction;
+
+            char log[100];
+            sprintf(log, "Rotation prediction error: %f\n Translation prediction error: %f\n", sqrt(wdis*wdis), sqrt(tdis*tdis));
+            cout << log << endl;
+
+            useIMUModel = false;
+        }
     }
 
     // Tracker::

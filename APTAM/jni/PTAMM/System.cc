@@ -26,6 +26,7 @@ System::System()
   : mGLWindow(mVideoSource.Size(), "PTAMM"),
     requestFinish(false), finished(false)
 {
+
   GUI.RegisterCommand("exit", GUICommandCallBack, this);
   GUI.RegisterCommand("quit", GUICommandCallBack, this);
 
@@ -161,6 +162,8 @@ void System::predict(float* imuval)
         predictcount = 0;
     }
     predictcount++;
+
+    mpTracker->predict(imuval);
 }
 
 /**

@@ -1,0 +1,855 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ASSERT_NEAR_EIGEN	ndk-modules/msf/msf_core/include/msf_core/testing_predicates.h	36;"	d
+Accumulator	ndk-modules/msf/msf_timing/include/msf_timing/Timer.h	/^  Accumulator()$/;"	f	class:msf_timing::Accumulator
+Accumulator	ndk-modules/msf/msf_timing/include/msf_timing/Timer.h	/^class Accumulator {$/;"	c	namespace:msf_timing
+Add	ndk-modules/msf/msf_timing/include/msf_timing/Timer.h	/^  void Add(T sample) {$/;"	f	class:msf_timing::Accumulator
+AddConstPtr	ndk-modules/msf/msf_core/include/msf_core/msf_typetraits.h	/^struct AddConstPtr {$/;"	s	namespace:msf_tmp
+AddConstPtr	ndk-modules/msf/msf_core/include/msf_core/msf_typetraits.h	/^struct AddConstPtr<T*> {$/;"	s	namespace:msf_tmp
+AddConstPtr	ndk-modules/msf/msf_core/include/msf_core/msf_typetraits.h	/^struct AddConstPtr<const T*> {$/;"	s	namespace:msf_tmp
+AddConstPtr	ndk-modules/msf/msf_core/include/msf_core/msf_typetraits.h	/^struct AddConstPtr<const T> {$/;"	s	namespace:msf_tmp
+AddConstReference	ndk-modules/msf/msf_core/include/msf_core/msf_typetraits.h	/^struct AddConstReference {$/;"	s	namespace:msf_tmp
+AddConstReference	ndk-modules/msf/msf_core/include/msf_core/msf_typetraits.h	/^struct AddConstReference<T&> {$/;"	s	namespace:msf_tmp
+AddConstReference	ndk-modules/msf/msf_core/include/msf_core/msf_typetraits.h	/^struct AddConstReference<const T&> {$/;"	s	namespace:msf_tmp
+AddConstReference	ndk-modules/msf/msf_core/include/msf_core/msf_typetraits.h	/^struct AddConstReference<const T> {$/;"	s	namespace:msf_tmp
+AddHandler	ndk-modules/msf/msf_core/include/msf_core/msf_sensormanager.h	/^  void AddHandler(shared_ptr<SensorHandler<EKFState_T> > handler) {$/;"	f	class:msf_core::MSF_SensorManager
+AddMeasurement	ndk-modules/msf/msf_core/include/msf_core/implementation/msf_core_inl.h	/^        void MSF_Core<EKFState_T>::AddMeasurement($/;"	f	class:msf_core::MSF_Core
+AddPtr	ndk-modules/msf/msf_core/include/msf_core/msf_typetraits.h	/^struct AddPtr {$/;"	s	namespace:msf_tmp
+AddPtr	ndk-modules/msf/msf_core/include/msf_core/msf_typetraits.h	/^struct AddPtr<T*> {$/;"	s	namespace:msf_tmp
+AddPtr	ndk-modules/msf/msf_core/include/msf_core/msf_typetraits.h	/^struct AddPtr<const T*> {$/;"	s	namespace:msf_tmp
+AddPtr	ndk-modules/msf/msf_core/include/msf_core/msf_typetraits.h	/^struct AddPtr<const T> {$/;"	s	namespace:msf_tmp
+AddReference	ndk-modules/msf/msf_core/include/msf_core/msf_typetraits.h	/^struct AddReference {$/;"	s	namespace:msf_tmp
+AddReference	ndk-modules/msf/msf_core/include/msf_core/msf_typetraits.h	/^struct AddReference<T&> {$/;"	s	namespace:msf_tmp
+AddReference	ndk-modules/msf/msf_core/include/msf_core/msf_typetraits.h	/^struct AddReference<const T&> {$/;"	s	namespace:msf_tmp
+AddReference	ndk-modules/msf/msf_core/include/msf_core/msf_typetraits.h	/^struct AddReference<const T> {$/;"	s	namespace:msf_tmp
+AddTime	ndk-modules/msf/msf_timing/src/Timer.cc	/^void Timing::AddTime(size_t handle, double seconds) {$/;"	f	class:msf_timing::Timing
+Apply	ndk-modules/msf/msf_core/include/msf_core/implementation/msf_measurement_inl.h	/^void MSF_InitMeasurement<EKFState_T>::Apply($/;"	f	class:msf_core::MSF_InitMeasurement
+Apply	ndk-modules/msf/msf_updates/include/msf_updates/pose_sensor_handler/pose_measurement.h	/^                            virtual void Apply(shared_ptr<EKFState_T> state_nonconst_new,$/;"	f	struct:msf_updates::pose_measurement::PoseMeasurement
+ApplyCorrection	ndk-modules/msf/msf_core/include/msf_core/implementation/msf_core_inl.h	/^        bool MSF_Core<EKFState_T>::ApplyCorrection(shared_ptr<EKFState_T>& delaystate,$/;"	f	class:msf_core::MSF_Core
+AugmentCorrectionVector	ndk-modules/msf/msf_updates/src/pose_msf/pose_sensormanager.cc	/^        void AugmentCorrectionVector($/;"	f	class:msf_pose_sensor::PoseSensorManager	file:
+AuxState	ndk-modules/msf/msf_updates/include/msf_updates/pose_sensor_handler/pose_measurement.h	/^                            enum AuxState {$/;"	g	struct:msf_updates::pose_measurement::PoseMeasurement
+Auxiliary	ndk-modules/msf/msf_core/include/msf_core/msf_fwds.h	/^  Auxiliary,$/;"	e	enum:msf_core::__anon82
+AuxiliaryNonTemporalDrifting	ndk-modules/msf/msf_core/include/msf_core/msf_fwds.h	/^  AuxiliaryNonTemporalDrifting$/;"	e	enum:msf_core::__anon82
+CALCQ_H_	ndk-modules/msf/msf_core/include/msf_core/implementation/calcQCore.h	18;"	d
+CHECK_IN_BOUNDS	ndk-modules/msf/msf_core/include/msf_core/msf_sortedContainer.h	26;"	d
+CalcQCore	ndk-modules/msf/msf_core/include/msf_core/implementation/calcQCore.h	/^void CalcQCore(const double dt, const Eigen::Quaternion<double> & q,$/;"	f
+CalculateAndApplyCorrection	ndk-modules/msf/msf_core/include/msf_core/implementation/msf_measurement_inl.h	/^void MSF_MeasurementBase<EKFState_T>::CalculateAndApplyCorrection($/;"	f	class:msf_core::MSF_MeasurementBase
+CalculateAndApplyCorrectionRelative	ndk-modules/msf/msf_core/include/msf_core/implementation/msf_measurement_inl.h	/^void MSF_MeasurementBase<EKFState_T>::CalculateAndApplyCorrectionRelative($/;"	f	class:msf_core::MSF_MeasurementBase
+CalculateH	ndk-modules/msf/msf_updates/include/msf_updates/pose_sensor_handler/pose_measurement.h	/^                            virtual void CalculateH($/;"	f	struct:msf_updates::pose_measurement::PoseMeasurement
+CalculateIndicesInErrorState	ndk-modules/msf/msf_core/include/msf_core/implementation/msf_state_inl.h	/^void GenericState_T<stateVector_T, StateDefinition_T>::CalculateIndicesInErrorState($/;"	f	class:msf_core::GenericState_T
+CalculateQAuxiliaryStates	ndk-modules/msf/msf_updates/src/pose_msf/pose_sensormanager.cc	/^        void CalculateQAuxiliaryStates(EKFState_T& state, double dt) const {$/;"	f	class:msf_pose_sensor::PoseSensorManager	file:
+Callback	ndk-modules/msf/msf_updates/src/pose_msf/pose_sensormanager.cc	/^    typedef void (* Callback)(const Eigen::Matrix<double, 3, 1>&, $/;"	t	namespace:msf_pose_sensor	file:
+Check	ndk-modules/msf/msf_core/include/msf_core/msf_checkFuzzyTracking.h	/^  bool Check(shared_ptr<EKFState_T> delaystate, EKFState_T& buffstate,$/;"	f	class:msf_core::CheckFuzzyTracking
+CheckCorrectIndexing	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^struct CheckCorrectIndexing {$/;"	s	namespace:msf_tmp
+CheckForNumeric	ndk-modules/msf/msf_core/include/msf_core/eigen_utils.h	/^bool CheckForNumeric(const Eigen::MatrixBase<D> & mat,$/;"	f
+CheckFuzzyTracking	ndk-modules/msf/msf_core/include/msf_core/msf_checkFuzzyTracking.h	/^  CheckFuzzyTracking() : nontemporaldrifting_inittimer_(0) {$/;"	f	class:msf_core::CheckFuzzyTracking
+CheckFuzzyTracking	ndk-modules/msf/msf_core/include/msf_core/msf_checkFuzzyTracking.h	/^class CheckFuzzyTracking {$/;"	c	namespace:msf_core
+CheckFuzzyTracking	ndk-modules/msf/msf_core/include/msf_core/msf_checkFuzzyTracking.h	/^class CheckFuzzyTracking<EKFState_T, mpl_::void_> {$/;"	c	namespace:msf_core
+CheckStateForNumeric	ndk-modules/msf/msf_core/include/msf_core/implementation/msf_state_inl.h	/^bool GenericState_T<stateVector_T, StateDefinition_T>::CheckStateForNumeric() {$/;"	f	class:msf_core::GenericState_T
+CheckStateIndexing	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^struct CheckStateIndexing<Sequence, First, Last, CurrentIdx, false> {$/;"	s	namespace:msf_tmp::__anon17
+CheckStateIndexing	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^struct CheckStateIndexing<Sequence, First, Last, CurrentIdx, true> {$/;"	s	namespace:msf_tmp::__anon17
+CleanUpBuffers	ndk-modules/msf/msf_core/include/msf_core/implementation/msf_core_inl.h	/^        void MSF_Core<EKFState_T>::CleanUpBuffers() {$/;"	f	class:msf_core::MSF_Core
+Clear	ndk-modules/msf/msf_core/include/msf_core/msf_sortedContainer.h	/^  inline void Clear() {$/;"	f	class:msf_core::SortedContainer
+ClearCrossCov	ndk-modules/msf/msf_core/include/msf_core/implementation/msf_state_inl.h	/^inline void GenericState_T<stateVector_T, StateDefinition_T>::ClearCrossCov() {$/;"	f	class:msf_core::GenericState_T
+ClearOlderThan	ndk-modules/msf/msf_core/include/msf_core/msf_sortedContainer.h	/^  inline void ClearOlderThan(double age) {$/;"	f	class:msf_core::SortedContainer
+CompileTimeChecker	ndk-modules/msf/msf_updates/include/msf_updates/static_ordering_assertions.h	/^enum class CompileTimeChecker {$/;"	c	namespace:__anon86
+ComputeStartIndex	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^struct ComputeStartIndex<Sequence, StateVarT, OffsetCalculator, First, Last,$/;"	s	namespace:msf_tmp::__anon17
+ContainsInitialSensorReadings_	ndk-modules/msf/msf_core/include/msf_core/msf_measurement.h	/^  bool ContainsInitialSensorReadings_;$/;"	m	class:msf_core::MSF_InitMeasurement
+CopyInitStates	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^  CopyInitStates(const stateVarT& oldstate)$/;"	f	struct:msf_tmp::CopyInitStates
+CopyInitStates	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^struct CopyInitStates {$/;"	s	namespace:msf_tmp
+CopyNonPropagationStates	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^  CopyNonPropagationStates(const stateVarT& oldstate)$/;"	f	struct:msf_tmp::CopyNonPropagationStates
+CopyNonPropagationStates	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^struct CopyNonPropagationStates {$/;"	s	namespace:msf_tmp
+CopyQBlocksFromAuxiliaryStatesToQ	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^  CopyQBlocksFromAuxiliaryStatesToQ(Q_T& Q)$/;"	f	struct:msf_tmp::CopyQBlocksFromAuxiliaryStatesToQ
+CopyQBlocksFromAuxiliaryStatesToQ	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^struct CopyQBlocksFromAuxiliaryStatesToQ {$/;"	s	namespace:msf_tmp
+CoreErrorStateLengthForType	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^struct CoreErrorStateLengthForType<$/;"	s	namespace:msf_tmp::__anon17
+CoreErrorStateLengthForType	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^struct CoreErrorStateLengthForType<const mpl_::void_&> {$/;"	s	namespace:msf_tmp::__anon17
+CoreStateLengthForType	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^struct CoreStateLengthForType<$/;"	s	namespace:msf_tmp::__anon17
+CoreStateLengthForType	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^struct CoreStateLengthForType<const mpl_::void_&> {$/;"	s	namespace:msf_tmp::__anon17
+CoreStateWithPropagation	ndk-modules/msf/msf_core/include/msf_core/msf_fwds.h	/^  CoreStateWithPropagation,$/;"	e	enum:msf_core::__anon82
+CoreStateWithoutPropagation	ndk-modules/msf/msf_core/include/msf_core/msf_fwds.h	/^  CoreStateWithoutPropagation,$/;"	e	enum:msf_core::__anon82
+CoreStatetoDoubleArray	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^  CoreStatetoDoubleArray(T& statearray)$/;"	f	struct:msf_tmp::CoreStatetoDoubleArray
+CoreStatetoDoubleArray	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^struct CoreStatetoDoubleArray {$/;"	s	namespace:msf_tmp
+Correct	ndk-modules/msf/msf_core/include/msf_core/implementation/msf_state_inl.h	/^inline void GenericState_T<stateVector_T, StateDefinition_T>::Correct($/;"	f	class:msf_core::GenericState_T
+CorrectState	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^  CorrectState(T& correction)$/;"	f	struct:msf_tmp::CorrectState
+CorrectState	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^struct CorrectState {$/;"	s	namespace:msf_tmp
+CorrectionStateLengthForType	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^struct CorrectionStateLengthForType<$/;"	s	namespace:msf_tmp::__anon17
+CorrectionStateLengthForType	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^struct CorrectionStateLengthForType<const mpl_::void_&> {$/;"	s	namespace:msf_tmp::__anon17
+CountStates	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^struct CountStates {$/;"	s	namespace:msf_tmp
+CountStatesLinear	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^struct CountStatesLinear<Sequence, Counter, First, Last, false> {$/;"	s	namespace:msf_tmp::__anon17
+CountStatesLinear	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^struct CountStatesLinear<Sequence, Counter, First, Last, true> {$/;"	s	namespace:msf_tmp::__anon17
+DEG2RAD	ndk-modules/msf/msf_core/include/msf_core/msf_macros.h	45;"	d
+DebugTimer	ndk-modules/msf/msf_timing/include/msf_timing/Timer.h	/^typedef DummyTimer DebugTimer;$/;"	t	namespace:msf_timing
+DebugTimer	ndk-modules/msf/msf_timing/include/msf_timing/Timer.h	/^typedef Timer DebugTimer;$/;"	t	namespace:msf_timing
+Distort	ndk-modules/msf/msf_updates/src/msf_distort/PoseDistorter.cc	/^void PoseDistorter::Distort(Eigen::Quaterniond& att, double dt) {$/;"	f	class:msf_updates::PoseDistorter
+Distort	ndk-modules/msf/msf_updates/src/msf_distort/PoseDistorter.cc	/^void PoseDistorter::Distort(Eigen::Vector3d& pos, Eigen::Quaterniond& att,$/;"	f	class:msf_updates::PoseDistorter
+Distort	ndk-modules/msf/msf_updates/src/msf_distort/PoseDistorter.cc	/^void PoseDistorter::Distort(Eigen::Vector3d& pos, double dt) {$/;"	f	class:msf_updates::PoseDistorter
+DummyTimer	ndk-modules/msf/msf_timing/include/msf_timing/Timer.h	/^  DummyTimer(size_t \/*handle*\/, bool \/*constructStopped*\/ = false) { }$/;"	f	class:msf_timing::DummyTimer
+DummyTimer	ndk-modules/msf/msf_timing/include/msf_timing/Timer.h	/^  DummyTimer(std::string const& \/*tag*\/, bool \/*constructStopped*\/ = false) { }$/;"	f	class:msf_timing::DummyTimer
+DummyTimer	ndk-modules/msf/msf_timing/include/msf_timing/Timer.h	/^class DummyTimer {$/;"	c	namespace:msf_timing
+EIGEN_CONVERSIONS_H_	ndk-modules/msf/msf_core/include/msf_core/eigen_conversions.h	18;"	d
+EIGEN_UTILS_H_	ndk-modules/msf/msf_core/include/msf_core/eigen_utils.h	22;"	d
+EKFState	ndk-modules/msf/msf_updates/src/pose_msf/msf_statedef.hpp	/^typedef msf_core::GenericState_T<fullState_T, StateDefinition> EKFState;  \/\/\/< The state we want to use in this EKF.$/;"	t	namespace:msf_updates
+EKFStateConstPtr	ndk-modules/msf/msf_updates/src/pose_msf/msf_statedef.hpp	/^typedef shared_ptr<const EKFState> EKFStateConstPtr;$/;"	t	namespace:msf_updates
+EKFStatePtr	ndk-modules/msf/msf_updates/src/pose_msf/msf_statedef.hpp	/^typedef shared_ptr<EKFState> EKFStatePtr;$/;"	t	namespace:msf_updates
+EKFState_T	ndk-modules/msf/msf_updates/include/msf_updates/pose_sensor_handler/pose_measurement.h	/^                            typedef msf_updates::EKFState EKFState_T;$/;"	t	struct:msf_updates::pose_measurement::PoseMeasurement
+EKFState_T	ndk-modules/msf/msf_updates/src/pose_msf/pose_sensormanager.cc	/^        typedef msf_updates::EKFState EKFState_T;$/;"	t	class:msf_pose_sensor::PoseSensorManager	file:
+EXPECT_NEAR_EIGEN	ndk-modules/msf/msf_core/include/msf_core/testing_predicates.h	33;"	d
+EchoBufferContentTimes	ndk-modules/msf/msf_core/include/msf_core/msf_sortedContainer.h	/^  std::string EchoBufferContentTimes() {$/;"	f	class:msf_core::SortedContainer
+EchoCompileTimeConstant	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^void EchoCompileTimeConstant() {$/;"	f	namespace:msf_tmp
+EchoStateVarType	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^struct EchoStateVarType<$/;"	s	namespace:msf_tmp
+EigenCovBlockToGeometryMsgs	ndk-modules/msf/msf_core/include/msf_core/similaritytransform.h	/^inline void EigenCovBlockToGeometryMsgs($/;"	f	namespace:msf_core
+EigenToGeometryMsgs	ndk-modules/msf/msf_core/include/msf_core/similaritytransform.h	/^inline geometry_msgs::Point EigenToGeometryMsgs($/;"	f	namespace:msf_core
+EigenToGeometryMsgs	ndk-modules/msf/msf_core/include/msf_core/similaritytransform.h	/^inline geometry_msgs::Quaternion EigenToGeometryMsgs($/;"	f	namespace:msf_core
+ErrorState	ndk-modules/msf/msf_core/include/msf_core/msf_core.h	/^  typedef Eigen::Matrix<double, nErrorStatesAtCompileTime, 1> ErrorState;$/;"	t	class:msf_core::MSF_Core
+ErrorStateCov	ndk-modules/msf/msf_core/include/msf_core/msf_core.h	/^      nErrorStatesAtCompileTime> ErrorStateCov;$/;"	t	class:msf_core::MSF_Core
+FALSECOLOR_H_	ndk-modules/msf/msf_core/include/msf_core/falsecolor.h	18;"	d
+FUSION_MAX_VECTOR_SIZE	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	40;"	d
+FUSION_MAX_VECTOR_SIZE	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	42;"	d
+F_type	ndk-modules/msf/msf_core/include/msf_core/msf_state.h	/^  typedef P_type F_type;$/;"	t	struct:msf_core::GenericState_T
+False_color_palette1	ndk-modules/msf/msf_core/include/msf_core/falsecolor.h	/^    False_color_palette1,$/;"	e	enum:palette::palettetypes
+False_color_palette2	ndk-modules/msf/msf_core/include/msf_core/falsecolor.h	/^    False_color_palette2,$/;"	e	enum:palette::palettetypes
+False_color_palette3	ndk-modules/msf/msf_core/include/msf_core/falsecolor.h	/^    False_color_palette3,$/;"	e	enum:palette::palettetypes
+False_color_palette4	ndk-modules/msf/msf_core/include/msf_core/falsecolor.h	/^    False_color_palette4$/;"	e	enum:palette::palettetypes
+Fd	ndk-modules/msf/msf_core/include/msf_core/msf_state.h	/^  F_type Fd;   \/\/\/< Discrete state propagation matrix.$/;"	m	struct:msf_core::GenericState_T
+FindBestNonTemporalDriftingStateImpl	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^struct FindBestNonTemporalDriftingStateImpl<Sequence, First, Last,$/;"	s	namespace:msf_tmp::__anon17
+First	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^  typedef typename boost::fusion::result_of::begin<Sequence const>::type First;$/;"	t	struct:msf_tmp::CheckCorrectIndexing
+First	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^  typedef typename boost::fusion::result_of::begin<Sequence const>::type First;$/;"	t	struct:msf_tmp::CountStates
+First	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^  typedef typename boost::fusion::result_of::begin<Sequence const>::type First;$/;"	t	struct:msf_tmp::GetStartIndex
+First	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^  typedef typename boost::fusion::result_of::begin<Sequence const>::type First;$/;"	t	struct:msf_tmp::GetStartIndexInCorrection
+First	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^  typedef typename boost::fusion::result_of::begin<Sequence const>::type First;$/;"	t	struct:msf_tmp::IndexOfBestNonTemporalDriftingState
+From6DoF	ndk-modules/msf/msf_core/include/msf_core/similaritytransform.h	/^class From6DoF {$/;"	c	namespace:msf_core::similarity_transform
+FullStatetoDoubleArray	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^  FullStatetoDoubleArray(T& statearray)$/;"	f	struct:msf_tmp::FullStatetoDoubleArray
+FullStatetoDoubleArray	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^struct FullStatetoDoubleArray {$/;"	s	namespace:msf_tmp
+FullStatetoString	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^  FullStatetoString(STREAM& data)$/;"	f	struct:msf_tmp::FullStatetoString
+FullStatetoString	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^struct FullStatetoString {$/;"	s	namespace:msf_tmp
+GPSConversion	ndk-modules/msf/msf_core/include/msf_core/gps_conversion.h	/^class GPSConversion {$/;"	c	namespace:msf_core
+GPS_CONVERSION_H_	ndk-modules/msf/msf_core/include/msf_core/gps_conversion.h	18;"	d
+GammaLog_palettes	ndk-modules/msf/msf_core/include/msf_core/falsecolor.h	/^    GammaLog_palettes,$/;"	e	enum:palette::palettetypes
+GammaLog_red_palettes	ndk-modules/msf/msf_core/include/msf_core/falsecolor.h	/^    GammaLog_red_palettes,$/;"	e	enum:palette::palettetypes
+GenericState_T	ndk-modules/msf/msf_core/include/msf_core/msf_state.h	/^  GenericState_T() {$/;"	f	struct:msf_core::GenericState_T
+GenericState_T	ndk-modules/msf/msf_core/include/msf_core/msf_state.h	/^struct GenericState_T {$/;"	s	namespace:msf_core
+GeometryMsgsCovBlockToEigen	ndk-modules/msf/msf_core/include/msf_core/similaritytransform.h	/^inline Matrix3 GeometryMsgsCovBlockToEigen($/;"	f	namespace:msf_core
+GeometryMsgsToEigen	ndk-modules/msf/msf_core/include/msf_core/similaritytransform.h	/^inline Eigen::Quaterniond GeometryMsgsToEigen($/;"	f	namespace:msf_core
+GeometryMsgsToEigen	ndk-modules/msf/msf_core/include/msf_core/similaritytransform.h	/^inline Vector3 GeometryMsgsToEigen(const geometry_msgs::Point & p) {$/;"	f	namespace:msf_core
+Get	ndk-modules/msf/msf_core/include/msf_core/implementation/msf_state_inl.h	/^GenericState_T<stateVector_T, StateDefinition_T>::Get() const {$/;"	f	class:msf_core::GenericState_T
+Get	ndk-modules/msf/msf_core/include/msf_core/implementation/msf_state_inl.h	/^GenericState_T<stateVector_T, StateDefinition_T>::Get() {$/;"	f	class:msf_core::GenericState_T
+GetAccumulatedStateTransitionStochasticCloning	ndk-modules/msf/msf_core/include/msf_core/implementation/msf_core_inl.h	/^        void MSF_Core<EKFState_T>::GetAccumulatedStateTransitionStochasticCloning($/;"	f	class:msf_core::MSF_Core
+GetAttitudeMeasurement	ndk-modules/msf/msf_updates/include/msf_updates/pose_sensor_handler/pose_sensorhandler.h	/^  Eigen::Quaterniond GetAttitudeMeasurement() {$/;"	f	class:msf_pose_sensor::PoseSensorHandler
+GetClosest	ndk-modules/msf/msf_core/include/msf_core/msf_sortedContainer.h	/^  inline shared_ptr<T>& GetClosest(const double& statetime) {$/;"	f	class:msf_core::SortedContainer
+GetClosestAfter	ndk-modules/msf/msf_core/include/msf_core/msf_sortedContainer.h	/^  inline shared_ptr<T>& GetClosestAfter(const double& statetime) {$/;"	f	class:msf_core::SortedContainer
+GetClosestBefore	ndk-modules/msf/msf_core/include/msf_core/msf_sortedContainer.h	/^  inline shared_ptr<T>& GetClosestBefore(const double& statetime) {$/;"	f	class:msf_core::SortedContainer
+GetClosestState	ndk-modules/msf/msf_core/include/msf_core/implementation/msf_core_inl.h	/^        shared_ptr<EKFState_T> MSF_Core<EKFState_T>::GetClosestState(double tstamp) {$/;"	f	class:msf_core::MSF_Core
+GetDataPlaybackStatus	ndk-modules/msf/msf_core/include/msf_core/msf_sensormanager.h	/^  bool GetDataPlaybackStatus() {$/;"	f	class:msf_core::MSF_SensorManager
+GetEnumStateName	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^struct GetEnumStateName<const msf_core::StateVar_T<U, NAME, STATE_T, OPTIONS>&> {$/;"	s	namespace:msf_tmp::__anon17
+GetEnumStateName	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^struct GetEnumStateName<msf_core::StateVar_T<U, NAME, STATE_T, OPTIONS> > {$/;"	s	namespace:msf_tmp::__anon17
+GetEnumStateName	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^template<> struct GetEnumStateName<const mpl_::void_&> {$/;"	s	namespace:msf_tmp::__anon17
+GetEnumStateName	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^template<> struct GetEnumStateName<mpl_::void_> {$/;"	s	namespace:msf_tmp::__anon17
+GetEnumStateType	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^struct GetEnumStateType {$/;"	s	namespace:msf_tmp::__anon17
+GetEnumStateType	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^struct GetEnumStateType<TypeList, -1> {$/;"	s	namespace:msf_tmp::__anon17
+GetFirst	ndk-modules/msf/msf_core/include/msf_core/msf_sortedContainer.h	/^  inline shared_ptr<T>& GetFirst() {$/;"	f	class:msf_core::SortedContainer
+GetHandle	ndk-modules/msf/msf_timing/src/Timer.cc	/^size_t Timing::GetHandle(std::string const& tag) {$/;"	f	class:msf_timing::Timing
+GetHz	ndk-modules/msf/msf_timing/src/Timer.cc	/^double Timing::GetHz(size_t handle) {$/;"	f	class:msf_timing::Timing
+GetHz	ndk-modules/msf/msf_timing/src/Timer.cc	/^double Timing::GetHz(std::string const& tag) {$/;"	f	class:msf_timing::Timing
+GetIndicesInErrorState	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^  GetIndicesInErrorState(T& val)$/;"	f	struct:msf_tmp::GetIndicesInErrorState
+GetIndicesInErrorState	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^struct GetIndicesInErrorState {$/;"	s	namespace:msf_tmp
+GetInvalid	ndk-modules/msf/msf_core/include/msf_core/msf_sortedContainer.h	/^  inline shared_ptr<T>& GetInvalid() {$/;"	f	class:msf_core::SortedContainer
+GetIteratorAtValue	ndk-modules/msf/msf_core/include/msf_core/msf_sortedContainer.h	/^  inline typename ListT::iterator GetIteratorAtValue($/;"	f	class:msf_core::SortedContainer
+GetIteratorBeforeBegin	ndk-modules/msf/msf_core/include/msf_core/msf_sortedContainer.h	/^  inline typename ListT::iterator GetIteratorBeforeBegin() {$/;"	f	class:msf_core::SortedContainer
+GetIteratorBegin	ndk-modules/msf/msf_core/include/msf_core/msf_sortedContainer.h	/^  inline typename ListT::iterator GetIteratorBegin() {$/;"	f	class:msf_core::SortedContainer
+GetIteratorClosest	ndk-modules/msf/msf_core/include/msf_core/msf_sortedContainer.h	/^  inline typename ListT::iterator GetIteratorClosest(const double& statetime) {$/;"	f	class:msf_core::SortedContainer
+GetIteratorClosestAfter	ndk-modules/msf/msf_core/include/msf_core/msf_sortedContainer.h	/^  inline typename ListT::iterator GetIteratorClosestAfter($/;"	f	class:msf_core::SortedContainer
+GetIteratorClosestBefore	ndk-modules/msf/msf_core/include/msf_core/msf_sortedContainer.h	/^  inline typename ListT::iterator GetIteratorClosestBefore($/;"	f	class:msf_core::SortedContainer
+GetIteratorEnd	ndk-modules/msf/msf_core/include/msf_core/msf_sortedContainer.h	/^  inline typename ListT::iterator GetIteratorEnd() {$/;"	f	class:msf_core::SortedContainer
+GetLast	ndk-modules/msf/msf_core/include/msf_core/msf_sortedContainer.h	/^  inline shared_ptr<T>& GetLast() {$/;"	f	class:msf_core::SortedContainer
+GetMaxSeconds	ndk-modules/msf/msf_timing/src/Timer.cc	/^double Timing::GetMaxSeconds(size_t handle) {$/;"	f	class:msf_timing::Timing
+GetMaxSeconds	ndk-modules/msf/msf_timing/src/Timer.cc	/^double Timing::GetMaxSeconds(std::string const& tag) {$/;"	f	class:msf_timing::Timing
+GetMeanSeconds	ndk-modules/msf/msf_timing/src/Timer.cc	/^double Timing::GetMeanSeconds(size_t handle) {$/;"	f	class:msf_timing::Timing
+GetMeanSeconds	ndk-modules/msf/msf_timing/src/Timer.cc	/^double Timing::GetMeanSeconds(std::string const& tag) {$/;"	f	class:msf_timing::Timing
+GetMedian	ndk-modules/msf/msf_core/include/msf_core/msf_tools.h	/^typename Eigen::MatrixBase<D>::Scalar GetMedian($/;"	f	namespace:msf_core
+GetMinSeconds	ndk-modules/msf/msf_timing/src/Timer.cc	/^double Timing::GetMinSeconds(size_t handle) {$/;"	f	class:msf_timing::Timing
+GetMinSeconds	ndk-modules/msf/msf_timing/src/Timer.cc	/^double Timing::GetMinSeconds(std::string const& tag) {$/;"	f	class:msf_timing::Timing
+GetNumSamples	ndk-modules/msf/msf_timing/src/Timer.cc	/^size_t Timing::GetNumSamples(size_t handle) {$/;"	f	class:msf_timing::Timing
+GetNumSamples	ndk-modules/msf/msf_timing/src/Timer.cc	/^size_t Timing::GetNumSamples(std::string const& tag) {$/;"	f	class:msf_timing::Timing
+GetParamFixedBias	ndk-modules/msf/msf_updates/src/pose_msf/pose_sensormanager.cc	/^        virtual bool GetParamFixedBias() const { return false; }$/;"	f	class:msf_pose_sensor::PoseSensorManager	file:
+GetParamFuzzyTrackingThreshold	ndk-modules/msf/msf_updates/src/pose_msf/pose_sensormanager.cc	/^        virtual double GetParamFuzzyTrackingThreshold() const $/;"	f	class:msf_pose_sensor::PoseSensorManager	file:
+GetParamNoiseAcc	ndk-modules/msf/msf_updates/src/pose_msf/pose_sensormanager.cc	/^        virtual double GetParamNoiseAcc() const { return noiseAcc; }$/;"	f	class:msf_pose_sensor::PoseSensorManager	file:
+GetParamNoiseAccbias	ndk-modules/msf/msf_updates/src/pose_msf/pose_sensormanager.cc	/^        virtual double GetParamNoiseAccbias() const { return noiseAccbias; }$/;"	f	class:msf_pose_sensor::PoseSensorManager	file:
+GetParamNoiseGyr	ndk-modules/msf/msf_updates/src/pose_msf/pose_sensormanager.cc	/^        virtual double GetParamNoiseGyr() const { return noiseGyr; }$/;"	f	class:msf_pose_sensor::PoseSensorManager	file:
+GetParamNoiseGyrbias	ndk-modules/msf/msf_updates/src/pose_msf/pose_sensormanager.cc	/^        virtual double GetParamNoiseGyrbias() const { return noiseGyrbias; }$/;"	f	class:msf_pose_sensor::PoseSensorManager	file:
+GetPositionMeasurement	ndk-modules/msf/msf_updates/include/msf_updates/pose_sensor_handler/pose_sensorhandler.h	/^  Eigen::Matrix<double, 3, 1> GetPositionMeasurement() {$/;"	f	class:msf_pose_sensor::PoseSensorHandler
+GetPreviousMeasurement	ndk-modules/msf/msf_core/include/msf_core/implementation/msf_core_inl.h	/^        MSF_Core<EKFState_T>::GetPreviousMeasurement($/;"	f	class:msf_core::MSF_Core
+GetQBlock	ndk-modules/msf/msf_core/include/msf_core/implementation/msf_state_inl.h	/^GenericState_T<stateVector_T, StateDefinition_T>::GetQBlock() const {$/;"	f	class:msf_core::GenericState_T
+GetQBlock	ndk-modules/msf/msf_core/include/msf_core/implementation/msf_state_inl.h	/^GenericState_T<stateVector_T, StateDefinition_T>::GetQBlock() {$/;"	f	class:msf_core::GenericState_T
+GetStartIndex	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^struct GetStartIndex {$/;"	s	namespace:msf_tmp
+GetStartIndexInCorrection	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^struct GetStartIndexInCorrection {$/;"	s	namespace:msf_tmp
+GetStateAtTime	ndk-modules/msf/msf_core/include/msf_core/implementation/msf_core_inl.h	/^        shared_ptr<EKFState_T> MSF_Core<EKFState_T>::GetStateAtTime(double tstamp) {$/;"	f	class:msf_core::MSF_Core
+GetStateCovariance	ndk-modules/msf/msf_core/include/msf_core/msf_measurement.h	/^  typename EKFState_T::P_type& GetStateCovariance() {$/;"	f	class:msf_core::MSF_InitMeasurement
+GetStateIndexInErrorState	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^struct GetStateIndexInErrorState {$/;"	s	namespace:msf_tmp
+GetStateIndexInState	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^struct GetStateIndexInState {$/;"	s	namespace:msf_tmp
+GetStateInitValue	ndk-modules/msf/msf_core/include/msf_core/msf_measurement.h	/^  GetStateInitValue() const {$/;"	f	class:msf_core::MSF_InitMeasurement
+GetStateIsNonTemporalDrifting	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^struct GetStateIsNonTemporalDrifting<$/;"	s	namespace:msf_tmp::__anon17
+GetStateIsNonTemporalDrifting	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^template<> struct GetStateIsNonTemporalDrifting<const mpl_::void_&> {$/;"	s	namespace:msf_tmp::__anon17
+GetStateIsNonTemporalDrifting	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^template<> struct GetStateIsNonTemporalDrifting<mpl_::void_> {$/;"	s	namespace:msf_tmp::__anon17
+GetStateVariable	ndk-modules/msf/msf_core/include/msf_core/implementation/msf_state_inl.h	/^    GenericState_T<stateVector_T, StateDefinition_T>::GetStateVariable() const {$/;"	f	class:msf_core::GenericState_T
+GetStateVariable	ndk-modules/msf/msf_core/include/msf_core/implementation/msf_state_inl.h	/^GenericState_T<stateVector_T, StateDefinition_T>::GetStateVariable() {$/;"	f	class:msf_core::GenericState_T
+GetTag	ndk-modules/msf/msf_timing/src/Timer.cc	/^std::string Timing::GetTag(size_t handle) {$/;"	f	class:msf_timing::Timing
+GetTimeNow	ndk-modules/msf/msf_timing/src/Timer.cc	/^double GetTimeNow() {$/;"	f	namespace:msf_timing
+GetTimers	ndk-modules/msf/msf_timing/include/msf_timing/Timer.h	/^  static const map_t& GetTimers() {$/;"	f	class:msf_timing::Timing
+GetTotalSeconds	ndk-modules/msf/msf_timing/src/Timer.cc	/^double Timing::GetTotalSeconds(size_t handle) {$/;"	f	class:msf_timing::Timing
+GetTotalSeconds	ndk-modules/msf/msf_timing/src/Timer.cc	/^double Timing::GetTotalSeconds(std::string const& tag) {$/;"	f	class:msf_timing::Timing
+GetUserCalc	ndk-modules/msf/msf_core/include/msf_core/implementation/msf_core_inl.h	/^        const MSF_SensorManager<EKFState_T>& MSF_Core<EKFState_T>::GetUserCalc() const {$/;"	f	class:msf_core::MSF_Core
+GetValueAt	ndk-modules/msf/msf_core/include/msf_core/msf_sortedContainer.h	/^  inline shared_ptr<T>& GetValueAt(const double& statetime) {$/;"	f	class:msf_core::SortedContainer
+GetVarianceSeconds	ndk-modules/msf/msf_timing/src/Timer.cc	/^double Timing::GetVarianceSeconds(size_t handle) {$/;"	f	class:msf_timing::Timing
+GetVarianceSeconds	ndk-modules/msf/msf_timing/src/Timer.cc	/^double Timing::GetVarianceSeconds(std::string const& tag) {$/;"	f	class:msf_timing::Timing
+Geta_m	ndk-modules/msf/msf_core/include/msf_core/msf_measurement.h	/^  Eigen::Matrix<double, 3, 1>& Geta_m() {$/;"	f	class:msf_core::MSF_InitMeasurement
+Getcfg	ndk-modules/msf/msf_updates/src/pose_msf/pose_sensormanager.cc	/^        const PoseSensorConfig& Getcfg() $/;"	f	class:msf_pose_sensor::PoseSensorManager
+Getw_m	ndk-modules/msf/msf_core/include/msf_core/msf_measurement.h	/^  Eigen::Matrix<double, 3, 1>& Getw_m() {$/;"	f	class:msf_core::MSF_InitMeasurement
+HandlePendingMeasurements	ndk-modules/msf/msf_core/include/msf_core/implementation/msf_core_inl.h	/^        void MSF_Core<EKFState_T>::HandlePendingMeasurements() {$/;"	f	class:msf_core::MSF_Core
+Handlers	ndk-modules/msf/msf_core/include/msf_core/msf_sensormanager.h	/^  typedef std::vector<shared_ptr<SensorHandler<EKFState_T> > > Handlers;$/;"	t	class:msf_core::MSF_SensorManager
+IMUHandler	ndk-modules/msf/msf_core/include/msf_core/msf_IMUHandler.h	/^  IMUHandler(MSF_SensorManager<EKFState_T>& mng,$/;"	f	class:msf_core::IMUHandler
+IMUHandler	ndk-modules/msf/msf_core/include/msf_core/msf_IMUHandler.h	/^class IMUHandler : public SensorHandler<EKFState_T> {$/;"	c	namespace:msf_core
+INVALID_ID	ndk-modules/msf/msf_core/include/msf_core/msf_types.h	/^  const static int INVALID_ID = -1;$/;"	m	namespace:msf_core::constants
+INVALID_SEQUENCE	ndk-modules/msf/msf_core/include/msf_core/msf_types.h	/^  const static int INVALID_SEQUENCE = -1;$/;"	m	namespace:msf_core::constants
+INVALID_TIME	ndk-modules/msf/msf_core/include/msf_core/msf_types.h	/^  const static double INVALID_TIME = -1;$/;"	m	namespace:msf_core::constants
+IndexOfBestNonTemporalDriftingState	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^struct IndexOfBestNonTemporalDriftingState {$/;"	s	namespace:msf_tmp
+Init	ndk-modules/msf/msf_core/include/msf_core/implementation/msf_core_inl.h	/^        void MSF_Core<EKFState_T>::Init($/;"	f	class:msf_core::MSF_Core
+Init	ndk-modules/msf/msf_updates/src/pose_msf/pose_sensormanager.cc	/^        void Init(double scale) const $/;"	f	class:msf_pose_sensor::PoseSensorManager	file:
+InitScale	ndk-modules/msf/msf_updates/src/pose_msf/pose_sensormanager.cc	/^        bool InitScale(float scale) $/;"	f	class:msf_pose_sensor::PoseSensorManager	file:
+InitState	ndk-modules/msf/msf_core/include/msf_core/msf_measurement.h	/^  EKFState_T InitState;  \/\/\/< Values for initialization of the state.$/;"	m	class:msf_core::MSF_InitMeasurement
+InitState	ndk-modules/msf/msf_updates/src/pose_msf/pose_sensormanager.cc	/^        void InitState(EKFState_T& state) const {$/;"	f	class:msf_pose_sensor::PoseSensorManager	file:
+Initialize	ndk-modules/msf/msf_core/include/msf_core/msf_IMUHandler.h	/^  virtual bool Initialize() {$/;"	f	class:msf_core::IMUHandler
+Insert	ndk-modules/msf/msf_core/include/msf_core/msf_sortedContainer.h	/^  inline typename ListT::iterator Insert(const shared_ptr<T>& value) {$/;"	f	class:msf_core::SortedContainer
+Instance	ndk-modules/msf/msf_timing/src/Timer.cc	/^Timing& Timing::Instance() {$/;"	f	class:msf_timing::Timing
+Inversion_palette	ndk-modules/msf/msf_core/include/msf_core/falsecolor.h	/^    Inversion_palette,$/;"	e	enum:palette::palettetypes
+Inversion_red_palette	ndk-modules/msf/msf_core/include/msf_core/falsecolor.h	/^    Inversion_red_palette,$/;"	e	enum:palette::palettetypes
+IsCurrentStateAQuaternion	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^    IsCurrentStateAQuaternion = IsQuaternionType<$/;"	e	enum:msf_tmp::__anon17::FindBestNonTemporalDriftingStateImpl::__anon70
+IsCurrentStateNonTemporalDrifting	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^    IsCurrentStateNonTemporalDrifting = GetStateIsNonTemporalDrifting<$/;"	e	enum:msf_tmp::__anon17::FindBestNonTemporalDriftingStateImpl::__anon70
+IsPointerType	ndk-modules/msf/msf_core/include/msf_core/msf_typetraits.h	/^struct IsPointerType {$/;"	s	namespace:msf_tmp
+IsPointerType	ndk-modules/msf/msf_core/include/msf_core/msf_typetraits.h	/^struct IsPointerType<T*> {$/;"	s	namespace:msf_tmp
+IsPointerType	ndk-modules/msf/msf_core/include/msf_core/msf_typetraits.h	/^struct IsPointerType<const T*> {$/;"	s	namespace:msf_tmp
+IsQuaternionType	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^struct IsQuaternionType<$/;"	s	namespace:msf_tmp::__anon17
+IsQuaternionType	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^struct IsQuaternionType<const mpl_::void_&> {$/;"	s	namespace:msf_tmp::__anon17
+IsQuaternionType	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^struct IsQuaternionType<mpl_::void_> {$/;"	s	namespace:msf_tmp::__anon17
+IsReferenceType	ndk-modules/msf/msf_core/include/msf_core/msf_typetraits.h	/^struct IsReferenceType {$/;"	s	namespace:msf_tmp
+IsReferenceType	ndk-modules/msf/msf_core/include/msf_core/msf_typetraits.h	/^struct IsReferenceType<T&> {$/;"	s	namespace:msf_tmp
+IsReferenceType	ndk-modules/msf/msf_core/include/msf_core/msf_typetraits.h	/^struct IsReferenceType<const T&> {$/;"	s	namespace:msf_tmp
+IsTiming	ndk-modules/msf/msf_timing/include/msf_timing/Timer.h	/^  bool IsTiming() {$/;"	f	class:msf_timing::DummyTimer
+IsTiming	ndk-modules/msf/msf_timing/src/Timer.cc	/^bool Timer::IsTiming() const {$/;"	f	class:msf_timing::Timer
+L	ndk-modules/msf/msf_updates/include/msf_updates/pose_sensor_handler/pose_measurement.h	/^                                L = StateLIdx,$/;"	e	enum:msf_updates::pose_measurement::PoseMeasurement::AuxState
+L	ndk-modules/msf/msf_updates/src/pose_msf/msf_statedef.hpp	/^  L,$/;"	e	enum:msf_updates::StateDefinition
+LOCAL_CPP_EXTENSION	ndk-modules/msf/jni/Android.mk	/^LOCAL_CPP_EXTENSION := .cc .cpp .cxx$/;"	m
+LOCAL_EXPORT_CFLAGS	ndk-modules/msf/jni/Android.mk	/^LOCAL_EXPORT_CFLAGS := $(LOCAL_CFLAGS) #export c flgs$/;"	m
+LOCAL_EXPORT_CPPFLAGS	ndk-modules/msf/jni/Android.mk	/^LOCAL_EXPORT_CPPFLAGS := $(LOCAL_CPPFLAGS) #export cpp flgs$/;"	m
+LOCAL_EXPORT_CXXFLAGS	ndk-modules/msf/jni/Android.mk	/^LOCAL_EXPORT_CXXFLAGS := $(LOCAL_CXXFLAGS) #export cpp flgs$/;"	m
+LOCAL_EXPORT_C_INCLUDES	ndk-modules/msf/jni/Android.mk	/^LOCAL_EXPORT_C_INCLUDES := $(LOCAL_C_INCLUDES) #export includes$/;"	m
+LOCAL_EXPORT_LDLIBS	ndk-modules/msf/jni/Android.mk	/^LOCAL_EXPORT_LDLIBS := $(LOCAL_LDLIBS) #export linker cmds$/;"	m
+LOCAL_MODULE	ndk-modules/msf/jni/Android.mk	/^LOCAL_MODULE    := msf$/;"	m
+LOCAL_PATH	ndk-modules/msf/Android.mk	/^LOCAL_PATH := $(call my-dir)$/;"	m
+LOCAL_PATH	ndk-modules/msf/jni/Android.mk	/^LOCAL_PATH := $(call my-dir)$/;"	m
+Last	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^  typedef typename boost::fusion::result_of::end<Sequence const>::type Last;$/;"	t	struct:msf_tmp::CheckCorrectIndexing
+Last	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^  typedef typename boost::fusion::result_of::end<Sequence const>::type Last;$/;"	t	struct:msf_tmp::CountStates
+Last	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^  typedef typename boost::fusion::result_of::end<Sequence const>::type Last;$/;"	t	struct:msf_tmp::GetStartIndex
+Last	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^  typedef typename boost::fusion::result_of::end<Sequence const>::type Last;$/;"	t	struct:msf_tmp::GetStartIndexInCorrection
+Last	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^  typedef typename boost::fusion::result_of::end<Sequence const>::type Last;$/;"	t	struct:msf_tmp::IndexOfBestNonTemporalDriftingState
+LazyVariance	ndk-modules/msf/msf_timing/include/msf_timing/Timer.h	/^  double LazyVariance() const {$/;"	f	class:msf_timing::Accumulator
+Linear_palettes	ndk-modules/msf/msf_core/include/msf_core/falsecolor.h	/^    Linear_palettes,$/;"	e	enum:palette::palettetypes
+Linear_red_palettes	ndk-modules/msf/msf_core/include/msf_core/falsecolor.h	/^    Linear_red_palettes,$/;"	e	enum:palette::palettetypes
+ListT	ndk-modules/msf/msf_core/include/msf_core/msf_sortedContainer.h	/^  typedef std::map<double, Ptr_T> ListT;  \/\/\/< The container type in which to store the data.$/;"	t	class:msf_core::SortedContainer
+MEASUREMENT_H_	ndk-modules/msf/msf_core/include/msf_core/msf_measurement.h	18;"	d
+MEASUREMENT_INL_H_	ndk-modules/msf/msf_core/include/msf_core/implementation/msf_measurement_inl.h	18;"	d
+MIN_INITIALIZATION_HEIGHT	ndk-modules/msf/msf_updates/src/pose_msf/pose_sensormanager.cc	/^        static constexpr double MIN_INITIALIZATION_HEIGHT = 0.01;$/;"	m	class:msf_pose_sensor::PoseSensorManager	file:
+MSF_CHECKFUZZYTRACKING_H_	ndk-modules/msf/msf_core/include/msf_core/msf_checkFuzzyTracking.h	20;"	d
+MSF_CORE_H_	ndk-modules/msf/msf_core/include/msf_core/msf_core.h	34;"	d
+MSF_CORE_INL_H_	ndk-modules/msf/msf_core/include/msf_core/implementation/msf_core_inl.h	20;"	d
+MSF_Core	ndk-modules/msf/msf_core/include/msf_core/implementation/msf_core_inl.h	/^        MSF_Core<EKFState_T>::MSF_Core(const MSF_SensorManager<EKFState_T>& GetUserCalc)$/;"	f	class:msf_core::MSF_Core
+MSF_Core	ndk-modules/msf/msf_core/include/msf_core/msf_core.h	/^class MSF_Core {$/;"	c	namespace:msf_core
+MSF_ERROR_STREAM	ndk-modules/msf/msf_core/include/msf_core/msf_macros.h	60;"	d
+MSF_ERROR_STREAM	ndk-modules/msf/msf_core/include/msf_core/msf_macros.h	87;"	d
+MSF_ERROR_STREAM_COND	ndk-modules/msf/msf_core/include/msf_core/msf_macros.h	175;"	d
+MSF_ERROR_STREAM_COND	ndk-modules/msf/msf_core/include/msf_core/msf_macros.h	72;"	d
+MSF_ERROR_STREAM_ONCE	ndk-modules/msf/msf_core/include/msf_core/msf_macros.h	108;"	d
+MSF_ERROR_STREAM_ONCE	ndk-modules/msf/msf_core/include/msf_core/msf_macros.h	64;"	d
+MSF_ERROR_STREAM_THROTTLE	ndk-modules/msf/msf_core/include/msf_core/msf_macros.h	146;"	d
+MSF_ERROR_STREAM_THROTTLE	ndk-modules/msf/msf_core/include/msf_core/msf_macros.h	68;"	d
+MSF_FWD_HPP_	ndk-modules/msf/msf_core/include/msf_core/msf_fwds.h	18;"	d
+MSF_IMU_HANDLER_H_	ndk-modules/msf/msf_core/include/msf_core/msf_IMUHandler.h	18;"	d
+MSF_INFO_STREAM	ndk-modules/msf/msf_core/include/msf_core/msf_macros.h	58;"	d
+MSF_INFO_STREAM	ndk-modules/msf/msf_core/include/msf_core/msf_macros.h	79;"	d
+MSF_INFO_STREAM_COND	ndk-modules/msf/msf_core/include/msf_core/msf_macros.h	161;"	d
+MSF_INFO_STREAM_COND	ndk-modules/msf/msf_core/include/msf_core/msf_macros.h	70;"	d
+MSF_INFO_STREAM_ONCE	ndk-modules/msf/msf_core/include/msf_core/msf_macros.h	62;"	d
+MSF_INFO_STREAM_ONCE	ndk-modules/msf/msf_core/include/msf_core/msf_macros.h	90;"	d
+MSF_InitMeasurement	ndk-modules/msf/msf_core/include/msf_core/msf_measurement.h	/^  EIGEN_MAKE_ALIGNED_OPERATOR_NEW MSF_InitMeasurement($/;"	f	class:msf_core::MSF_InitMeasurement
+MSF_InitMeasurement	ndk-modules/msf/msf_core/include/msf_core/msf_measurement.h	/^class MSF_InitMeasurement : public MSF_MeasurementBase<EKFState_T> {$/;"	c	namespace:msf_core
+MSF_InvalidMeasurement	ndk-modules/msf/msf_core/include/msf_core/msf_measurement.h	/^  MSF_InvalidMeasurement()$/;"	f	class:msf_core::MSF_InvalidMeasurement
+MSF_InvalidMeasurement	ndk-modules/msf/msf_core/include/msf_core/msf_measurement.h	/^class MSF_InvalidMeasurement : public MSF_MeasurementBase<EKFState_T> {$/;"	c	namespace:msf_core
+MSF_LIKELY	ndk-modules/msf/msf_core/include/msf_core/msf_macros.h	49;"	d
+MSF_LIKELY	ndk-modules/msf/msf_core/include/msf_core/msf_macros.h	52;"	d
+MSF_LOG_STREAM_THROTTLE	ndk-modules/msf/msf_core/include/msf_core/msf_macros.h	117;"	d
+MSF_LOG_STREAM_THROTTLE	ndk-modules/msf/msf_core/include/msf_core/msf_macros.h	66;"	d
+MSF_MACROS_H_	ndk-modules/msf/msf_core/include/msf_core/msf_macros.h	18;"	d
+MSF_MAKE_EIGEN_TYPES	ndk-modules/msf/msf_core/include/msf_core/msf_types.h	33;"	d
+MSF_Measurement	ndk-modules/msf/msf_core/include/msf_core/msf_measurement.h	/^  MSF_Measurement(bool isAbsoluteMeasurement, int sensorID,$/;"	f	class:msf_core::MSF_Measurement
+MSF_Measurement	ndk-modules/msf/msf_core/include/msf_core/msf_measurement.h	/^class MSF_Measurement : public MSF_MeasurementBase<EKFState_T> {$/;"	c	namespace:msf_core
+MSF_MeasurementBase	ndk-modules/msf/msf_core/include/msf_core/implementation/msf_measurement_inl.h	/^MSF_MeasurementBase<EKFState_T>::MSF_MeasurementBase(bool isabsoluteMeasurement,$/;"	f	class:msf_core::MSF_MeasurementBase
+MSF_MeasurementBase	ndk-modules/msf/msf_core/include/msf_core/msf_measurement.h	/^class MSF_MeasurementBase {$/;"	c	namespace:msf_core
+MSF_SENSORHANDLER_H_	ndk-modules/msf/msf_core/include/msf_core/msf_sensorhandler.h	18;"	d
+MSF_SENSORHANDLER_INL_H_	ndk-modules/msf/msf_core/include/msf_core/implementation/msf_sensormanager_inl.h	18;"	d
+MSF_SORTEDCONTAINER_H_	ndk-modules/msf/msf_core/include/msf_core/msf_sortedContainer.h	18;"	d
+MSF_STATEDEF_HPP_	ndk-modules/msf/msf_updates/src/pose_msf/msf_statedef.hpp	18;"	d
+MSF_STATEVISITOR_H_	ndk-modules/msf/msf_core/include/msf_core/msf_statevisitor.h	18;"	d
+MSF_STATE_H_	ndk-modules/msf/msf_core/include/msf_core/msf_state.h	18;"	d
+MSF_STATE_INL_H_	ndk-modules/msf/msf_core/include/msf_core/implementation/msf_state_inl.h	18;"	d
+MSF_SensorManager	ndk-modules/msf/msf_core/include/msf_core/implementation/msf_sensormanager_inl.h	/^MSF_SensorManager<EKFState_T>::MSF_SensorManager() {$/;"	f	class:msf_core::MSF_SensorManager
+MSF_SensorManager	ndk-modules/msf/msf_core/include/msf_core/msf_sensormanager.h	/^class MSF_SensorManager : public StateVisitor<EKFState_T> {$/;"	c	namespace:msf_core
+MSF_TIMING_TIMER_H_	ndk-modules/msf/msf_timing/include/msf_timing/Timer.h	21;"	d
+MSF_TMP_H_	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	27;"	d
+MSF_TOOLS_H_	ndk-modules/msf/msf_core/include/msf_core/msf_tools.h	18;"	d
+MSF_TYPES_HPP_	ndk-modules/msf/msf_core/include/msf_core/msf_types.h	18;"	d
+MSF_TYPETRAITS_H_	ndk-modules/msf/msf_core/include/msf_core/msf_typetraits.h	18;"	d
+MSF_UNITTEST_ENTRYPOINT	ndk-modules/msf/msf_core/include/msf_core/testing_entrypoint.h	29;"	d
+MSF_UNLIKELY	ndk-modules/msf/msf_core/include/msf_core/msf_macros.h	50;"	d
+MSF_UNLIKELY	ndk-modules/msf/msf_core/include/msf_core/msf_macros.h	53;"	d
+MSF_WARN_STREAM	ndk-modules/msf/msf_core/include/msf_core/msf_macros.h	59;"	d
+MSF_WARN_STREAM	ndk-modules/msf/msf_core/include/msf_core/msf_macros.h	83;"	d
+MSF_WARN_STREAM_COND	ndk-modules/msf/msf_core/include/msf_core/msf_macros.h	168;"	d
+MSF_WARN_STREAM_COND	ndk-modules/msf/msf_core/include/msf_core/msf_macros.h	71;"	d
+MSF_WARN_STREAM_ONCE	ndk-modules/msf/msf_core/include/msf_core/msf_macros.h	63;"	d
+MSF_WARN_STREAM_ONCE	ndk-modules/msf/msf_core/include/msf_core/msf_macros.h	99;"	d
+MSF_WARN_STREAM_THROTTLE	ndk-modules/msf/msf_core/include/msf_core/msf_macros.h	131;"	d
+MSF_WARN_STREAM_THROTTLE	ndk-modules/msf/msf_core/include/msf_core/msf_macros.h	67;"	d
+MakeFromSensorReading	ndk-modules/msf/msf_core/include/msf_core/msf_measurement.h	/^  void MakeFromSensorReading(const boost::shared_ptr<T const> reading,$/;"	f	class:msf_core::MSF_Measurement
+MakeFromSensorReadingImpl	ndk-modules/msf/msf_updates/include/msf_updates/pose_sensor_handler/pose_measurement.h	/^                            virtual void MakeFromSensorReadingImpl(measptr_t msg) {$/;"	f	struct:msf_updates::pose_measurement::PoseMeasurement
+Max	ndk-modules/msf/msf_timing/include/msf_timing/Timer.h	/^  double Max() const {$/;"	f	class:msf_timing::Accumulator
+Mean	ndk-modules/msf/msf_timing/include/msf_timing/Timer.h	/^  double Mean() const {$/;"	f	class:msf_timing::Accumulator
+MeasurementBuffer_	ndk-modules/msf/msf_core/include/msf_core/msf_core.h	/^  measurementBufferT MeasurementBuffer_;$/;"	m	class:msf_core::MSF_Core
+Measurement_ptr	ndk-modules/msf/msf_core/include/msf_core/msf_measurement.h	/^  typedef boost::shared_ptr<T const> Measurement_ptr;$/;"	t	class:msf_core::MSF_Measurement
+Measurement_t	ndk-modules/msf/msf_updates/include/msf_updates/pose_sensor_handler/pose_measurement.h	/^                            typedef PoseMeasurementBase Measurement_t;$/;"	t	struct:msf_updates::pose_measurement::PoseMeasurement
+Measurement_type	ndk-modules/msf/msf_core/include/msf_core/msf_measurement.h	/^  typedef T Measurement_type;$/;"	t	class:msf_core::MSF_Measurement
+Min	ndk-modules/msf/msf_timing/include/msf_timing/Timer.h	/^  double Min() const {$/;"	f	class:msf_timing::Accumulator
+NUMERIC_PREC	ndk-modules/msf/msf_core/include/msf_core/msf_macros.h	23;"	d
+Next	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^  typedef typename boost::fusion::result_of::next<First>::type Next;$/;"	t	struct:msf_tmp::__anon17::CheckStateIndexing
+Next	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^  typedef typename boost::fusion::result_of::next<First>::type Next;$/;"	t	struct:msf_tmp::__anon17::ComputeStartIndex
+Next	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^  typedef typename boost::fusion::result_of::next<First>::type Next;$/;"	t	struct:msf_tmp::__anon17::CountStatesLinear
+Next	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^  typedef typename boost::fusion::result_of::next<First>::type Next;$/;"	t	struct:msf_tmp::__anon17::FindBestNonTemporalDriftingStateImpl
+OmegaMatHamilton	ndk-modules/msf/msf_core/include/msf_core/eigen_utils.h	/^inline Eigen::Matrix<typename Derived::Scalar, 4, 4> OmegaMatHamilton($/;"	f
+OmegaMatJPL	ndk-modules/msf/msf_core/include/msf_core/eigen_utils.h	/^inline Eigen::Matrix<typename Derived::Scalar, 4, 4> OmegaMatJPL($/;"	f
+P	ndk-modules/msf/msf_core/include/msf_core/msf_state.h	/^  P_type P;  \/\/\/< Error state covariance.$/;"	m	struct:msf_core::GenericState_T
+POSEDISTORTER_H_	ndk-modules/msf/msf_updates/include/msf_updates/PoseDistorter.h	18;"	d
+POSESENSORCONFIG	ndk-modules/msf/msf_updates/src/pose_msf/PoseSensorConfig.h	2;"	d
+POSE_MEASUREMENTMANAGER_H	ndk-modules/msf/msf_updates/src/pose_msf/pose_sensormanager.cc	18;"	d	file:
+POSE_MEASUREMENT_HPP_	ndk-modules/msf/msf_updates/include/msf_updates/pose_sensor_handler/pose_measurement.h	20;"	d
+POSE_SENSORHANDLER_HPP_	ndk-modules/msf/msf_updates/include/msf_updates/pose_sensor_handler/implementation/pose_sensorhandler.hpp	23;"	d
+POSE_SENSOR_H_	ndk-modules/msf/msf_updates/include/msf_updates/pose_sensor_handler/pose_sensorhandler.h	20;"	d
+P_type	ndk-modules/msf/msf_core/include/msf_core/msf_state.h	/^      nErrorStatesAtCompileTime> P_type;  \/\/\/< Type of the error state$/;"	t	struct:msf_core::GenericState_T
+Pose	ndk-modules/msf/msf_core/include/msf_core/similaritytransform.h	/^typedef geometry_msgs::PoseWithCovariance Pose;$/;"	t	namespace:msf_core::similarity_transform
+PoseDistorter	ndk-modules/msf/msf_updates/include/msf_updates/PoseDistorter.h	/^class PoseDistorter {$/;"	c	namespace:msf_updates
+PoseDistorter	ndk-modules/msf/msf_updates/src/msf_distort/PoseDistorter.cc	/^PoseDistorter::PoseDistorter(const Eigen::Vector3d& meanposdrift,$/;"	f	class:msf_updates::PoseDistorter
+PoseMeasurement	ndk-modules/msf/msf_updates/include/msf_updates/pose_sensor_handler/pose_measurement.h	/^                            PoseMeasurement(double n_zp, double n_zq, bool measurement_world_sensor,$/;"	f	struct:msf_updates::pose_measurement::PoseMeasurement
+PoseMeasurement	ndk-modules/msf/msf_updates/include/msf_updates/pose_sensor_handler/pose_measurement.h	/^                    struct PoseMeasurement : public PoseMeasurementBase {$/;"	s	namespace:msf_updates::pose_measurement
+PoseMeasurementBase	ndk-modules/msf/msf_updates/include/msf_updates/pose_sensor_handler/pose_measurement.h	/^                Eigen::Matrix<double, nMeasurements, nMeasurements>, msf_updates::EKFState> PoseMeasurementBase;$/;"	t	namespace:msf_updates::pose_measurement
+PosePair	ndk-modules/msf/msf_core/include/msf_core/similaritytransform.h	/^typedef std::pair<Pose, Pose> PosePair;$/;"	t	namespace:msf_core::similarity_transform
+PosePairVector	ndk-modules/msf/msf_core/include/msf_core/similaritytransform.h	/^typedef std::vector<PosePair> PosePairVector;$/;"	t	namespace:msf_core::similarity_transform
+PoseSensorConfig	ndk-modules/msf/msf_updates/src/pose_msf/PoseSensorConfig.h	/^    PoseSensorConfig(): $/;"	f	class:PoseSensorConfig
+PoseSensorConfig	ndk-modules/msf/msf_updates/src/pose_msf/PoseSensorConfig.h	/^class PoseSensorConfig $/;"	c
+PoseSensorHandler	ndk-modules/msf/msf_updates/include/msf_updates/pose_sensor_handler/implementation/pose_sensorhandler.hpp	/^        PoseSensorHandler<MEASUREMENT_TYPE, MANAGER_TYPE>::PoseSensorHandler($/;"	f	class:msf_pose_sensor::PoseSensorHandler
+PoseSensorHandler	ndk-modules/msf/msf_updates/include/msf_updates/pose_sensor_handler/pose_sensorhandler.h	/^class PoseSensorHandler : public msf_core::SensorHandler<$/;"	c	namespace:msf_pose_sensor
+PoseSensorHandler_T	ndk-modules/msf/msf_updates/src/pose_msf/pose_sensormanager.cc	/^            PoseSensorManager>  PoseSensorHandler_T;$/;"	t	class:msf_pose_sensor::PoseSensorManager	file:
+PoseSensorManager	ndk-modules/msf/msf_updates/src/pose_msf/pose_sensormanager.cc	/^        PoseSensorManager(std::string config_file_name): noiseAcc(0.08), noiseAccbias(0.008), noiseGyr(0.02), noiseGyrbias(0.002) $/;"	f	class:msf_pose_sensor::PoseSensorManager
+PoseSensorManager	ndk-modules/msf/msf_updates/src/pose_msf/pose_sensormanager.cc	/^    class PoseSensorManager : $/;"	c	namespace:msf_pose_sensor	file:
+PoseWithCovarianceStamped	ndk-modules/msf/msf_updates/include/msf_updates/pose_sensor_handler/pose_measurement.h	/^        struct PoseWithCovarianceStamped $/;"	s	namespace:msf_updates::pose_measurement
+PredictProcessCovariance	ndk-modules/msf/msf_core/include/msf_core/implementation/msf_core_inl.h	/^        void MSF_Core<EKFState_T>::PredictProcessCovariance($/;"	f	class:msf_core::MSF_Core
+Print	ndk-modules/msf/msf_core/include/msf_core/implementation/msf_state_inl.h	/^std::string GenericState_T<stateVector_T, StateDefinition_T>::Print() {$/;"	f	class:msf_core::GenericState_T
+Print	ndk-modules/msf/msf_timing/src/Timer.cc	/^std::string Timing::Print() {$/;"	f	class:msf_timing::Timing
+Print	ndk-modules/msf/msf_timing/src/Timer.cc	/^void Timing::Print(std::ostream& out) {$/;"	f	class:msf_timing::Timing
+ProcessExternallyPropagatedState	ndk-modules/msf/msf_core/include/msf_core/implementation/msf_core_inl.h	/^        void MSF_Core<EKFState_T>::ProcessExternallyPropagatedState($/;"	f	class:msf_core::MSF_Core
+ProcessIMU	ndk-modules/msf/msf_core/include/msf_core/implementation/msf_core_inl.h	/^        void MSF_Core<EKFState_T>::ProcessIMU($/;"	f	class:msf_core::MSF_Core
+ProcessIMU	ndk-modules/msf/msf_core/include/msf_core/msf_IMUHandler.h	/^  void ProcessIMU(const msf_core::Vector3& linear_acceleration,$/;"	f	class:msf_core::IMUHandler
+ProcessIMU	ndk-modules/msf/msf_updates/src/pose_msf/pose_sensormanager.cc	/^        void ProcessIMU(const msf_core::Vector3& linear_acceleration,$/;"	f	class:msf_pose_sensor::PoseSensorManager
+ProcessPose	ndk-modules/msf/msf_updates/src/pose_msf/pose_sensormanager.cc	/^        void ProcessPose(const boost::shared_ptr$/;"	f	class:msf_pose_sensor::PoseSensorManager
+ProcessPoseMeasurement	ndk-modules/msf/msf_updates/include/msf_updates/pose_sensor_handler/implementation/pose_sensorhandler.hpp	/^        void PoseSensorHandler<MEASUREMENT_TYPE, MANAGER_TYPE>::ProcessPoseMeasurement($/;"	f	class:msf_pose_sensor::PoseSensorHandler
+ProcessState	ndk-modules/msf/msf_core/include/msf_core/msf_IMUHandler.h	/^  void ProcessState(const msf_core::Vector3& linear_acceleration,$/;"	f	class:msf_core::IMUHandler
+PropPToState	ndk-modules/msf/msf_core/include/msf_core/implementation/msf_core_inl.h	/^        void MSF_Core<EKFState_T>::PropPToState(shared_ptr<EKFState_T>& state) {$/;"	f	class:msf_core::MSF_Core
+PropagatePOneStep	ndk-modules/msf/msf_core/include/msf_core/implementation/msf_core_inl.h	/^        void MSF_Core<EKFState_T>::PropagatePOneStep() {$/;"	f	class:msf_core::MSF_Core
+PropagateState	ndk-modules/msf/msf_core/include/msf_core/implementation/msf_core_inl.h	/^        void MSF_Core<EKFState_T>::PropagateState(shared_ptr<EKFState_T>& state_old,$/;"	f	class:msf_core::MSF_Core
+PropagatedCoreErrorStateLengthForType	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^struct PropagatedCoreErrorStateLengthForType<$/;"	s	namespace:msf_tmp::__anon17
+PropagatedCoreErrorStateLengthForType	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^struct PropagatedCoreErrorStateLengthForType<const mpl_::void_&> {$/;"	s	namespace:msf_tmp::__anon17
+PropagatedCoreStateLengthForType	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^struct PropagatedCoreStateLengthForType<$/;"	s	namespace:msf_tmp::__anon17
+PropagatedCoreStateLengthForType	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^struct PropagatedCoreStateLengthForType<const mpl_::void_&> {$/;"	s	namespace:msf_tmp::__anon17
+Ptr	ndk-modules/msf/msf_updates/include/msf_updates/PoseDistorter.h	/^  typedef shared_ptr<PoseDistorter> Ptr;$/;"	t	class:msf_updates::PoseDistorter
+Ptr_T	ndk-modules/msf/msf_core/include/msf_core/msf_sortedContainer.h	/^  typedef shared_ptr<T> Ptr_T;$/;"	t	class:msf_core::SortedContainer
+Ptr_T	ndk-modules/msf/msf_core/include/msf_core/msf_state.h	/^  typedef StateVar_T<type_T, name_T>* Ptr_T;$/;"	t	struct:msf_core::StateVar_T
+PublishStateAfterPropagation	ndk-modules/msf/msf_updates/src/pose_msf/pose_sensormanager.cc	/^        void PublishStateAfterPropagation$/;"	f	class:msf_pose_sensor::PoseSensorManager
+PublishStateAfterUpdate	ndk-modules/msf/msf_updates/src/pose_msf/pose_sensormanager.cc	/^        void PublishStateAfterUpdate$/;"	f	class:msf_pose_sensor::PoseSensorManager
+PublishStateInitial	ndk-modules/msf/msf_updates/src/pose_msf/pose_sensormanager.cc	/^        void PublishStateInitial$/;"	f	class:msf_pose_sensor::PoseSensorManager
+Q	ndk-modules/msf/msf_core/include/msf_core/msf_state.h	/^  Q_T Q;  \/\/\/< The noise covariance matrix block of this state.$/;"	m	struct:msf_core::StateVar_T
+Q_	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^  Q_T& Q_;$/;"	m	struct:msf_tmp::CopyQBlocksFromAuxiliaryStatesToQ
+Q_T	ndk-modules/msf/msf_core/include/msf_core/msf_state.h	/^  typedef Eigen::Matrix<double, sizeInCorrection_, sizeInCorrection_> Q_T;$/;"	t	struct:msf_core::StateVar_T
+Q_T	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^      nErrorStatesAtCompileTime> Q_T;$/;"	t	struct:msf_tmp::CopyQBlocksFromAuxiliaryStatesToQ
+Q_type	ndk-modules/msf/msf_core/include/msf_core/msf_state.h	/^  typedef P_type Q_type;$/;"	t	struct:msf_core::GenericState_T
+Qd	ndk-modules/msf/msf_core/include/msf_core/msf_state.h	/^  Q_type Qd;   \/\/\/< Discrete propagation noise matrix.$/;"	m	struct:msf_core::GenericState_T
+Quaternion	ndk-modules/msf/msf_core/include/msf_core/msf_types.h	/^typedef Eigen::Quaternion<double> Quaternion;$/;"	t	namespace:msf_core
+QuaternionFromSmallAngle	ndk-modules/msf/msf_core/include/msf_core/eigen_utils.h	/^Eigen::Quaternion<typename Derived::Scalar> QuaternionFromSmallAngle($/;"	f
+QuaternionToMsg	ndk-modules/msf/msf_core/include/msf_core/eigen_conversions.h	/^inline geometry_msgs::Quaternion QuaternionToMsg($/;"	f	namespace:eigen_conversions
+QuaternionToMsg	ndk-modules/msf/msf_core/include/msf_core/eigen_conversions.h	/^inline void QuaternionToMsg(const Eigen::Quaternion<Scalar>& q_in,$/;"	f	namespace:eigen_conversions
+R_	ndk-modules/msf/msf_core/include/msf_core/msf_measurement.h	/^  RMAT_T R_;$/;"	m	class:msf_core::MSF_Measurement
+ReceivedFirstMeasurement	ndk-modules/msf/msf_core/include/msf_core/msf_sensorhandler.h	/^  bool ReceivedFirstMeasurement() const {return received_first_measurement_;}$/;"	f	class:msf_core::SensorHandler
+Ref_T	ndk-modules/msf/msf_core/include/msf_core/msf_state.h	/^  typedef StateVar_T<type_T, name_T>& Ref_T;$/;"	t	struct:msf_core::StateVar_T
+Reset	ndk-modules/msf/msf_core/include/msf_core/implementation/msf_state_inl.h	/^void GenericState_T<stateVector_T, StateDefinition_T>::Reset($/;"	f	class:msf_core::GenericState_T
+Reset	ndk-modules/msf/msf_core/include/msf_core/msf_checkFuzzyTracking.h	/^  void Reset() { }$/;"	f	class:msf_core::CheckFuzzyTracking
+Reset	ndk-modules/msf/msf_core/include/msf_core/msf_checkFuzzyTracking.h	/^  void Reset() {$/;"	f	class:msf_core::CheckFuzzyTracking
+Reset	ndk-modules/msf/msf_timing/src/Timer.cc	/^void Timing::Reset() {$/;"	f	class:msf_timing::Timing
+ResetState	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^struct ResetState {$/;"	s	namespace:msf_tmp
+ResetState	ndk-modules/msf/msf_updates/src/pose_msf/pose_sensormanager.cc	/^        void ResetState(EKFState_T& state) const {$/;"	f	class:msf_pose_sensor::PoseSensorManager	file:
+ResetStateInitValue	ndk-modules/msf/msf_core/include/msf_core/msf_measurement.h	/^  void ResetStateInitValue() {$/;"	f	class:msf_core::MSF_InitMeasurement
+RollingMean	ndk-modules/msf/msf_timing/include/msf_timing/Timer.h	/^  double RollingMean() const {$/;"	f	class:msf_timing::Accumulator
+SENSORMANAGER_H	ndk-modules/msf/msf_core/include/msf_core/msf_sensormanager.h	18;"	d
+SIMILARITYTRANSFORM_H_	ndk-modules/msf/msf_core/include/msf_core/similaritytransform.h	18;"	d
+SINCOS_H_	ndk-modules/msf/msf_core/include/msf_core/sincos.h	18;"	d
+STATIC_ORDERING_ASSERTIONS_CORE_H_	ndk-modules/msf/msf_core/include/msf_core/static_ordering_assertions.h	18;"	d
+STATIC_ORDERING_ASSERTIONS_UPDATES_HPP_	ndk-modules/msf/msf_updates/include/msf_updates/static_ordering_assertions.h	18;"	d
+STREAMQUAT	ndk-modules/msf/msf_core/include/msf_core/msf_macros.h	40;"	d
+SameType	ndk-modules/msf/msf_core/include/msf_core/msf_typetraits.h	/^template<typename T, typename U> struct SameType {$/;"	s	namespace:msf_tmp
+SameType	ndk-modules/msf/msf_core/include/msf_core/msf_typetraits.h	/^template<typename T> struct SameType<T, T> {$/;"	s	namespace:msf_tmp
+SanityCheckCorrection	ndk-modules/msf/msf_updates/src/pose_msf/pose_sensormanager.cc	/^        void SanityCheckCorrection($/;"	f	class:msf_pose_sensor::PoseSensorManager	file:
+SecondsToTimeString	ndk-modules/msf/msf_timing/src/Timer.cc	/^std::string Timing::SecondsToTimeString(double seconds) {$/;"	f	class:msf_timing::Timing
+SensorHandler	ndk-modules/msf/msf_core/include/msf_core/msf_sensorhandler.h	/^  SensorHandler(MSF_SensorManager<EKFState_T>& mng,$/;"	f	class:msf_core::SensorHandler
+SensorHandler	ndk-modules/msf/msf_core/include/msf_core/msf_sensorhandler.h	/^class SensorHandler {$/;"	c	namespace:msf_core
+SequenceWatchDog	ndk-modules/msf/msf_core/include/msf_core/msf_sensorhandler.h	/^  void SequenceWatchDog(size_t seq, const std::string& topic) {$/;"	f	class:msf_core::SensorHandler
+Set	ndk-modules/msf/msf_core/include/msf_core/implementation/msf_state_inl.h	/^inline void GenericState_T<stateVector_T, StateDefinition_T>::Set($/;"	f	class:msf_core::GenericState_T
+SetCallback	ndk-modules/msf/msf_updates/src/pose_msf/pose_sensormanager.cc	/^        void SetCallback(Callback F) $/;"	f	class:msf_pose_sensor::PoseSensorManager
+SetDelay	ndk-modules/msf/msf_updates/include/msf_updates/pose_sensor_handler/implementation/pose_sensorhandler.hpp	/^        void PoseSensorHandler<MEASUREMENT_TYPE, MANAGER_TYPE>::SetDelay(double delay) {$/;"	f	class:msf_pose_sensor::PoseSensorHandler
+SetNoises	ndk-modules/msf/msf_updates/include/msf_updates/pose_sensor_handler/implementation/pose_sensorhandler.hpp	/^        void PoseSensorHandler<MEASUREMENT_TYPE, MANAGER_TYPE>::SetNoises(double n_zp,$/;"	f	class:msf_pose_sensor::PoseSensorHandler
+SetPCore	ndk-modules/msf/msf_core/include/msf_core/implementation/msf_core_inl.h	/^        void MSF_Core<EKFState_T>::SetPCore($/;"	f	class:msf_core::MSF_Core
+SetSensorID	ndk-modules/msf/msf_core/include/msf_core/msf_sensorhandler.h	/^  void SetSensorID(int ID) {$/;"	f	class:msf_core::SensorHandler
+SetStateCovariance	ndk-modules/msf/msf_updates/src/pose_msf/pose_sensormanager.cc	/^        void SetStateCovariance($/;"	f	class:msf_pose_sensor::PoseSensorManager	file:
+SetStateInitValue	ndk-modules/msf/msf_core/include/msf_core/msf_measurement.h	/^  void SetStateInitValue(const T& initvalue) {$/;"	f	class:msf_core::MSF_InitMeasurement
+Size	ndk-modules/msf/msf_core/include/msf_core/msf_sortedContainer.h	/^  inline typename ListT::size_type Size() {$/;"	f	class:msf_core::SortedContainer
+Skew	ndk-modules/msf/msf_core/include/msf_core/eigen_utils.h	/^inline Eigen::Matrix<typename Derived::Scalar, 3, 3> Skew($/;"	f
+SortStates	ndk-modules/msf/msf_core/include/msf_core/msf_state.h	/^class SortStates {$/;"	c	namespace:msf_core
+SortedContainer	ndk-modules/msf/msf_core/include/msf_core/msf_sortedContainer.h	/^  SortedContainer() {$/;"	f	class:msf_core::SortedContainer
+SortedContainer	ndk-modules/msf/msf_core/include/msf_core/msf_sortedContainer.h	/^class SortedContainer {$/;"	c	namespace:msf_core
+Start	ndk-modules/msf/msf_timing/include/msf_timing/Timer.h	/^  void Start() { }$/;"	f	class:msf_timing::DummyTimer
+Start	ndk-modules/msf/msf_timing/src/Timer.cc	/^void Timer::Start() {$/;"	f	class:msf_timing::Timer
+StateBuffer_T	ndk-modules/msf/msf_core/include/msf_core/msf_core.h	/^  typedef msf_core::SortedContainer<EKFState_T> StateBuffer_T;$/;"	t	class:msf_core::MSF_Core
+StateDefinition	ndk-modules/msf/msf_updates/src/pose_msf/msf_statedef.hpp	/^enum StateDefinition {  \/\/ Must not manually set the enum values!$/;"	g	namespace:msf_updates
+StateDefinition_T	ndk-modules/msf/msf_core/include/msf_core/msf_core.h	/^  typedef typename EKFState_T::StateDefinition_T StateDefinition_T;$/;"	t	class:msf_core::MSF_Core
+StateDefinition_T	ndk-modules/msf/msf_core/include/msf_core/msf_state.h	/^  typedef StateDef_T StateDefinition_T;$/;"	t	struct:msf_core::GenericState_T
+StateDefinition_T	ndk-modules/msf/msf_core/include/msf_core/static_ordering_assertions.h	/^  typedef typename EKFState_T::StateDefinition_T StateDefinition_T;$/;"	t	struct:__anon1::StaticAssertCoreStateOrderingCorrect
+StateDefinition_T	ndk-modules/msf/msf_updates/include/msf_updates/pose_sensor_handler/pose_measurement.h	/^                            typedef EKFState_T::StateDefinition_T StateDefinition_T;$/;"	t	struct:msf_updates::pose_measurement::PoseMeasurement
+StateDefinition_T	ndk-modules/msf/msf_updates/src/pose_msf/pose_sensormanager.cc	/^        typedef EKFState_T::StateDefinition_T StateDefinition_T;$/;"	t	class:msf_pose_sensor::PoseSensorManager	file:
+StateLengthForType	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^struct StateLengthForType<$/;"	s	namespace:msf_tmp::__anon17
+StateLengthForType	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^struct StateLengthForType<const mpl_::void_&> {$/;"	s	namespace:msf_tmp::__anon17
+StateSequence_T	ndk-modules/msf/msf_core/include/msf_core/msf_core.h	/^  typedef typename EKFState_T::StateSequence_T StateSequence_T;$/;"	t	class:msf_core::MSF_Core
+StateSequence_T	ndk-modules/msf/msf_core/include/msf_core/msf_measurement.h	/^  typedef typename EKFState_T::StateSequence_T StateSequence_T;$/;"	t	class:msf_core::MSF_InitMeasurement
+StateSequence_T	ndk-modules/msf/msf_core/include/msf_core/msf_state.h	/^  typedef StateSeq_T StateSequence_T;$/;"	t	struct:msf_core::GenericState_T
+StateSequence_T	ndk-modules/msf/msf_core/include/msf_core/static_ordering_assertions.h	/^  typedef typename EKFState_T::StateSequence_T StateSequence_T;$/;"	t	struct:__anon1::StaticAssertCoreStateOrderingCorrect
+StateSequence_T	ndk-modules/msf/msf_updates/include/msf_updates/pose_sensor_handler/pose_measurement.h	/^                            typedef EKFState_T::StateSequence_T StateSequence_T;$/;"	t	struct:msf_updates::pose_measurement::PoseMeasurement
+StateSequence_T	ndk-modules/msf/msf_updates/src/pose_msf/pose_sensormanager.cc	/^        typedef EKFState_T::StateSequence_T StateSequence_T;$/;"	t	class:msf_pose_sensor::PoseSensorManager	file:
+StateVar_T	ndk-modules/msf/msf_core/include/msf_core/msf_state.h	/^  StateVar_T() {$/;"	f	struct:msf_core::StateVar_T
+StateVar_T	ndk-modules/msf/msf_core/include/msf_core/msf_state.h	/^struct StateVar_T {$/;"	s	namespace:msf_core
+StateVisitor	ndk-modules/msf/msf_core/include/msf_core/msf_statevisitor.h	/^class StateVisitor {$/;"	c	namespace:msf_core
+StaticAssertCoreStateOrderingCorrect	ndk-modules/msf/msf_core/include/msf_core/static_ordering_assertions.h	/^struct StaticAssertCoreStateOrderingCorrect {$/;"	s	namespace:__anon1
+Stop	ndk-modules/msf/msf_timing/include/msf_timing/Timer.h	/^  void Stop() { }$/;"	f	class:msf_timing::DummyTimer
+Stop	ndk-modules/msf/msf_timing/src/Timer.cc	/^void Timer::Stop() {$/;"	f	class:msf_timing::Timer
+StripConstPtr	ndk-modules/msf/msf_core/include/msf_core/msf_typetraits.h	/^struct StripConstPtr {$/;"	s	namespace:msf_tmp
+StripConstPtr	ndk-modules/msf/msf_core/include/msf_core/msf_typetraits.h	/^struct StripConstPtr<T*> {$/;"	s	namespace:msf_tmp
+StripConstPtr	ndk-modules/msf/msf_core/include/msf_core/msf_typetraits.h	/^struct StripConstPtr<const T*> {$/;"	s	namespace:msf_tmp
+StripConstPtr	ndk-modules/msf/msf_core/include/msf_core/msf_typetraits.h	/^struct StripConstPtr<const T> {$/;"	s	namespace:msf_tmp
+StripConstReference	ndk-modules/msf/msf_core/include/msf_core/msf_typetraits.h	/^struct StripConstReference {$/;"	s	namespace:msf_tmp
+StripConstReference	ndk-modules/msf/msf_core/include/msf_core/msf_typetraits.h	/^struct StripConstReference<T&> {$/;"	s	namespace:msf_tmp
+StripConstReference	ndk-modules/msf/msf_core/include/msf_core/msf_typetraits.h	/^struct StripConstReference<const T&> {$/;"	s	namespace:msf_tmp
+StripConstReference	ndk-modules/msf/msf_core/include/msf_core/msf_typetraits.h	/^struct StripConstReference<const T> {$/;"	s	namespace:msf_tmp
+StripReference	ndk-modules/msf/msf_core/include/msf_core/msf_typetraits.h	/^struct StripReference {$/;"	s	namespace:msf_tmp
+StripReference	ndk-modules/msf/msf_core/include/msf_core/msf_typetraits.h	/^struct StripReference<T&> {$/;"	s	namespace:msf_tmp
+StripReference	ndk-modules/msf/msf_core/include/msf_core/msf_typetraits.h	/^struct StripReference<const T&> {$/;"	s	namespace:msf_tmp
+StripReference	ndk-modules/msf/msf_core/include/msf_core/msf_typetraits.h	/^struct StripReference<const T> {$/;"	s	namespace:msf_tmp
+Sum	ndk-modules/msf/msf_timing/include/msf_timing/Timer.h	/^  double Sum() const {$/;"	f	class:msf_timing::Accumulator
+TEST	ndk-modules/msf/msf_core/include/msf_core/testing_entrypoint.h	26;"	d
+TESTING_ENTRYPOINT_H_	ndk-modules/msf/msf_core/include/msf_core/testing_entrypoint.h	19;"	d
+TESTING_PREDICATES_H_	ndk-modules/msf/msf_core/include/msf_core/testing_predicates.h	19;"	d
+Timer	ndk-modules/msf/msf_timing/include/msf_timing/Timer.h	/^class Timer {$/;"	c	namespace:msf_timing
+Timer	ndk-modules/msf/msf_timing/src/Timer.cc	/^Timer::Timer(size_t handle, bool constructStopped)$/;"	f	class:msf_timing::Timer
+Timer	ndk-modules/msf/msf_timing/src/Timer.cc	/^Timer::Timer(std::string const& tag, bool constructStopped)$/;"	f	class:msf_timing::Timer
+TimerMapValue	ndk-modules/msf/msf_timing/include/msf_timing/Timer.h	/^  TimerMapValue() { }$/;"	f	struct:msf_timing::TimerMapValue
+TimerMapValue	ndk-modules/msf/msf_timing/include/msf_timing/Timer.h	/^struct TimerMapValue {$/;"	s	namespace:msf_timing
+Timing	ndk-modules/msf/msf_timing/include/msf_timing/Timer.h	/^class Timing {$/;"	c	namespace:msf_timing
+Timing	ndk-modules/msf/msf_timing/src/Timer.cc	/^Timing::Timing()$/;"	f	class:msf_timing::Timing
+ToEigenVector	ndk-modules/msf/msf_core/include/msf_core/implementation/msf_state_inl.h	/^GenericState_T<stateVector_T, StateDefinition_T>::ToEigenVector() {$/;"	f	class:msf_core::GenericState_T
+ToPoseVectors	ndk-modules/msf/msf_core/include/msf_core/implementation/msf_state_inl.h	/^void GenericState_T<stateVector_T, StateDefinition_T>::ToPoseVectors($/;"	f	class:msf_core::GenericState_T
+TotalSamples	ndk-modules/msf/msf_timing/include/msf_timing/Timer.h	/^  int TotalSamples() const {$/;"	f	class:msf_timing::Accumulator
+Type	ndk-modules/msf/msf_core/include/msf_core/msf_measurement.h	/^  virtual std::string Type() {$/;"	f	class:msf_core::MSF_InitMeasurement
+Type	ndk-modules/msf/msf_core/include/msf_core/msf_measurement.h	/^  virtual std::string Type() {$/;"	f	class:msf_core::MSF_InvalidMeasurement
+Type	ndk-modules/msf/msf_updates/include/msf_updates/pose_sensor_handler/pose_measurement.h	/^                            virtual std::string Type() {$/;"	f	struct:msf_updates::pose_measurement::PoseMeasurement
+UNUSED	ndk-modules/msf/msf_core/include/msf_core/msf_macros.h	36;"	d
+UNUSEDPARAM	ndk-modules/msf/msf_core/include/msf_core/msf_checkFuzzyTracking.h	/^             double UNUSEDPARAM(fuzzythres)) {$/;"	f	class:msf_core::CheckFuzzyTracking
+UNUSEDPARAM	ndk-modules/msf/msf_core/include/msf_core/msf_macros.h	28;"	d
+UNUSEDPARAM	ndk-modules/msf/msf_core/include/msf_core/msf_macros.h	30;"	d
+UNUSEDPARAM	ndk-modules/msf/msf_core/include/msf_core/msf_macros.h	32;"	d
+UNUSEDPARAM	ndk-modules/msf/msf_core/include/msf_core/msf_measurement.h	/^                     MSF_Core<EKFState_T>& UNUSEDPARAM(core)) {$/;"	f	class:msf_core::MSF_InvalidMeasurement
+UNUSEDPARAM	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^          OPTIONS>& UNUSEDPARAM(t)) const {$/;"	f	struct:msf_tmp::CopyQBlocksFromAuxiliaryStatesToQ
+UNUSEDPARAM	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^          OPTIONS>& UNUSEDPARAM(t)) const {$/;"	f	struct:msf_tmp::CoreStatetoDoubleArray
+UNUSEDPARAM	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^          msf_core::Auxiliary, OPTIONS>& UNUSEDPARAM(t)) const {$/;"	f	struct:msf_tmp::CoreStatetoDoubleArray
+UNUSEDPARAM	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^          msf_core::AuxiliaryNonTemporalDrifting, OPTIONS>& UNUSEDPARAM(t)) const {$/;"	f	struct:msf_tmp::CoreStatetoDoubleArray
+UNUSEDPARAM	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^      msf_core::StateVar_T<T, NAME, msf_core::CoreStateWithPropagation, OPTIONS>& UNUSEDPARAM(t)) const {$/;"	f	struct:msf_tmp::CopyNonPropagationStates
+UNUSEDPARAM	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^      msf_core::StateVar_T<T, NAME, msf_core::CoreStateWithPropagation, OPTIONS>& UNUSEDPARAM(t)) const {$/;"	f	struct:msf_tmp::CopyQBlocksFromAuxiliaryStatesToQ
+UNUSEDPARAM	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^      msf_core::StateVar_T<VALUE_T, NAME, STATE_T, OPTIONS>& UNUSEDPARAM(t)) const {$/;"	f	struct:msf_tmp::GetIndicesInErrorState
+UpdateTime	ndk-modules/msf/msf_core/include/msf_core/msf_sortedContainer.h	/^  inline shared_ptr<T> UpdateTime(double timeOld, double timeNew)$/;"	f	class:msf_core::SortedContainer
+Value	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^  static std::string Value() {$/;"	f	struct:msf_tmp::EchoStateVarType
+Vector3dToPoint	ndk-modules/msf/msf_core/include/msf_core/eigen_conversions.h	/^inline Point Vector3dToPoint(const Eigen::MatrixBase<Derived>& vec) {$/;"	f	namespace:eigen_conversions
+Vector3dToPoint	ndk-modules/msf/msf_core/include/msf_core/eigen_conversions.h	/^inline void Vector3dToPoint(const Eigen::MatrixBase<Derived>& vec,$/;"	f	namespace:eigen_conversions
+XiMat	ndk-modules/msf/msf_core/include/msf_core/eigen_utils.h	/^inline Eigen::Matrix<typename Derived::Scalar, 4, 3> XiMat($/;"	f
+__INTERNAL_GTEST_NEAR_EIGEN	ndk-modules/msf/msf_core/include/msf_core/testing_predicates.h	24;"	d
+__x87_inline_math__	ndk-modules/msf/msf_core/include/msf_core/sincos.h	24;"	d
+a_m	ndk-modules/msf/msf_core/include/msf_core/msf_state.h	/^  Eigen::Matrix<double, 3, 1> a_m;         \/\/\/< Linear acceleration from IMU.$/;"	m	struct:msf_core::GenericState_T
+acc_	ndk-modules/msf/msf_timing/include/msf_timing/Timer.h	/^  Accumulator<double, double, 50> acc_;$/;"	m	struct:msf_timing::TimerMapValue
+attdrift_	ndk-modules/msf/msf_updates/include/msf_updates/PoseDistorter.h	/^  Eigen::Quaterniond attdrift_;$/;"	m	class:msf_updates::PoseDistorter
+b_a	ndk-modules/msf/msf_updates/src/pose_msf/msf_statedef.hpp	/^  b_a,$/;"	e	enum:msf_updates::StateDefinition
+b_w	ndk-modules/msf/msf_updates/src/pose_msf/msf_statedef.hpp	/^  b_w,$/;"	e	enum:msf_updates::StateDefinition
+bestindex	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^    bestindex = -1,  \/\/ Must not change this.$/;"	e	enum:msf_tmp::IndexOfBestNonTemporalDriftingState::__anon73
+callback_	ndk-modules/msf/msf_updates/src/pose_msf/pose_sensormanager.cc	/^        Callback callback_;$/;"	m	class:msf_pose_sensor::PoseSensorManager	file:
+color	ndk-modules/msf/msf_core/include/msf_core/falsecolor.h	/^  color() {$/;"	f	struct:color
+color	ndk-modules/msf/msf_core/include/msf_core/falsecolor.h	/^struct color {$/;"	s
+colors	ndk-modules/msf/msf_core/include/msf_core/falsecolor.h	/^  color colors[256];$/;"	m	struct:palette
+config_	ndk-modules/msf/msf_updates/src/pose_msf/pose_sensormanager.cc	/^        PoseSensorConfig config_;$/;"	m	class:msf_pose_sensor::PoseSensorManager	file:
+constPtr_T	ndk-modules/msf/msf_core/include/msf_core/msf_state.h	/^  typedef const StateVar_T<type_T, name_T>* constPtr_T;$/;"	t	struct:msf_core::StateVar_T
+constRef_T	ndk-modules/msf/msf_core/include/msf_core/msf_state.h	/^  typedef const StateVar_T<type_T, name_T>& constRef_T;$/;"	t	struct:msf_core::StateVar_T
+constants	ndk-modules/msf/msf_core/include/msf_core/msf_types.h	/^namespace constants{$/;"	n	namespace:msf_core
+core_	ndk-modules/msf/msf_core/include/msf_core/msf_IMUHandler.h	/^  shared_ptr<MSF_Core<EKFState_T> > core_;$/;"	m	class:msf_core::IMUHandler
+core_height	ndk-modules/msf/msf_updates/src/pose_msf/PoseSensorConfig.h	/^    double core_height;$/;"	m	class:PoseSensorConfig
+core_init_filter	ndk-modules/msf/msf_updates/src/pose_msf/PoseSensorConfig.h	/^    bool core_init_filter;$/;"	m	class:PoseSensorConfig
+core_set_height	ndk-modules/msf/msf_updates/src/pose_msf/PoseSensorConfig.h	/^    bool core_set_height;$/;"	m	class:PoseSensorConfig
+correctionMultiplicative	ndk-modules/msf/msf_core/include/msf_core/msf_fwds.h	/^  correctionMultiplicative = 0x1$/;"	e	enum:msf_core::__anon83
+cov	ndk-modules/msf/msf_core/include/msf_core/similaritytransform.h	/^namespace cov {$/;"	n	namespace:geometry_msgs
+covariance	ndk-modules/msf/msf_updates/include/msf_updates/pose_sensor_handler/pose_measurement.h	/^            Eigen::Matrix<double, 6, 6> covariance;$/;"	m	struct:msf_updates::pose_measurement::PoseWithCovarianceStamped
+currBestIdx	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^    currBestIdx = boost::mpl::if_c<isQuaternionAndNonTemporalDrifting,$/;"	e	enum:msf_tmp::__anon17::FindBestNonTemporalDriftingStateImpl::__anon70
+currentType	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^  typedef typename boost::fusion::result_of::deref<First>::type currentType;$/;"	t	struct:msf_tmp::GetStartIndex
+currentType	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^  typedef typename boost::fusion::result_of::deref<First>::type currentType;$/;"	t	struct:msf_tmp::GetStartIndexInCorrection
+currentType	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^  typedef typename boost::fusion::result_of::deref<First>::type currentType;$/;"	t	struct:msf_tmp::__anon17::ComputeStartIndex
+current_Type	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^  typedef typename boost::fusion::result_of::deref<First>::type current_Type;$/;"	t	struct:msf_tmp::__anon17::CheckStateIndexing
+current_Type	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^  typedef typename boost::fusion::result_of::deref<First>::type current_Type;$/;"	t	struct:msf_tmp::__anon17::CountStatesLinear
+current_Type	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^  typedef typename boost::fusion::result_of::deref<First>::type current_Type;$/;"	t	struct:msf_tmp::__anon17::FindBestNonTemporalDriftingStateImpl
+d_att_	ndk-modules/msf/msf_updates/include/msf_updates/PoseDistorter.h	/^  distribution_t d_att_[3];$/;"	m	class:msf_updates::PoseDistorter
+d_pos_	ndk-modules/msf/msf_updates/include/msf_updates/PoseDistorter.h	/^  distribution_t d_pos_[3];$/;"	m	class:msf_updates::PoseDistorter
+d_scale	ndk-modules/msf/msf_updates/include/msf_updates/PoseDistorter.h	/^  distribution_t d_scale;$/;"	m	class:msf_updates::PoseDistorter
+data_	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^  STREAM& data_;$/;"	m	struct:msf_tmp::FullStatetoString
+data_	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^  T& data_;$/;"	m	struct:msf_tmp::CoreStatetoDoubleArray
+data_	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^  T& data_;$/;"	m	struct:msf_tmp::CorrectState
+data_	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^  T& data_;$/;"	m	struct:msf_tmp::FullStatetoDoubleArray
+data_	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^  T& data_;$/;"	m	struct:msf_tmp::GetIndicesInErrorState
+data_playback_	ndk-modules/msf/msf_core/include/msf_core/msf_sensormanager.h	/^  bool data_playback_;$/;"	m	class:msf_core::MSF_SensorManager
+delay_	ndk-modules/msf/msf_updates/include/msf_updates/pose_sensor_handler/pose_sensorhandler.h	/^  double delay_;        \/\/\/< Delay to be subtracted from the ros-timestamp of$/;"	m	class:msf_pose_sensor::PoseSensorHandler
+distorter_	ndk-modules/msf/msf_updates/include/msf_updates/pose_sensor_handler/pose_measurement.h	/^                            msf_updates::PoseDistorter::Ptr distorter_;$/;"	m	struct:msf_updates::pose_measurement::PoseMeasurement
+distorter_	ndk-modules/msf/msf_updates/include/msf_updates/pose_sensor_handler/pose_sensorhandler.h	/^  msf_updates::PoseDistorter::Ptr distorter_;$/;"	m	class:msf_pose_sensor::PoseSensorHandler
+distribution_t	ndk-modules/msf/msf_updates/include/msf_updates/PoseDistorter.h	/^  typedef std::normal_distribution<> distribution_t;$/;"	t	class:msf_updates::PoseDistorter
+ecef_ref_orientation_	ndk-modules/msf/msf_core/include/msf_core/gps_conversion.h	/^  msf_core::Quaternion ecef_ref_orientation_;$/;"	m	class:msf_core::GPSConversion
+ecef_ref_point_	ndk-modules/msf/msf_core/include/msf_core/gps_conversion.h	/^  msf_core::Vector3 ecef_ref_point_;$/;"	m	class:msf_core::GPSConversion
+eigen_conversions	ndk-modules/msf/msf_core/include/msf_core/eigen_conversions.h	/^namespace eigen_conversions {$/;"	n
+enable_mah_outlier_rejection_	ndk-modules/msf/msf_core/include/msf_core/msf_measurement.h	/^  bool enable_mah_outlier_rejection_;$/;"	m	class:msf_core::MSF_MeasurementBase
+enable_mah_outlier_rejection_	ndk-modules/msf/msf_core/include/msf_core/msf_sensorhandler.h	/^  bool enable_mah_outlier_rejection_;$/;"	m	class:msf_core::SensorHandler
+fixed_covariance_	ndk-modules/msf/msf_updates/include/msf_updates/pose_sensor_handler/pose_measurement.h	/^                            bool fixed_covariance_;$/;"	m	struct:msf_updates::pose_measurement::PoseMeasurement
+fixedstates_	ndk-modules/msf/msf_updates/include/msf_updates/pose_sensor_handler/pose_measurement.h	/^                            int fixedstates_;$/;"	m	struct:msf_updates::pose_measurement::PoseMeasurement
+fullState_T	ndk-modules/msf/msf_updates/src/pose_msf/msf_statedef.hpp	/^> fullState_T;$/;"	t	namespace:msf_updates::__anon84
+fuzzyTracker_	ndk-modules/msf/msf_core/include/msf_core/msf_core.h	/^  CheckFuzzyTracking<EKFState_T, nonDriftingStateType> fuzzyTracker_;$/;"	m	class:msf_core::MSF_Core
+gen_	ndk-modules/msf/msf_updates/include/msf_updates/PoseDistorter.h	/^  std::mt19937 gen_;$/;"	m	class:msf_updates::PoseDistorter
+geometry_msgs	ndk-modules/msf/msf_core/include/msf_core/similaritytransform.h	/^namespace geometry_msgs {$/;"	n
+handle_	ndk-modules/msf/msf_timing/include/msf_timing/Timer.h	/^  size_t handle_;$/;"	m	class:msf_timing::Timer
+handlers	ndk-modules/msf/msf_core/include/msf_core/msf_sensormanager.h	/^  Handlers handlers;  \/\/\/< A list of sensor handlers which provide measurements.$/;"	m	class:msf_core::MSF_SensorManager
+hasResetValue	ndk-modules/msf/msf_core/include/msf_core/msf_state.h	/^  bool hasResetValue;  \/\/<Indicating that this statevariable has a reset value$/;"	m	struct:msf_core::StateVar_T
+idxInEnum	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^    idxInEnum = boost::mpl::if_c<GetEnumStateName<current_Type>::value != -1,$/;"	e	enum:msf_tmp::__anon17::CheckStateIndexing::__anon65
+idxInState	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^    idxInState = CurrentIdx,$/;"	e	enum:msf_tmp::__anon17::CheckStateIndexing::__anon65
+idxInState	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^    idxInState = GetEnumStateName<$/;"	e	enum:msf_tmp::__anon17::FindBestNonTemporalDriftingStateImpl::__anon70
+idxstartcorr_b_a_	ndk-modules/msf/msf_core/include/msf_core/static_ordering_assertions.h	/^    idxstartcorr_b_a_ = msf_tmp::GetStartIndex<StateSequence_T,$/;"	e	enum:__anon1::StaticAssertCoreStateOrderingCorrect::__anon3
+idxstartcorr_b_w_	ndk-modules/msf/msf_core/include/msf_core/static_ordering_assertions.h	/^    idxstartcorr_b_w_ = msf_tmp::GetStartIndex<StateSequence_T,$/;"	e	enum:__anon1::StaticAssertCoreStateOrderingCorrect::__anon3
+idxstartcorr_p_	ndk-modules/msf/msf_core/include/msf_core/static_ordering_assertions.h	/^    idxstartcorr_p_ = msf_tmp::GetStartIndex<StateSequence_T,$/;"	e	enum:__anon1::StaticAssertCoreStateOrderingCorrect::__anon3
+idxstartcorr_q_	ndk-modules/msf/msf_core/include/msf_core/static_ordering_assertions.h	/^    idxstartcorr_q_ = msf_tmp::GetStartIndex<StateSequence_T,$/;"	e	enum:__anon1::StaticAssertCoreStateOrderingCorrect::__anon3
+idxstartcorr_v_	ndk-modules/msf/msf_core/include/msf_core/static_ordering_assertions.h	/^    idxstartcorr_v_ = msf_tmp::GetStartIndex<StateSequence_T,$/;"	e	enum:__anon1::StaticAssertCoreStateOrderingCorrect::__anon3
+imu_handler_	ndk-modules/msf/msf_updates/src/pose_msf/pose_sensormanager.cc	/^            imu_handler_;$/;"	m	class:msf_pose_sensor::PoseSensorManager	file:
+indexOfStateWithoutTemporalDrift	ndk-modules/msf/msf_core/include/msf_core/msf_core.h	/^    indexOfStateWithoutTemporalDrift = msf_tmp::IndexOfBestNonTemporalDriftingState<$/;"	e	enum:msf_core::MSF_Core::__anon15
+indexingerrors	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^    indexingerrors = 0$/;"	e	enum:msf_tmp::__anon17::CheckStateIndexing::__anon64
+indexingerrors	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^    indexingerrors = CheckStateIndexing<Sequence, First, Last, startindex,$/;"	e	enum:msf_tmp::CheckCorrectIndexing::__anon72
+indexingerrors	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^    indexingerrors = boost::mpl::if_c<idxInEnum == idxInState,$/;"	e	enum:msf_tmp::__anon17::CheckStateIndexing::__anon65
+initialized_	ndk-modules/msf/msf_core/include/msf_core/msf_core.h	/^  bool initialized_;$/;"	m	class:msf_core::MSF_Core
+invalid	ndk-modules/msf/msf_core/include/msf_core/msf_sortedContainer.h	/^  Ptr_T invalid;  \/\/\/< A object to signal requests which cannot be satisfied.$/;"	m	class:msf_core::SortedContainer
+isNonTemporalDriftingPositionAndNoQuaternionHasBeenFound	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^    isNonTemporalDriftingPositionAndNoQuaternionHasBeenFound = IsCurrentStateNonTemporalDrifting$/;"	e	enum:msf_tmp::__anon17::FindBestNonTemporalDriftingStateImpl::__anon70
+isQuaternionAndNonTemporalDrifting	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^    isQuaternionAndNonTemporalDrifting = IsCurrentStateAQuaternion == true$/;"	e	enum:msf_tmp::__anon17::FindBestNonTemporalDriftingStateImpl::__anon70
+isabsolute_	ndk-modules/msf/msf_core/include/msf_core/msf_measurement.h	/^  bool isabsolute_;$/;"	m	class:msf_core::MSF_MeasurementBase
+isfuzzyState_	ndk-modules/msf/msf_core/include/msf_core/msf_core.h	/^  bool isfuzzyState_;$/;"	m	class:msf_core::MSF_Core
+it_last_IMU	ndk-modules/msf/msf_core/include/msf_core/msf_core.h	/^  typename StateBuffer_T::iterator_T it_last_IMU;$/;"	m	class:msf_core::MSF_Core
+iterator_T	ndk-modules/msf/msf_core/include/msf_core/msf_sortedContainer.h	/^  typedef typename ListT::iterator iterator_T;$/;"	t	class:msf_core::SortedContainer
+kDefaultMahThreshold_	ndk-modules/msf/msf_core/include/msf_core/msf_sensorhandler.h	/^  static constexpr double kDefaultMahThreshold_ = 100.0;$/;"	m	namespace:msf_core
+kNumSecondsPerNanosecond	ndk-modules/msf/msf_timing/src/Timer.cc	/^const double kNumSecondsPerNanosecond = 1.e-9;$/;"	m	namespace:msf_timing	file:
+lastseq_	ndk-modules/msf/msf_core/include/msf_core/msf_sensorhandler.h	/^  int lastseq_;$/;"	m	class:msf_core::SensorHandler
+list_t	ndk-modules/msf/msf_timing/include/msf_timing/Timer.h	/^  typedef std::vector<TimerMapValue> list_t;$/;"	t	class:msf_timing::Timing
+mah_threshold_	ndk-modules/msf/msf_core/include/msf_core/msf_measurement.h	/^  double mah_threshold_;$/;"	m	class:msf_core::MSF_MeasurementBase
+mah_threshold_	ndk-modules/msf/msf_core/include/msf_core/msf_sensorhandler.h	/^  double mah_threshold_;$/;"	m	class:msf_core::SensorHandler
+main	ndk-modules/msf/msf_updates/src/msf_distort/GPS_distorter.cc	/^int main(int argc, char** argv) {$/;"	f
+manager_	ndk-modules/msf/msf_core/include/msf_core/msf_sensorhandler.h	/^  MSF_SensorManager<EKFState_T>& manager_;$/;"	m	class:msf_core::SensorHandler
+map_t	ndk-modules/msf/msf_timing/include/msf_timing/Timer.h	/^  typedef std::map<std::string, size_t> map_t;$/;"	t	class:msf_timing::Timing
+maxTagLength_	ndk-modules/msf/msf_timing/include/msf_timing/Timer.h	/^  size_t maxTagLength_;$/;"	m	class:msf_timing::Timing
+max_	ndk-modules/msf/msf_timing/include/msf_timing/Timer.h	/^  T max_;$/;"	m	class:msf_timing::Accumulator
+measptr_t	ndk-modules/msf/msf_updates/include/msf_updates/pose_sensor_handler/pose_measurement.h	/^                            typedef Measurement_t::Measurement_ptr measptr_t;$/;"	t	struct:msf_updates::pose_measurement::PoseMeasurement
+measurementBufferT	ndk-modules/msf/msf_core/include/msf_core/msf_core.h	/^      typename msf_core::MSF_InvalidMeasurement<EKFState_T> > measurementBufferT;$/;"	t	class:msf_core::MSF_Core
+measurement_t	ndk-modules/msf/msf_updates/include/msf_updates/pose_sensor_handler/pose_sensorhandler.h	/^  typedef MEASUREMENT_TYPE measurement_t;$/;"	t	class:msf_pose_sensor::PoseSensorHandler
+measurement_world_sensor_	ndk-modules/msf/msf_updates/include/msf_updates/pose_sensor_handler/pose_measurement.h	/^                            bool measurement_world_sensor_;$/;"	m	struct:msf_updates::pose_measurement::PoseMeasurement
+measurement_world_sensor_	ndk-modules/msf/msf_updates/include/msf_updates/pose_sensor_handler/pose_sensorhandler.h	/^  bool measurement_world_sensor_;  \/\/\/< Defines if the pose of the sensor is$/;"	m	class:msf_pose_sensor::PoseSensorHandler
+measurements_	ndk-modules/msf/msf_core/include/msf_core/similaritytransform.h	/^  PosePairVector measurements_;$/;"	m	class:msf_core::similarity_transform::From6DoF
+min_	ndk-modules/msf/msf_timing/include/msf_timing/Timer.h	/^  T min_;$/;"	m	class:msf_timing::Accumulator
+msf_core	ndk-modules/msf/msf_core/include/msf_core/gps_conversion.h	/^namespace msf_core {$/;"	n
+msf_core	ndk-modules/msf/msf_core/include/msf_core/implementation/msf_core_inl.h	/^namespace msf_core {$/;"	n
+msf_core	ndk-modules/msf/msf_core/include/msf_core/implementation/msf_measurement_inl.h	/^namespace msf_core {$/;"	n
+msf_core	ndk-modules/msf/msf_core/include/msf_core/implementation/msf_sensormanager_inl.h	/^namespace msf_core {$/;"	n
+msf_core	ndk-modules/msf/msf_core/include/msf_core/implementation/msf_state_inl.h	/^namespace msf_core {$/;"	n
+msf_core	ndk-modules/msf/msf_core/include/msf_core/msf_IMUHandler.h	/^namespace msf_core {$/;"	n
+msf_core	ndk-modules/msf/msf_core/include/msf_core/msf_checkFuzzyTracking.h	/^namespace msf_core {$/;"	n
+msf_core	ndk-modules/msf/msf_core/include/msf_core/msf_core.h	/^namespace msf_core {$/;"	n
+msf_core	ndk-modules/msf/msf_core/include/msf_core/msf_fwds.h	/^namespace msf_core {$/;"	n
+msf_core	ndk-modules/msf/msf_core/include/msf_core/msf_measurement.h	/^namespace msf_core {$/;"	n
+msf_core	ndk-modules/msf/msf_core/include/msf_core/msf_sensorhandler.h	/^namespace msf_core {$/;"	n
+msf_core	ndk-modules/msf/msf_core/include/msf_core/msf_sensormanager.h	/^namespace msf_core {$/;"	n
+msf_core	ndk-modules/msf/msf_core/include/msf_core/msf_sortedContainer.h	/^namespace msf_core {$/;"	n
+msf_core	ndk-modules/msf/msf_core/include/msf_core/msf_state.h	/^namespace msf_core {$/;"	n
+msf_core	ndk-modules/msf/msf_core/include/msf_core/msf_statevisitor.h	/^namespace msf_core {$/;"	n
+msf_core	ndk-modules/msf/msf_core/include/msf_core/msf_tools.h	/^namespace msf_core {$/;"	n
+msf_core	ndk-modules/msf/msf_core/include/msf_core/msf_types.h	/^namespace msf_core {$/;"	n
+msf_core	ndk-modules/msf/msf_core/include/msf_core/similaritytransform.h	/^namespace msf_core {$/;"	n
+msf_core_	ndk-modules/msf/msf_core/include/msf_core/msf_sensormanager.h	/^  shared_ptr<MSF_Core<EKFState_T> > msf_core_;  \/\/\/< The ekf core instance.$/;"	m	class:msf_core::MSF_SensorManager
+msf_pose_sensor	ndk-modules/msf/msf_updates/include/msf_updates/pose_sensor_handler/implementation/pose_sensorhandler.hpp	/^namespace msf_pose_sensor {$/;"	n
+msf_pose_sensor	ndk-modules/msf/msf_updates/include/msf_updates/pose_sensor_handler/pose_sensorhandler.h	/^namespace msf_pose_sensor {$/;"	n
+msf_pose_sensor	ndk-modules/msf/msf_updates/src/pose_msf/pose_sensormanager.cc	/^namespace msf_pose_sensor {$/;"	n	file:
+msf_timing	ndk-modules/msf/msf_timing/include/msf_timing/Timer.h	/^namespace msf_timing {$/;"	n
+msf_timing	ndk-modules/msf/msf_timing/src/Timer.cc	/^namespace msf_timing {$/;"	n	file:
+msf_tmp	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^namespace msf_tmp {$/;"	n
+msf_tmp	ndk-modules/msf/msf_core/include/msf_core/msf_typetraits.h	/^namespace msf_tmp {$/;"	n
+msf_updates	ndk-modules/msf/msf_updates/include/msf_updates/PoseDistorter.h	/^namespace msf_updates {$/;"	n
+msf_updates	ndk-modules/msf/msf_updates/include/msf_updates/pose_sensor_handler/pose_measurement.h	/^namespace msf_updates {$/;"	n
+msf_updates	ndk-modules/msf/msf_updates/src/msf_distort/PoseDistorter.cc	/^namespace msf_updates {$/;"	n	file:
+msf_updates	ndk-modules/msf/msf_updates/src/pose_msf/msf_statedef.hpp	/^namespace msf_updates {$/;"	n
+nBuff_	ndk-modules/msf/msf_core/include/msf_core/msf_checkFuzzyTracking.h	/^    nBuff_ = 30  \/\/\/< Buffer size for median non drifting state values.$/;"	e	enum:msf_core::CheckFuzzyTracking::__anon16
+nCoreErrorStatesAtCompileTime	ndk-modules/msf/msf_core/include/msf_core/msf_state.h	/^    nCoreErrorStatesAtCompileTime = msf_tmp::CountStates<StateSequence_T,$/;"	e	enum:msf_core::GenericState_T::__anon13
+nCoreStatesAtCompileTime	ndk-modules/msf/msf_core/include/msf_core/msf_state.h	/^    nCoreStatesAtCompileTime = msf_tmp::CountStates<StateSequence_T,$/;"	e	enum:msf_core::GenericState_T::__anon13
+nErrorStatesAtCompileTime	ndk-modules/msf/msf_core/include/msf_core/msf_core.h	/^    nErrorStatesAtCompileTime = EKFState_T::nErrorStatesAtCompileTime,$/;"	e	enum:msf_core::MSF_Core::__anon14
+nErrorStatesAtCompileTime	ndk-modules/msf/msf_core/include/msf_core/msf_state.h	/^    nErrorStatesAtCompileTime = msf_tmp::CountStates<StateSequence_T,$/;"	e	enum:msf_core::GenericState_T::__anon13
+nErrorStatesAtCompileTime	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^    nErrorStatesAtCompileTime = msf_tmp::CountStates<stateList_T,$/;"	e	enum:msf_tmp::CopyQBlocksFromAuxiliaryStatesToQ::__anon78
+nMeasurements	ndk-modules/msf/msf_updates/include/msf_updates/pose_sensor_handler/pose_measurement.h	/^            nMeasurements = 7$/;"	e	enum:msf_updates::pose_measurement::__anon87
+nPropagatedCoreErrorStatesAtCompileTime	ndk-modules/msf/msf_core/include/msf_core/msf_state.h	/^    nPropagatedCoreErrorStatesAtCompileTime = msf_tmp::CountStates<$/;"	e	enum:msf_core::GenericState_T::__anon13
+nPropagatedCoreStatesAtCompileTime	ndk-modules/msf/msf_core/include/msf_core/msf_state.h	/^    nPropagatedCoreStatesAtCompileTime = msf_tmp::CountStates<StateSequence_T,$/;"	e	enum:msf_core::GenericState_T::__anon13
+nStateVarsAtCompileTime	ndk-modules/msf/msf_core/include/msf_core/msf_state.h	/^    nStateVarsAtCompileTime = boost::fusion::result_of::size < StateSequence_T$/;"	e	enum:msf_core::GenericState_T::__anon13
+nStatesAtCompileTime	ndk-modules/msf/msf_core/include/msf_core/msf_core.h	/^    nStatesAtCompileTime = EKFState_T::nStatesAtCompileTime$/;"	e	enum:msf_core::MSF_Core::__anon14
+nStatesAtCompileTime	ndk-modules/msf/msf_core/include/msf_core/msf_state.h	/^    nStatesAtCompileTime = msf_tmp::CountStates<StateSequence_T,$/;"	e	enum:msf_core::GenericState_T::__anon13
+n_zp_	ndk-modules/msf/msf_updates/include/msf_updates/pose_sensor_handler/pose_measurement.h	/^                            double n_zp_, n_zq_;  \/\/\/ Position and attitude measurement noise.$/;"	m	struct:msf_updates::pose_measurement::PoseMeasurement
+n_zp_	ndk-modules/msf/msf_updates/include/msf_updates/pose_sensor_handler/pose_sensorhandler.h	/^  double n_zp_, n_zq_;  \/\/\/< Position and attitude measurement noise.$/;"	m	class:msf_pose_sensor::PoseSensorHandler
+n_zq_	ndk-modules/msf/msf_updates/include/msf_updates/pose_sensor_handler/pose_measurement.h	/^                            double n_zp_, n_zq_;  \/\/\/ Position and attitude measurement noise.$/;"	m	struct:msf_updates::pose_measurement::PoseMeasurement
+n_zq_	ndk-modules/msf/msf_updates/include/msf_updates/pose_sensor_handler/pose_sensorhandler.h	/^  double n_zp_, n_zq_;  \/\/\/< Position and attitude measurement noise.$/;"	m	class:msf_pose_sensor::PoseSensorHandler
+name_	ndk-modules/msf/msf_core/include/msf_core/msf_state.h	/^    name_ = name_T,$/;"	e	enum:msf_core::StateVar_T::__anon12
+noiseAcc	ndk-modules/msf/msf_updates/src/pose_msf/pose_sensormanager.cc	/^        double noiseAcc;$/;"	m	class:msf_pose_sensor::PoseSensorManager	file:
+noiseAccbias	ndk-modules/msf/msf_updates/src/pose_msf/pose_sensormanager.cc	/^        double noiseAccbias;$/;"	m	class:msf_pose_sensor::PoseSensorManager	file:
+noiseGyr	ndk-modules/msf/msf_updates/src/pose_msf/pose_sensormanager.cc	/^        double noiseGyr;$/;"	m	class:msf_pose_sensor::PoseSensorManager	file:
+noiseGyrbias	ndk-modules/msf/msf_updates/src/pose_msf/pose_sensormanager.cc	/^        double noiseGyrbias;$/;"	m	class:msf_pose_sensor::PoseSensorManager	file:
+noise_acc	ndk-modules/msf/msf_core/include/msf_core/msf_state.h	/^  msf_core::Vector3 noise_acc;$/;"	m	struct:msf_core::GenericState_T
+noise_gyr	ndk-modules/msf/msf_core/include/msf_core/msf_state.h	/^  msf_core::Vector3 noise_gyr;$/;"	m	struct:msf_core::GenericState_T
+nonDriftingStateType	ndk-modules/msf/msf_core/include/msf_core/msf_core.h	/^      indexOfStateWithoutTemporalDrift>::value nonDriftingStateType;$/;"	t	class:msf_core::MSF_Core
+none	ndk-modules/msf/msf_core/include/msf_core/msf_fwds.h	/^  none = 0x0,$/;"	e	enum:msf_core::__anon83
+nontemporaldrifting_inittimer_	ndk-modules/msf/msf_core/include/msf_core/msf_checkFuzzyTracking.h	/^  int nontemporaldrifting_inittimer_;  \/\/\/< A counter for fuzzy tracking detection$/;"	m	class:msf_core::CheckFuzzyTracking
+oldstate_	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^    const stateVarT& oldstate_;$/;"	m	struct:msf_tmp::CopyInitStates
+oldstate_	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^  const stateVarT& oldstate_;$/;"	m	struct:msf_tmp::CopyNonPropagationStates
+operator ()	ndk-modules/msf/msf_core/include/msf_core/msf_measurement.h	/^  bool operator()(const MSF_MeasurementBase<EKFState_T>& lhs,$/;"	f	class:msf_core::sortMeasurements
+operator ()	ndk-modules/msf/msf_core/include/msf_core/msf_state.h	/^  bool operator()($/;"	f	class:msf_core::SortStates
+operator ()	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^  void operator()($/;"	f	struct:msf_tmp::CoreStatetoDoubleArray
+operator ()	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^  void operator()($/;"	f	struct:msf_tmp::CorrectState
+operator ()	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^  void operator()($/;"	f	struct:msf_tmp::FullStatetoDoubleArray
+operator ()	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^  void operator()($/;"	f	struct:msf_tmp::FullStatetoString
+operator ()	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^  void operator()($/;"	f	struct:msf_tmp::ResetState
+operator ()	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^  void operator()(msf_core::StateVar_T<T, NAME, STATE_T, OPTIONS>& t) const {$/;"	f	struct:msf_tmp::CopyInitStates
+operator ()	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^  void operator()(msf_core::StateVar_T<T, NAME, STATE_T, OPTIONS>& t) const {$/;"	f	struct:msf_tmp::CopyNonPropagationStates
+operator ()	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^  void operator()(msf_core::StateVar_T<T, NAME, STATE_T, OPTIONS>& t) const {$/;"	f	struct:msf_tmp::CopyQBlocksFromAuxiliaryStatesToQ
+operator char	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^  operator char() {$/;"	f	struct:msf_tmp::overflow
+options_	ndk-modules/msf/msf_core/include/msf_core/msf_state.h	/^    options_ = OPTIONS,$/;"	e	enum:msf_core::StateVar_T::__anon12
+orientation	ndk-modules/msf/msf_updates/include/msf_updates/pose_sensor_handler/pose_measurement.h	/^            Eigen::Matrix<double, 4, 1> orientation;$/;"	m	struct:msf_updates::pose_measurement::PoseWithCovarianceStamped
+overflow	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^struct overflow {$/;"	s	namespace:msf_tmp
+p	ndk-modules/msf/msf_core/include/msf_core/similaritytransform.h	/^  p = 0,$/;"	e	enum:geometry_msgs::cov::__anon81
+p	ndk-modules/msf/msf_updates/src/pose_msf/msf_statedef.hpp	/^  p,$/;"	e	enum:msf_updates::StateDefinition
+p_ic	ndk-modules/msf/msf_updates/include/msf_updates/pose_sensor_handler/pose_measurement.h	/^                                p_ic = StatePicIdx,$/;"	e	enum:msf_updates::pose_measurement::PoseMeasurement::AuxState
+p_ic	ndk-modules/msf/msf_updates/src/pose_msf/msf_statedef.hpp	/^  p_ic$/;"	e	enum:msf_updates::StateDefinition
+p_wv	ndk-modules/msf/msf_updates/include/msf_updates/pose_sensor_handler/pose_measurement.h	/^                                p_wv = StatePwvIdx$/;"	e	enum:msf_updates::pose_measurement::PoseMeasurement::AuxState
+p_wv	ndk-modules/msf/msf_updates/src/pose_msf/msf_statedef.hpp	/^  p_wv,$/;"	e	enum:msf_updates::StateDefinition
+palette	ndk-modules/msf/msf_core/include/msf_core/falsecolor.h	/^struct palette {$/;"	s
+palettetypes	ndk-modules/msf/msf_core/include/msf_core/falsecolor.h	/^  enum palettetypes {$/;"	g	struct:palette
+parameternamespace_	ndk-modules/msf/msf_core/include/msf_core/msf_sensorhandler.h	/^  std::string parameternamespace_;$/;"	m	class:msf_core::SensorHandler
+posdrift_	ndk-modules/msf/msf_updates/include/msf_updates/PoseDistorter.h	/^  Eigen::Vector3d posdrift_;$/;"	m	class:msf_updates::PoseDistorter
+pose_delay	ndk-modules/msf/msf_updates/src/pose_msf/PoseSensorConfig.h	/^    double pose_delay;$/;"	m	class:PoseSensorConfig
+pose_fixed_p_ic	ndk-modules/msf/msf_updates/src/pose_msf/PoseSensorConfig.h	/^    bool pose_fixed_p_ic;$/;"	m	class:PoseSensorConfig
+pose_fixed_p_wv	ndk-modules/msf/msf_updates/src/pose_msf/PoseSensorConfig.h	/^    bool pose_fixed_p_wv;$/;"	m	class:PoseSensorConfig
+pose_fixed_q_ic	ndk-modules/msf/msf_updates/src/pose_msf/PoseSensorConfig.h	/^    bool pose_fixed_q_ic;$/;"	m	class:PoseSensorConfig
+pose_fixed_q_wv	ndk-modules/msf/msf_updates/src/pose_msf/PoseSensorConfig.h	/^    bool pose_fixed_q_wv;$/;"	m	class:PoseSensorConfig
+pose_fixed_scale	ndk-modules/msf/msf_updates/src/pose_msf/PoseSensorConfig.h	/^    bool pose_fixed_scale;$/;"	m	class:PoseSensorConfig
+pose_handler_	ndk-modules/msf/msf_updates/src/pose_msf/pose_sensormanager.cc	/^        shared_ptr<PoseSensorHandler_T> pose_handler_;$/;"	m	class:msf_pose_sensor::PoseSensorManager	file:
+pose_initial_scale	ndk-modules/msf/msf_updates/src/pose_msf/PoseSensorConfig.h	/^    double pose_initial_scale;$/;"	m	class:PoseSensorConfig
+pose_measurement	ndk-modules/msf/msf_updates/include/msf_updates/pose_sensor_handler/pose_measurement.h	/^    namespace pose_measurement {$/;"	n	namespace:msf_updates
+pose_measurement_minimum_dt_	ndk-modules/msf/msf_updates/include/msf_updates/pose_sensor_handler/pose_sensorhandler.h	/^  double pose_measurement_minimum_dt_; \/\/\/< Minimum time between two pose measurements in seconds.$/;"	m	class:msf_pose_sensor::PoseSensorHandler
+pose_noise_meas_p	ndk-modules/msf/msf_updates/src/pose_msf/PoseSensorConfig.h	/^    double pose_noise_meas_p;$/;"	m	class:PoseSensorConfig
+pose_noise_meas_q	ndk-modules/msf/msf_updates/src/pose_msf/PoseSensorConfig.h	/^    double pose_noise_meas_q;$/;"	m	class:PoseSensorConfig
+pose_noise_p_ic	ndk-modules/msf/msf_updates/src/pose_msf/PoseSensorConfig.h	/^    double pose_noise_p_ic;$/;"	m	class:PoseSensorConfig
+pose_noise_p_wv	ndk-modules/msf/msf_updates/src/pose_msf/PoseSensorConfig.h	/^    double pose_noise_p_wv;$/;"	m	class:PoseSensorConfig
+pose_noise_q_ic	ndk-modules/msf/msf_updates/src/pose_msf/PoseSensorConfig.h	/^    double pose_noise_q_ic;$/;"	m	class:PoseSensorConfig
+pose_noise_q_wv	ndk-modules/msf/msf_updates/src/pose_msf/PoseSensorConfig.h	/^    double pose_noise_q_wv;$/;"	m	class:PoseSensorConfig
+pose_noise_scale	ndk-modules/msf/msf_updates/src/pose_msf/PoseSensorConfig.h	/^    double pose_noise_scale;$/;"	m	class:PoseSensorConfig
+position	ndk-modules/msf/msf_updates/include/msf_updates/pose_sensor_handler/pose_measurement.h	/^            Eigen::Matrix<double, 3, 1> position;$/;"	m	struct:msf_updates::pose_measurement::PoseWithCovarianceStamped
+predictionMade_	ndk-modules/msf/msf_core/include/msf_core/msf_core.h	/^  bool predictionMade_;$/;"	m	class:msf_core::MSF_Core
+provides_absolute_measurements_	ndk-modules/msf/msf_updates/include/msf_updates/pose_sensor_handler/pose_sensorhandler.h	/^  bool provides_absolute_measurements_;  \/\/\/<Does this sensor measure relative or$/;"	m	class:msf_pose_sensor::PoseSensorHandler
+q	ndk-modules/msf/msf_core/include/msf_core/similaritytransform.h	/^  q = 3$/;"	e	enum:geometry_msgs::cov::__anon81
+q	ndk-modules/msf/msf_updates/src/pose_msf/msf_statedef.hpp	/^  q,$/;"	e	enum:msf_updates::StateDefinition
+q_ic	ndk-modules/msf/msf_updates/include/msf_updates/pose_sensor_handler/pose_measurement.h	/^                                q_ic = StateQicIdx,$/;"	e	enum:msf_updates::pose_measurement::PoseMeasurement::AuxState
+q_ic	ndk-modules/msf/msf_updates/src/pose_msf/msf_statedef.hpp	/^  q_ic,$/;"	e	enum:msf_updates::StateDefinition
+q_wv	ndk-modules/msf/msf_updates/include/msf_updates/pose_sensor_handler/pose_measurement.h	/^                                q_wv = StateQwvIdx,$/;"	e	enum:msf_updates::pose_measurement::PoseMeasurement::AuxState
+q_wv	ndk-modules/msf/msf_updates/src/pose_msf/msf_statedef.hpp	/^  q_wv,$/;"	e	enum:msf_updates::StateDefinition
+qbuffRowsAtCompiletime	ndk-modules/msf/msf_core/include/msf_core/msf_checkFuzzyTracking.h	/^    qbuffRowsAtCompiletime = msf_tmp::StateLengthForType<$/;"	e	enum:msf_core::CheckFuzzyTracking::__anon16
+qbuff_	ndk-modules/msf/msf_core/include/msf_core/msf_checkFuzzyTracking.h	/^  Eigen::Matrix<double, nBuff_, qbuffRowsAtCompiletime> qbuff_;$/;"	m	class:msf_core::CheckFuzzyTracking
+queueFutureMeasurements_	ndk-modules/msf/msf_core/include/msf_core/msf_core.h	/^  std::queue<shared_ptr<MSF_MeasurementBase<EKFState_T> > > queueFutureMeasurements_;$/;"	m	class:msf_core::MSF_Core
+rd_	ndk-modules/msf/msf_updates/include/msf_updates/PoseDistorter.h	/^  std::random_device rd_;$/;"	m	class:msf_updates::PoseDistorter
+received_first_measurement_	ndk-modules/msf/msf_core/include/msf_core/msf_sensorhandler.h	/^  bool received_first_measurement_;$/;"	m	class:msf_core::SensorHandler
+result_t	ndk-modules/msf/msf_core/include/msf_core/msf_typetraits.h	/^  typedef T result_t;$/;"	t	struct:msf_tmp::StripConstPtr
+result_t	ndk-modules/msf/msf_core/include/msf_core/msf_typetraits.h	/^  typedef T result_t;$/;"	t	struct:msf_tmp::StripConstReference
+result_t	ndk-modules/msf/msf_core/include/msf_core/msf_typetraits.h	/^  typedef T result_t;$/;"	t	struct:msf_tmp::StripReference
+result_t	ndk-modules/msf/msf_core/include/msf_core/msf_typetraits.h	/^  typedef T& result_t;$/;"	t	struct:msf_tmp::AddReference
+result_t	ndk-modules/msf/msf_core/include/msf_core/msf_typetraits.h	/^  typedef T* result_t;$/;"	t	struct:msf_tmp::AddPtr
+result_t	ndk-modules/msf/msf_core/include/msf_core/msf_typetraits.h	/^  typedef const T result_t;$/;"	t	struct:msf_tmp::StripReference
+result_t	ndk-modules/msf/msf_core/include/msf_core/msf_typetraits.h	/^  typedef const T& result_t;$/;"	t	struct:msf_tmp::AddConstReference
+result_t	ndk-modules/msf/msf_core/include/msf_core/msf_typetraits.h	/^  typedef const T& result_t;$/;"	t	struct:msf_tmp::AddReference
+result_t	ndk-modules/msf/msf_core/include/msf_core/msf_typetraits.h	/^  typedef const T* result_t;$/;"	t	struct:msf_tmp::AddConstPtr
+result_t	ndk-modules/msf/msf_core/include/msf_core/msf_typetraits.h	/^  typedef const T* result_t;$/;"	t	struct:msf_tmp::AddPtr
+rgbBlue	ndk-modules/msf/msf_core/include/msf_core/falsecolor.h	/^  unsigned char rgbBlue;$/;"	m	struct:color
+rgbGreen	ndk-modules/msf/msf_core/include/msf_core/falsecolor.h	/^  unsigned char rgbGreen;$/;"	m	struct:color
+rgbRed	ndk-modules/msf/msf_core/include/msf_core/falsecolor.h	/^  unsigned char rgbRed;$/;"	m	struct:color
+samples_	ndk-modules/msf/msf_timing/include/msf_timing/Timer.h	/^  T samples_[N];$/;"	m	class:msf_timing::Accumulator
+scaledrift_	ndk-modules/msf/msf_updates/include/msf_updates/PoseDistorter.h	/^  double scaledrift_;$/;"	m	class:msf_updates::PoseDistorter
+sensorID	ndk-modules/msf/msf_core/include/msf_core/msf_sensorhandler.h	/^  int sensorID;$/;"	m	class:msf_core::SensorHandler
+sensorID_	ndk-modules/msf/msf_core/include/msf_core/msf_measurement.h	/^  int sensorID_;$/;"	m	class:msf_core::MSF_MeasurementBase
+sensorID_	ndk-modules/msf/msf_core/include/msf_core/msf_sensormanager.h	/^  int sensorID_;$/;"	m	class:msf_core::MSF_SensorManager
+similarity_transform	ndk-modules/msf/msf_core/include/msf_core/similaritytransform.h	/^namespace similarity_transform {$/;"	n	namespace:msf_core
+sincos	ndk-modules/msf/msf_core/include/msf_core/sincos.h	34;"	d
+sincos	ndk-modules/msf/msf_core/include/msf_core/sincos.h	41;"	d
+sincos_x87_inline	ndk-modules/msf/msf_core/include/msf_core/sincos.h	/^extern __inline__ void sincos_x87_inline(double x,double *s,double *c)$/;"	f
+sizeInCorrection_	ndk-modules/msf/msf_core/include/msf_core/msf_state.h	/^    sizeInCorrection_ = msf_tmp::CorrectionStateLengthForType<$/;"	e	enum:msf_core::StateVar_T::__anon12
+sizeInState_	ndk-modules/msf/msf_core/include/msf_core/msf_state.h	/^    sizeInState_ = msf_tmp::StateLengthForType<const StateVar_T<type_T,$/;"	e	enum:msf_core::StateVar_T::__anon12
+sortMeasurements	ndk-modules/msf/msf_core/include/msf_core/msf_measurement.h	/^class sortMeasurements {$/;"	c	namespace:msf_core
+startindex	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^    startindex = 0,  \/\/ Must not change this.$/;"	e	enum:msf_tmp::CheckCorrectIndexing::__anon71
+stateBuffer_	ndk-modules/msf/msf_core/include/msf_core/msf_core.h	/^  StateBuffer_T stateBuffer_;$/;"	m	class:msf_core::MSF_Core
+stateList	ndk-modules/msf/msf_core/include/msf_core/msf_sortedContainer.h	/^  ListT stateList;  \/\/\/< The container in which all the data is stored.$/;"	m	class:msf_core::SortedContainer
+state_	ndk-modules/msf/msf_core/include/msf_core/msf_state.h	/^  value_t state_;  \/\/\/< The state variable of this state.$/;"	m	struct:msf_core::StateVar_T
+state_type	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^  typedef typename msf_tmp::GetEnumStateType<stateVector_T, INDEX>::value state_type;$/;"	t	struct:msf_tmp::GetStateIndexInErrorState
+state_type	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^  typedef typename msf_tmp::GetEnumStateType<stateVector_T, INDEX>::value state_type;$/;"	t	struct:msf_tmp::GetStateIndexInState
+statetype_	ndk-modules/msf/msf_core/include/msf_core/msf_state.h	/^    statetype_ = STATETYPE,$/;"	e	enum:msf_core::StateVar_T::__anon12
+statevars	ndk-modules/msf/msf_core/include/msf_core/msf_state.h	/^  StateSequence_T statevars;  \/\/\/< The actual state variables.$/;"	m	struct:msf_core::GenericState_T
+sum_	ndk-modules/msf/msf_timing/include/msf_timing/Timer.h	/^  Total sum_;$/;"	m	class:msf_timing::Accumulator
+tagMap_	ndk-modules/msf/msf_timing/include/msf_timing/Timer.h	/^  map_t tagMap_;$/;"	m	class:msf_timing::Timing
+time	ndk-modules/msf/msf_core/include/msf_core/msf_measurement.h	/^  double time;  \/\/\/< The time_ this measurement was taken.$/;"	m	class:msf_core::MSF_MeasurementBase
+time	ndk-modules/msf/msf_core/include/msf_core/msf_state.h	/^  double time; 	\/\/\/< Time of this state estimate.$/;"	m	struct:msf_core::GenericState_T
+timeStamp	ndk-modules/msf/msf_updates/include/msf_updates/pose_sensor_handler/pose_measurement.h	/^            double timeStamp;$/;"	m	struct:msf_updates::pose_measurement::PoseWithCovarianceStamped
+time_	ndk-modules/msf/msf_timing/include/msf_timing/Timer.h	/^  std::chrono::time_point<std::chrono::system_clock> time_;$/;"	m	class:msf_timing::Timer
+time_P_propagated	ndk-modules/msf/msf_core/include/msf_core/msf_core.h	/^  double time_P_propagated;$/;"	m	class:msf_core::MSF_Core
+timehuman	ndk-modules/msf/msf_core/include/msf_core/msf_core.h	/^double timehuman(double val) {$/;"	f	namespace:msf_core
+timers_	ndk-modules/msf/msf_timing/include/msf_timing/Timer.h	/^  list_t timers_;$/;"	m	class:msf_timing::Timing
+timestamp_previous_pose_	ndk-modules/msf/msf_updates/include/msf_updates/pose_sensor_handler/pose_sensorhandler.h	/^  double timestamp_previous_pose_;  \/\/\/< Timestamp of previous pose message to subsample messages.$/;"	m	class:msf_pose_sensor::PoseSensorHandler
+timing_	ndk-modules/msf/msf_timing/include/msf_timing/Timer.h	/^  bool timing_;$/;"	m	class:msf_timing::Timer
+topic_namespace_	ndk-modules/msf/msf_core/include/msf_core/msf_sensorhandler.h	/^  std::string topic_namespace_;$/;"	m	class:msf_core::SensorHandler
+totalsamples_	ndk-modules/msf/msf_timing/include/msf_timing/Timer.h	/^  int totalsamples_;$/;"	m	class:msf_timing::Accumulator
+use_fixed_covariance_	ndk-modules/msf/msf_updates/include/msf_updates/pose_sensor_handler/pose_sensorhandler.h	/^  bool use_fixed_covariance_;  \/\/\/< Use fixed covariance set by dynamic reconfigure$/;"	m	class:msf_pose_sensor::PoseSensorHandler
+usercalc_	ndk-modules/msf/msf_core/include/msf_core/msf_core.h	/^  const MSF_SensorManager<EKFState_T>& usercalc_;$/;"	m	class:msf_core::MSF_Core
+v	ndk-modules/msf/msf_updates/src/pose_msf/msf_statedef.hpp	/^  v,$/;"	e	enum:msf_updates::StateDefinition
+value	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^    value = -1$/;"	e	enum:msf_tmp::__anon17::ComputeStartIndex::__anon66
+value	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^    value = -1$/;"	e	enum:msf_tmp::__anon17::GetEnumStateName::__anon50
+value	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^    value = -1$/;"	e	enum:msf_tmp::__anon17::GetEnumStateName::__anon51
+value	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^    value = 0$/;"	e	enum:msf_tmp::__anon17::ComputeStartIndex::__anon67
+value	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^    value = 0$/;"	e	enum:msf_tmp::__anon17::CoreErrorStateLengthForType::__anon31
+value	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^    value = 0$/;"	e	enum:msf_tmp::__anon17::CoreErrorStateLengthForType::__anon32
+value	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^    value = 0$/;"	e	enum:msf_tmp::__anon17::CoreErrorStateLengthForType::__anon37
+value	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^    value = 0$/;"	e	enum:msf_tmp::__anon17::CoreStateLengthForType::__anon24
+value	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^    value = 0$/;"	e	enum:msf_tmp::__anon17::CoreStateLengthForType::__anon25
+value	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^    value = 0$/;"	e	enum:msf_tmp::__anon17::CoreStateLengthForType::__anon30
+value	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^    value = 0$/;"	e	enum:msf_tmp::__anon17::CorrectionStateLengthForType::__anon20
+value	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^    value = 0$/;"	e	enum:msf_tmp::__anon17::CountStatesLinear::__anon62
+value	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^    value = 0$/;"	e	enum:msf_tmp::__anon17::PropagatedCoreErrorStateLengthForType::__anon43
+value	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^    value = 0$/;"	e	enum:msf_tmp::__anon17::PropagatedCoreErrorStateLengthForType::__anon44
+value	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^    value = 0$/;"	e	enum:msf_tmp::__anon17::PropagatedCoreErrorStateLengthForType::__anon47
+value	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^    value = 0$/;"	e	enum:msf_tmp::__anon17::PropagatedCoreStateLengthForType::__anon38
+value	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^    value = 0$/;"	e	enum:msf_tmp::__anon17::PropagatedCoreStateLengthForType::__anon39
+value	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^    value = 0$/;"	e	enum:msf_tmp::__anon17::PropagatedCoreStateLengthForType::__anon42
+value	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^    value = 0$/;"	e	enum:msf_tmp::__anon17::StateLengthForType::__anon23
+value	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^    value = 3$/;"	e	enum:msf_tmp::__anon17::CoreErrorStateLengthForType::__anon34
+value	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^    value = 3$/;"	e	enum:msf_tmp::__anon17::CoreErrorStateLengthForType::__anon36
+value	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^    value = 3$/;"	e	enum:msf_tmp::__anon17::CorrectionStateLengthForType::__anon19
+value	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^    value = 3$/;"	e	enum:msf_tmp::__anon17::PropagatedCoreErrorStateLengthForType::__anon46
+value	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^    value = 4$/;"	e	enum:msf_tmp::__anon17::CoreStateLengthForType::__anon27
+value	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^    value = 4$/;"	e	enum:msf_tmp::__anon17::CoreStateLengthForType::__anon29
+value	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^    value = 4$/;"	e	enum:msf_tmp::__anon17::PropagatedCoreStateLengthForType::__anon41
+value	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^    value = 4$/;"	e	enum:msf_tmp::__anon17::StateLengthForType::__anon22
+value	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^    value = ComputeStartIndex<Sequence, StateVarT, Counter, First, Last,$/;"	e	enum:msf_tmp::GetStartIndex::__anon76
+value	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^    value = CountStatesLinear<Sequence, Counter, First, Last,$/;"	e	enum:msf_tmp::CountStates::__anon75
+value	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^    value = Counter<current_Type>::value$/;"	e	enum:msf_tmp::__anon17::CountStatesLinear::__anon63
+value	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^    value = CurrentBestIdx$/;"	e	enum:msf_tmp::__anon17::FindBestNonTemporalDriftingStateImpl::__anon69
+value	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^    value = CurrentVal$/;"	e	enum:msf_tmp::__anon17::ComputeStartIndex::__anon68
+value	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^    value = FindBestNonTemporalDriftingStateImpl<Sequence, First, Last,$/;"	e	enum:msf_tmp::IndexOfBestNonTemporalDriftingState::__anon74
+value	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^    value = FindBestNonTemporalDriftingStateImpl<Sequence, Next, Last,$/;"	e	enum:msf_tmp::__anon17::FindBestNonTemporalDriftingStateImpl::__anon70
+value	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^    value = N$/;"	e	enum:msf_tmp::__anon17::CoreErrorStateLengthForType::__anon33
+value	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^    value = N$/;"	e	enum:msf_tmp::__anon17::CoreErrorStateLengthForType::__anon35
+value	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^    value = N$/;"	e	enum:msf_tmp::__anon17::CoreStateLengthForType::__anon26
+value	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^    value = N$/;"	e	enum:msf_tmp::__anon17::CoreStateLengthForType::__anon28
+value	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^    value = N$/;"	e	enum:msf_tmp::__anon17::CorrectionStateLengthForType::__anon18
+value	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^    value = N$/;"	e	enum:msf_tmp::__anon17::PropagatedCoreErrorStateLengthForType::__anon45
+value	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^    value = N$/;"	e	enum:msf_tmp::__anon17::PropagatedCoreStateLengthForType::__anon40
+value	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^    value = N$/;"	e	enum:msf_tmp::__anon17::StateLengthForType::__anon21
+value	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^    value = NAME$/;"	e	enum:msf_tmp::__anon17::GetEnumStateName::__anon48
+value	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^    value = NAME$/;"	e	enum:msf_tmp::__anon17::GetEnumStateName::__anon49
+value	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^    value = false$/;"	e	enum:msf_tmp::__anon17::GetStateIsNonTemporalDrifting::__anon60
+value	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^    value = false$/;"	e	enum:msf_tmp::__anon17::GetStateIsNonTemporalDrifting::__anon61
+value	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^    value = false$/;"	e	enum:msf_tmp::__anon17::IsQuaternionType::__anon52
+value	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^    value = false$/;"	e	enum:msf_tmp::__anon17::IsQuaternionType::__anon53
+value	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^    value = false$/;"	e	enum:msf_tmp::__anon17::IsQuaternionType::__anon56
+value	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^    value = false$/;"	e	enum:msf_tmp::__anon17::IsQuaternionType::__anon57
+value	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^    value = msf_tmp::GetStartIndex<Sequence,$/;"	e	enum:msf_tmp::GetStartIndexInCorrection::__anon77
+value	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^    value = msf_tmp::GetStartIndex<stateVector_T, state_type,$/;"	e	enum:msf_tmp::GetStateIndexInErrorState::__anon80
+value	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^    value = msf_tmp::GetStartIndex<stateVector_T, state_type,$/;"	e	enum:msf_tmp::GetStateIndexInState::__anon79
+value	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^    value = static_cast<int>(msf_core::StateVar_T<U, NAME, STATE_T, OPTIONS>::statetype_)$/;"	e	enum:msf_tmp::__anon17::GetStateIsNonTemporalDrifting::__anon58
+value	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^    value = static_cast<int>(msf_core::StateVar_T<U, NAME, STATE_T, OPTIONS>::statetype_)$/;"	e	enum:msf_tmp::__anon17::GetStateIsNonTemporalDrifting::__anon59
+value	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^    value = true$/;"	e	enum:msf_tmp::__anon17::IsQuaternionType::__anon54
+value	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^    value = true$/;"	e	enum:msf_tmp::__anon17::IsQuaternionType::__anon55
+value	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^  typedef mpl_::void_ value;$/;"	t	struct:msf_tmp::__anon17::GetEnumStateType
+value	ndk-modules/msf/msf_core/include/msf_core/msf_tmp.h	/^  typedef typename boost::fusion::result_of::at_c<TypeList, INDEX>::type value;$/;"	t	struct:msf_tmp::__anon17::GetEnumStateType
+value	ndk-modules/msf/msf_core/include/msf_core/msf_typetraits.h	/^    value = false$/;"	e	enum:msf_tmp::IsPointerType::__anon9
+value	ndk-modules/msf/msf_core/include/msf_core/msf_typetraits.h	/^    value = false$/;"	e	enum:msf_tmp::IsReferenceType::__anon6
+value	ndk-modules/msf/msf_core/include/msf_core/msf_typetraits.h	/^    value = false$/;"	e	enum:msf_tmp::SameType::__anon4
+value	ndk-modules/msf/msf_core/include/msf_core/msf_typetraits.h	/^    value = true$/;"	e	enum:msf_tmp::IsPointerType::__anon10
+value	ndk-modules/msf/msf_core/include/msf_core/msf_typetraits.h	/^    value = true$/;"	e	enum:msf_tmp::IsPointerType::__anon11
+value	ndk-modules/msf/msf_core/include/msf_core/msf_typetraits.h	/^    value = true$/;"	e	enum:msf_tmp::IsReferenceType::__anon7
+value	ndk-modules/msf/msf_core/include/msf_core/msf_typetraits.h	/^    value = true$/;"	e	enum:msf_tmp::IsReferenceType::__anon8
+value	ndk-modules/msf/msf_core/include/msf_core/msf_typetraits.h	/^    value = true$/;"	e	enum:msf_tmp::SameType::__anon5
+value	ndk-modules/msf/msf_core/include/msf_core/static_ordering_assertions.h	/^    value$/;"	e	enum:__anon1::StaticAssertCoreStateOrderingCorrect::__anon2
+value	ndk-modules/msf/msf_updates/include/msf_updates/static_ordering_assertions.h	/^  value = StaticAssertCoreStateOrderingCorrect<msf_updates::EKFState>::value$/;"	m	class:__anon86::CompileTimeChecker
+value_t	ndk-modules/msf/msf_core/include/msf_core/msf_state.h	/^  typedef type_T value_t;$/;"	t	struct:msf_core::StateVar_T
+w_m	ndk-modules/msf/msf_core/include/msf_core/msf_state.h	/^  Eigen::Matrix<double, 3, 1> w_m;         \/\/\/< Angular velocity from IMU.$/;"	m	struct:msf_core::GenericState_T
+window_samples_	ndk-modules/msf/msf_timing/include/msf_timing/Timer.h	/^  int window_samples_;$/;"	m	class:msf_timing::Accumulator
+window_sum_	ndk-modules/msf/msf_timing/include/msf_timing/Timer.h	/^  Total window_sum_;$/;"	m	class:msf_timing::Accumulator
+z_p_	ndk-modules/msf/msf_updates/include/msf_updates/pose_sensor_handler/pose_measurement.h	/^                            Eigen::Matrix<double, 3, 1> z_p_;  \/\/\/ Position measurement camera seen from world.$/;"	m	struct:msf_updates::pose_measurement::PoseMeasurement
+z_p_	ndk-modules/msf/msf_updates/include/msf_updates/pose_sensor_handler/pose_sensorhandler.h	/^  Eigen::Matrix<double, 3, 1> z_p_;  \/\/\/< Position measurement camera seen from world.$/;"	m	class:msf_pose_sensor::PoseSensorHandler
+z_q_	ndk-modules/msf/msf_updates/include/msf_updates/pose_sensor_handler/pose_measurement.h	/^                                Eigen::Quaternion<double> z_q_;  \/\/\/ Attitude measurement camera seen from world.$/;"	m	struct:msf_updates::pose_measurement::PoseMeasurement
+z_q_	ndk-modules/msf/msf_updates/include/msf_updates/pose_sensor_handler/pose_sensorhandler.h	/^  Eigen::Quaternion<double> z_q_;  \/\/\/< Attitude measurement camera seen from world.$/;"	m	class:msf_pose_sensor::PoseSensorHandler
+~DummyTimer	ndk-modules/msf/msf_timing/include/msf_timing/Timer.h	/^  ~DummyTimer() { }$/;"	f	class:msf_timing::DummyTimer
+~IMUHandler	ndk-modules/msf/msf_core/include/msf_core/msf_IMUHandler.h	/^  virtual ~IMUHandler() {$/;"	f	class:msf_core::IMUHandler
+~MSF_Core	ndk-modules/msf/msf_core/include/msf_core/implementation/msf_core_inl.h	/^        MSF_Core<EKFState_T>::~MSF_Core() {$/;"	f	class:msf_core::MSF_Core
+~MSF_InitMeasurement	ndk-modules/msf/msf_core/include/msf_core/msf_measurement.h	/^  virtual ~MSF_InitMeasurement() {$/;"	f	class:msf_core::MSF_InitMeasurement
+~MSF_InvalidMeasurement	ndk-modules/msf/msf_core/include/msf_core/msf_measurement.h	/^  virtual ~MSF_InvalidMeasurement() {$/;"	f	class:msf_core::MSF_InvalidMeasurement
+~MSF_Measurement	ndk-modules/msf/msf_core/include/msf_core/msf_measurement.h	/^  virtual ~MSF_Measurement() { }$/;"	f	class:msf_core::MSF_Measurement
+~MSF_MeasurementBase	ndk-modules/msf/msf_core/include/msf_core/msf_measurement.h	/^  virtual ~MSF_MeasurementBase() {}$/;"	f	class:msf_core::MSF_MeasurementBase
+~MSF_SensorManager	ndk-modules/msf/msf_core/include/msf_core/msf_sensormanager.h	/^  virtual ~MSF_SensorManager() {$/;"	f	class:msf_core::MSF_SensorManager
+~PoseDistorter	ndk-modules/msf/msf_updates/src/msf_distort/PoseDistorter.cc	/^PoseDistorter::~PoseDistorter() {$/;"	f	class:msf_updates::PoseDistorter
+~PoseMeasurement	ndk-modules/msf/msf_updates/include/msf_updates/pose_sensor_handler/pose_measurement.h	/^                            virtual ~PoseMeasurement() {}$/;"	f	struct:msf_updates::pose_measurement::PoseMeasurement
+~PoseSensorManager	ndk-modules/msf/msf_updates/src/pose_msf/pose_sensormanager.cc	/^        ~PoseSensorManager() { }$/;"	f	class:msf_pose_sensor::PoseSensorManager
+~SensorHandler	ndk-modules/msf/msf_core/include/msf_core/msf_sensorhandler.h	/^  virtual ~SensorHandler() {$/;"	f	class:msf_core::SensorHandler
+~StateVisitor	ndk-modules/msf/msf_core/include/msf_core/msf_statevisitor.h	/^  virtual ~StateVisitor() {$/;"	f	class:msf_core::StateVisitor
+~Timer	ndk-modules/msf/msf_timing/src/Timer.cc	/^Timer::~Timer() {$/;"	f	class:msf_timing::Timer
+~Timing	ndk-modules/msf/msf_timing/src/Timer.cc	/^Timing::~Timing() { }$/;"	f	class:msf_timing::Timing

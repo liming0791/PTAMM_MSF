@@ -30,6 +30,12 @@
 #include <vector>
 #include <list>
 
+#include "pose_msf/pose_sensormanager.cc"
+#include "msf_updates/pose_sensor_handler/pose_measurement.h"
+#include "msf_timing/Timer.h"
+
+typedef msf_updates::pose_measurement::PoseWithCovarianceStamped MyPose;
+
 #define NUM_LOST_FRAMES 3
 
 namespace PTAMM {
@@ -49,8 +55,12 @@ public:
   
   // TrackFrame is the main working part of the tracker: call this every frame.
   void TrackFrame(CVD::Image<CVD::byte> &imFrame, float* q, bool bDraw);
+  void predict(float* imuval);
+  void update();
+  //void PublishPose(const Eigen::Matrix<double, 3, 1> & p, const Eigen::Matrix<double, 4, 1> & q);
 
   inline SE3<> GetCurrentPose() { return mse3CamFromWorld; }
+  //inline SE3<> GetCurrentPose() { return Pose_Estimated_MSF_out; }
   inline bool IsLost() { return (mnLostFrames > NUM_LOST_FRAMES); }
   
   // Gets messages to be printed on-screen for the user.
@@ -65,6 +75,8 @@ public:
   
 protected:
   KeyFrame mCurrentKF;            // The current working frame as a keyframe struct
+  msf_pose_sensor::PoseSensorManager msf;
+
   
   // The major components to which the tracker needs access:
   std::vector<Map*> & mvpMaps;     // Reference to all of the maps
@@ -112,12 +124,18 @@ protected:
   // imu data
   SO3<> mso3IMUInit;
   SO3<> mso3IMUNow;
+  Vector<4> qIMUNow;
+  Vector<4> qIMUInit;
   void updateIMURotation(float* q);
   void ApplyIMUModel();
   void UpdateIMUModel();
 
-  SO3<> Rc2i;
+  SO3<> R_ic;  // rotation IMU from Camera
+  SO3<> R_wv;
   SO3<> Rbinv;
+
+  SE3<> Pose_Estimated_MSF_out;
+  Vector<3> translation_old;
 
   // predict error
   SO3<> RPrediction;

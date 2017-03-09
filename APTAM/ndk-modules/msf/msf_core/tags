@@ -1,0 +1,611 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ASSERT_NEAR_EIGEN	include/msf_core/testing_predicates.h	36;"	d
+AddConstPtr	include/msf_core/msf_typetraits.h	/^struct AddConstPtr {$/;"	s	namespace:msf_tmp
+AddConstPtr	include/msf_core/msf_typetraits.h	/^struct AddConstPtr<T*> {$/;"	s	namespace:msf_tmp
+AddConstPtr	include/msf_core/msf_typetraits.h	/^struct AddConstPtr<const T*> {$/;"	s	namespace:msf_tmp
+AddConstPtr	include/msf_core/msf_typetraits.h	/^struct AddConstPtr<const T> {$/;"	s	namespace:msf_tmp
+AddConstReference	include/msf_core/msf_typetraits.h	/^struct AddConstReference {$/;"	s	namespace:msf_tmp
+AddConstReference	include/msf_core/msf_typetraits.h	/^struct AddConstReference<T&> {$/;"	s	namespace:msf_tmp
+AddConstReference	include/msf_core/msf_typetraits.h	/^struct AddConstReference<const T&> {$/;"	s	namespace:msf_tmp
+AddConstReference	include/msf_core/msf_typetraits.h	/^struct AddConstReference<const T> {$/;"	s	namespace:msf_tmp
+AddHandler	include/msf_core/msf_sensormanager.h	/^  void AddHandler(shared_ptr<SensorHandler<EKFState_T> > handler) {$/;"	f	class:msf_core::MSF_SensorManager
+AddMeasurement	src/msf_core_inl.h	/^void MSF_Core<EKFState_T>::AddMeasurement($/;"	f	class:msf_core::MSF_Core
+AddPtr	include/msf_core/msf_typetraits.h	/^struct AddPtr {$/;"	s	namespace:msf_tmp
+AddPtr	include/msf_core/msf_typetraits.h	/^struct AddPtr<T*> {$/;"	s	namespace:msf_tmp
+AddPtr	include/msf_core/msf_typetraits.h	/^struct AddPtr<const T*> {$/;"	s	namespace:msf_tmp
+AddPtr	include/msf_core/msf_typetraits.h	/^struct AddPtr<const T> {$/;"	s	namespace:msf_tmp
+AddReference	include/msf_core/msf_typetraits.h	/^struct AddReference {$/;"	s	namespace:msf_tmp
+AddReference	include/msf_core/msf_typetraits.h	/^struct AddReference<T&> {$/;"	s	namespace:msf_tmp
+AddReference	include/msf_core/msf_typetraits.h	/^struct AddReference<const T&> {$/;"	s	namespace:msf_tmp
+AddReference	include/msf_core/msf_typetraits.h	/^struct AddReference<const T> {$/;"	s	namespace:msf_tmp
+Apply	src/msf_measurement_inl.h	/^void MSF_InitMeasurement<EKFState_T>::Apply($/;"	f	class:msf_core::MSF_InitMeasurement
+ApplyCorrection	src/msf_core_inl.h	/^bool MSF_Core<EKFState_T>::ApplyCorrection(shared_ptr<EKFState_T>& delaystate,$/;"	f	class:msf_core::MSF_Core
+Auxiliary	include/msf_core/msf_fwds.h	/^  Auxiliary,$/;"	e	enum:msf_core::__anon82
+AuxiliaryNonTemporalDrifting	include/msf_core/msf_fwds.h	/^  AuxiliaryNonTemporalDrifting$/;"	e	enum:msf_core::__anon82
+CALCQ_H_	src/calcQCore.h	18;"	d
+CHECK_IN_BOUNDS	include/msf_core/msf_sortedContainer.h	26;"	d
+CalcQCore	src/calcQCore.h	/^void CalcQCore(const double dt, const Eigen::Quaternion<double> & q,$/;"	f
+CalculateAndApplyCorrection	src/msf_measurement_inl.h	/^void MSF_MeasurementBase<EKFState_T>::CalculateAndApplyCorrection($/;"	f	class:msf_core::MSF_MeasurementBase
+CalculateAndApplyCorrectionRelative	src/msf_measurement_inl.h	/^void MSF_MeasurementBase<EKFState_T>::CalculateAndApplyCorrectionRelative($/;"	f	class:msf_core::MSF_MeasurementBase
+CalculateIndicesInErrorState	src/msf_state_inl.h	/^void GenericState_T<stateVector_T, StateDefinition_T>::CalculateIndicesInErrorState($/;"	f	class:msf_core::GenericState_T
+Check	include/msf_core/msf_checkFuzzyTracking.h	/^  bool Check(shared_ptr<EKFState_T> delaystate, EKFState_T& buffstate,$/;"	f	class:msf_core::CheckFuzzyTracking
+CheckCorrectIndexing	include/msf_core/msf_tmp.h	/^struct CheckCorrectIndexing {$/;"	s	namespace:msf_tmp
+CheckForNumeric	include/msf_core/eigen_utils.h	/^bool CheckForNumeric(const Eigen::MatrixBase<D> & mat,$/;"	f
+CheckFuzzyTracking	include/msf_core/msf_checkFuzzyTracking.h	/^  CheckFuzzyTracking() : nontemporaldrifting_inittimer_(0) {$/;"	f	class:msf_core::CheckFuzzyTracking
+CheckFuzzyTracking	include/msf_core/msf_checkFuzzyTracking.h	/^class CheckFuzzyTracking {$/;"	c	namespace:msf_core
+CheckFuzzyTracking	include/msf_core/msf_checkFuzzyTracking.h	/^class CheckFuzzyTracking<EKFState_T, mpl_::void_> {$/;"	c	namespace:msf_core
+CheckStateForNumeric	src/msf_state_inl.h	/^bool GenericState_T<stateVector_T, StateDefinition_T>::CheckStateForNumeric() {$/;"	f	class:msf_core::GenericState_T
+CheckStateIndexing	include/msf_core/msf_tmp.h	/^struct CheckStateIndexing<Sequence, First, Last, CurrentIdx, false> {$/;"	s	namespace:msf_tmp::__anon17
+CheckStateIndexing	include/msf_core/msf_tmp.h	/^struct CheckStateIndexing<Sequence, First, Last, CurrentIdx, true> {$/;"	s	namespace:msf_tmp::__anon17
+CleanUpBuffers	src/msf_core_inl.h	/^void MSF_Core<EKFState_T>::CleanUpBuffers() {$/;"	f	class:msf_core::MSF_Core
+Clear	include/msf_core/msf_sortedContainer.h	/^  inline void Clear() {$/;"	f	class:msf_core::SortedContainer
+ClearCrossCov	src/msf_state_inl.h	/^inline void GenericState_T<stateVector_T, StateDefinition_T>::ClearCrossCov() {$/;"	f	class:msf_core::GenericState_T
+ClearOlderThan	include/msf_core/msf_sortedContainer.h	/^  inline void ClearOlderThan(double age) {$/;"	f	class:msf_core::SortedContainer
+ComputeStartIndex	include/msf_core/msf_tmp.h	/^struct ComputeStartIndex<Sequence, StateVarT, OffsetCalculator, First, Last,$/;"	s	namespace:msf_tmp::__anon17
+ContainsInitialSensorReadings_	include/msf_core/msf_measurement.h	/^  bool ContainsInitialSensorReadings_;$/;"	m	class:msf_core::MSF_InitMeasurement
+CopyInitStates	include/msf_core/msf_tmp.h	/^  CopyInitStates(const stateVarT& oldstate)$/;"	f	struct:msf_tmp::CopyInitStates
+CopyInitStates	include/msf_core/msf_tmp.h	/^struct CopyInitStates {$/;"	s	namespace:msf_tmp
+CopyNonPropagationStates	include/msf_core/msf_tmp.h	/^  CopyNonPropagationStates(const stateVarT& oldstate)$/;"	f	struct:msf_tmp::CopyNonPropagationStates
+CopyNonPropagationStates	include/msf_core/msf_tmp.h	/^struct CopyNonPropagationStates {$/;"	s	namespace:msf_tmp
+CopyQBlocksFromAuxiliaryStatesToQ	include/msf_core/msf_tmp.h	/^  CopyQBlocksFromAuxiliaryStatesToQ(Q_T& Q)$/;"	f	struct:msf_tmp::CopyQBlocksFromAuxiliaryStatesToQ
+CopyQBlocksFromAuxiliaryStatesToQ	include/msf_core/msf_tmp.h	/^struct CopyQBlocksFromAuxiliaryStatesToQ {$/;"	s	namespace:msf_tmp
+CoreErrorStateLengthForType	include/msf_core/msf_tmp.h	/^struct CoreErrorStateLengthForType<$/;"	s	namespace:msf_tmp::__anon17
+CoreErrorStateLengthForType	include/msf_core/msf_tmp.h	/^struct CoreErrorStateLengthForType<const mpl_::void_&> {$/;"	s	namespace:msf_tmp::__anon17
+CoreStateLengthForType	include/msf_core/msf_tmp.h	/^struct CoreStateLengthForType<$/;"	s	namespace:msf_tmp::__anon17
+CoreStateLengthForType	include/msf_core/msf_tmp.h	/^struct CoreStateLengthForType<const mpl_::void_&> {$/;"	s	namespace:msf_tmp::__anon17
+CoreStateWithPropagation	include/msf_core/msf_fwds.h	/^  CoreStateWithPropagation,$/;"	e	enum:msf_core::__anon82
+CoreStateWithoutPropagation	include/msf_core/msf_fwds.h	/^  CoreStateWithoutPropagation,$/;"	e	enum:msf_core::__anon82
+CoreStatetoDoubleArray	include/msf_core/msf_tmp.h	/^  CoreStatetoDoubleArray(T& statearray)$/;"	f	struct:msf_tmp::CoreStatetoDoubleArray
+CoreStatetoDoubleArray	include/msf_core/msf_tmp.h	/^struct CoreStatetoDoubleArray {$/;"	s	namespace:msf_tmp
+Correct	src/msf_state_inl.h	/^inline void GenericState_T<stateVector_T, StateDefinition_T>::Correct($/;"	f	class:msf_core::GenericState_T
+CorrectState	include/msf_core/msf_tmp.h	/^  CorrectState(T& correction)$/;"	f	struct:msf_tmp::CorrectState
+CorrectState	include/msf_core/msf_tmp.h	/^struct CorrectState {$/;"	s	namespace:msf_tmp
+CorrectionStateLengthForType	include/msf_core/msf_tmp.h	/^struct CorrectionStateLengthForType<$/;"	s	namespace:msf_tmp::__anon17
+CorrectionStateLengthForType	include/msf_core/msf_tmp.h	/^struct CorrectionStateLengthForType<const mpl_::void_&> {$/;"	s	namespace:msf_tmp::__anon17
+CountStates	include/msf_core/msf_tmp.h	/^struct CountStates {$/;"	s	namespace:msf_tmp
+CountStatesLinear	include/msf_core/msf_tmp.h	/^struct CountStatesLinear<Sequence, Counter, First, Last, false> {$/;"	s	namespace:msf_tmp::__anon17
+CountStatesLinear	include/msf_core/msf_tmp.h	/^struct CountStatesLinear<Sequence, Counter, First, Last, true> {$/;"	s	namespace:msf_tmp::__anon17
+DEG2RAD	include/msf_core/msf_macros.h	45;"	d
+EIGEN_CONVERSIONS_H_	include/msf_core/eigen_conversions.h	18;"	d
+EIGEN_UTILS_H_	include/msf_core/eigen_utils.h	22;"	d
+EXPECT_NEAR_EIGEN	include/msf_core/testing_predicates.h	33;"	d
+EchoBufferContentTimes	include/msf_core/msf_sortedContainer.h	/^  std::string EchoBufferContentTimes() {$/;"	f	class:msf_core::SortedContainer
+EchoCompileTimeConstant	include/msf_core/msf_tmp.h	/^void EchoCompileTimeConstant() {$/;"	f	namespace:msf_tmp
+EchoStateVarType	include/msf_core/msf_tmp.h	/^struct EchoStateVarType<$/;"	s	namespace:msf_tmp
+EigenCovBlockToGeometryMsgs	include/msf_core/similaritytransform.h	/^inline void EigenCovBlockToGeometryMsgs($/;"	f	namespace:msf_core
+EigenToGeometryMsgs	include/msf_core/similaritytransform.h	/^inline geometry_msgs::Point EigenToGeometryMsgs($/;"	f	namespace:msf_core
+EigenToGeometryMsgs	include/msf_core/similaritytransform.h	/^inline geometry_msgs::Quaternion EigenToGeometryMsgs($/;"	f	namespace:msf_core
+ErrorState	include/msf_core/msf_core.h	/^  typedef Eigen::Matrix<double, nErrorStatesAtCompileTime, 1> ErrorState;$/;"	t	class:msf_core::MSF_Core
+ErrorStateCov	include/msf_core/msf_core.h	/^      nErrorStatesAtCompileTime> ErrorStateCov;$/;"	t	class:msf_core::MSF_Core
+FALSECOLOR_H_	include/msf_core/falsecolor.h	18;"	d
+FUSION_MAX_VECTOR_SIZE	include/msf_core/msf_tmp.h	40;"	d
+FUSION_MAX_VECTOR_SIZE	include/msf_core/msf_tmp.h	42;"	d
+F_type	include/msf_core/msf_state.h	/^  typedef P_type F_type;$/;"	t	struct:msf_core::GenericState_T
+False_color_palette1	include/msf_core/falsecolor.h	/^    False_color_palette1,$/;"	e	enum:palette::palettetypes
+False_color_palette2	include/msf_core/falsecolor.h	/^    False_color_palette2,$/;"	e	enum:palette::palettetypes
+False_color_palette3	include/msf_core/falsecolor.h	/^    False_color_palette3,$/;"	e	enum:palette::palettetypes
+False_color_palette4	include/msf_core/falsecolor.h	/^    False_color_palette4$/;"	e	enum:palette::palettetypes
+Fd	include/msf_core/msf_state.h	/^  F_type Fd;   \/\/\/< Discrete state propagation matrix.$/;"	m	struct:msf_core::GenericState_T
+FindBestNonTemporalDriftingStateImpl	include/msf_core/msf_tmp.h	/^struct FindBestNonTemporalDriftingStateImpl<Sequence, First, Last,$/;"	s	namespace:msf_tmp::__anon17
+First	include/msf_core/msf_tmp.h	/^  typedef typename boost::fusion::result_of::begin<Sequence const>::type First;$/;"	t	struct:msf_tmp::CheckCorrectIndexing
+First	include/msf_core/msf_tmp.h	/^  typedef typename boost::fusion::result_of::begin<Sequence const>::type First;$/;"	t	struct:msf_tmp::CountStates
+First	include/msf_core/msf_tmp.h	/^  typedef typename boost::fusion::result_of::begin<Sequence const>::type First;$/;"	t	struct:msf_tmp::GetStartIndex
+First	include/msf_core/msf_tmp.h	/^  typedef typename boost::fusion::result_of::begin<Sequence const>::type First;$/;"	t	struct:msf_tmp::GetStartIndexInCorrection
+First	include/msf_core/msf_tmp.h	/^  typedef typename boost::fusion::result_of::begin<Sequence const>::type First;$/;"	t	struct:msf_tmp::IndexOfBestNonTemporalDriftingState
+From6DoF	include/msf_core/similaritytransform.h	/^class From6DoF {$/;"	c	namespace:msf_core::similarity_transform
+FullStatetoDoubleArray	include/msf_core/msf_tmp.h	/^  FullStatetoDoubleArray(T& statearray)$/;"	f	struct:msf_tmp::FullStatetoDoubleArray
+FullStatetoDoubleArray	include/msf_core/msf_tmp.h	/^struct FullStatetoDoubleArray {$/;"	s	namespace:msf_tmp
+FullStatetoString	include/msf_core/msf_tmp.h	/^  FullStatetoString(STREAM& data)$/;"	f	struct:msf_tmp::FullStatetoString
+FullStatetoString	include/msf_core/msf_tmp.h	/^struct FullStatetoString {$/;"	s	namespace:msf_tmp
+GPSConversion	include/msf_core/gps_conversion.h	/^class GPSConversion {$/;"	c	namespace:msf_core
+GPS_CONVERSION_H_	include/msf_core/gps_conversion.h	18;"	d
+GammaLog_palettes	include/msf_core/falsecolor.h	/^    GammaLog_palettes,$/;"	e	enum:palette::palettetypes
+GammaLog_red_palettes	include/msf_core/falsecolor.h	/^    GammaLog_red_palettes,$/;"	e	enum:palette::palettetypes
+GenericState_T	include/msf_core/msf_state.h	/^  GenericState_T() {$/;"	f	struct:msf_core::GenericState_T
+GenericState_T	include/msf_core/msf_state.h	/^struct GenericState_T {$/;"	s	namespace:msf_core
+GeometryMsgsCovBlockToEigen	include/msf_core/similaritytransform.h	/^inline Matrix3 GeometryMsgsCovBlockToEigen($/;"	f	namespace:msf_core
+GeometryMsgsToEigen	include/msf_core/similaritytransform.h	/^inline Eigen::Quaterniond GeometryMsgsToEigen($/;"	f	namespace:msf_core
+GeometryMsgsToEigen	include/msf_core/similaritytransform.h	/^inline Vector3 GeometryMsgsToEigen(const geometry_msgs::Point & p) {$/;"	f	namespace:msf_core
+Get	src/msf_state_inl.h	/^GenericState_T<stateVector_T, StateDefinition_T>::Get() const {$/;"	f	class:msf_core::GenericState_T
+Get	src/msf_state_inl.h	/^GenericState_T<stateVector_T, StateDefinition_T>::Get() {$/;"	f	class:msf_core::GenericState_T
+GetAccumulatedStateTransitionStochasticCloning	src/msf_core_inl.h	/^void MSF_Core<EKFState_T>::GetAccumulatedStateTransitionStochasticCloning($/;"	f	class:msf_core::MSF_Core
+GetClosest	include/msf_core/msf_sortedContainer.h	/^  inline shared_ptr<T>& GetClosest(const double& statetime) {$/;"	f	class:msf_core::SortedContainer
+GetClosestAfter	include/msf_core/msf_sortedContainer.h	/^  inline shared_ptr<T>& GetClosestAfter(const double& statetime) {$/;"	f	class:msf_core::SortedContainer
+GetClosestBefore	include/msf_core/msf_sortedContainer.h	/^  inline shared_ptr<T>& GetClosestBefore(const double& statetime) {$/;"	f	class:msf_core::SortedContainer
+GetClosestState	src/msf_core_inl.h	/^shared_ptr<EKFState_T> MSF_Core<EKFState_T>::GetClosestState(double tstamp) {$/;"	f	class:msf_core::MSF_Core
+GetDataPlaybackStatus	include/msf_core/msf_sensormanager.h	/^  bool GetDataPlaybackStatus() {$/;"	f	class:msf_core::MSF_SensorManager
+GetEnumStateName	include/msf_core/msf_tmp.h	/^struct GetEnumStateName<const msf_core::StateVar_T<U, NAME, STATE_T, OPTIONS>&> {$/;"	s	namespace:msf_tmp::__anon17
+GetEnumStateName	include/msf_core/msf_tmp.h	/^struct GetEnumStateName<msf_core::StateVar_T<U, NAME, STATE_T, OPTIONS> > {$/;"	s	namespace:msf_tmp::__anon17
+GetEnumStateName	include/msf_core/msf_tmp.h	/^template<> struct GetEnumStateName<const mpl_::void_&> {$/;"	s	namespace:msf_tmp::__anon17
+GetEnumStateName	include/msf_core/msf_tmp.h	/^template<> struct GetEnumStateName<mpl_::void_> {$/;"	s	namespace:msf_tmp::__anon17
+GetEnumStateType	include/msf_core/msf_tmp.h	/^struct GetEnumStateType {$/;"	s	namespace:msf_tmp::__anon17
+GetEnumStateType	include/msf_core/msf_tmp.h	/^struct GetEnumStateType<TypeList, -1> {$/;"	s	namespace:msf_tmp::__anon17
+GetFirst	include/msf_core/msf_sortedContainer.h	/^  inline shared_ptr<T>& GetFirst() {$/;"	f	class:msf_core::SortedContainer
+GetIndicesInErrorState	include/msf_core/msf_tmp.h	/^  GetIndicesInErrorState(T& val)$/;"	f	struct:msf_tmp::GetIndicesInErrorState
+GetIndicesInErrorState	include/msf_core/msf_tmp.h	/^struct GetIndicesInErrorState {$/;"	s	namespace:msf_tmp
+GetInvalid	include/msf_core/msf_sortedContainer.h	/^  inline shared_ptr<T>& GetInvalid() {$/;"	f	class:msf_core::SortedContainer
+GetIteratorAtValue	include/msf_core/msf_sortedContainer.h	/^  inline typename ListT::iterator GetIteratorAtValue($/;"	f	class:msf_core::SortedContainer
+GetIteratorBeforeBegin	include/msf_core/msf_sortedContainer.h	/^  inline typename ListT::iterator GetIteratorBeforeBegin() {$/;"	f	class:msf_core::SortedContainer
+GetIteratorBegin	include/msf_core/msf_sortedContainer.h	/^  inline typename ListT::iterator GetIteratorBegin() {$/;"	f	class:msf_core::SortedContainer
+GetIteratorClosest	include/msf_core/msf_sortedContainer.h	/^  inline typename ListT::iterator GetIteratorClosest(const double& statetime) {$/;"	f	class:msf_core::SortedContainer
+GetIteratorClosestAfter	include/msf_core/msf_sortedContainer.h	/^  inline typename ListT::iterator GetIteratorClosestAfter($/;"	f	class:msf_core::SortedContainer
+GetIteratorClosestBefore	include/msf_core/msf_sortedContainer.h	/^  inline typename ListT::iterator GetIteratorClosestBefore($/;"	f	class:msf_core::SortedContainer
+GetIteratorEnd	include/msf_core/msf_sortedContainer.h	/^  inline typename ListT::iterator GetIteratorEnd() {$/;"	f	class:msf_core::SortedContainer
+GetLast	include/msf_core/msf_sortedContainer.h	/^  inline shared_ptr<T>& GetLast() {$/;"	f	class:msf_core::SortedContainer
+GetMedian	include/msf_core/msf_tools.h	/^typename Eigen::MatrixBase<D>::Scalar GetMedian($/;"	f	namespace:msf_core
+GetPreviousMeasurement	src/msf_core_inl.h	/^MSF_Core<EKFState_T>::GetPreviousMeasurement($/;"	f	class:msf_core::MSF_Core
+GetQBlock	src/msf_state_inl.h	/^GenericState_T<stateVector_T, StateDefinition_T>::GetQBlock() const {$/;"	f	class:msf_core::GenericState_T
+GetQBlock	src/msf_state_inl.h	/^GenericState_T<stateVector_T, StateDefinition_T>::GetQBlock() {$/;"	f	class:msf_core::GenericState_T
+GetStartIndex	include/msf_core/msf_tmp.h	/^struct GetStartIndex {$/;"	s	namespace:msf_tmp
+GetStartIndexInCorrection	include/msf_core/msf_tmp.h	/^struct GetStartIndexInCorrection {$/;"	s	namespace:msf_tmp
+GetStateAtTime	src/msf_core_inl.h	/^shared_ptr<EKFState_T> MSF_Core<EKFState_T>::GetStateAtTime(double tstamp) {$/;"	f	class:msf_core::MSF_Core
+GetStateCovariance	include/msf_core/msf_measurement.h	/^  typename EKFState_T::P_type& GetStateCovariance() {$/;"	f	class:msf_core::MSF_InitMeasurement
+GetStateIndexInErrorState	include/msf_core/msf_tmp.h	/^struct GetStateIndexInErrorState {$/;"	s	namespace:msf_tmp
+GetStateIndexInState	include/msf_core/msf_tmp.h	/^struct GetStateIndexInState {$/;"	s	namespace:msf_tmp
+GetStateInitValue	include/msf_core/msf_measurement.h	/^  GetStateInitValue() const {$/;"	f	class:msf_core::MSF_InitMeasurement
+GetStateIsNonTemporalDrifting	include/msf_core/msf_tmp.h	/^struct GetStateIsNonTemporalDrifting<$/;"	s	namespace:msf_tmp::__anon17
+GetStateIsNonTemporalDrifting	include/msf_core/msf_tmp.h	/^template<> struct GetStateIsNonTemporalDrifting<const mpl_::void_&> {$/;"	s	namespace:msf_tmp::__anon17
+GetStateIsNonTemporalDrifting	include/msf_core/msf_tmp.h	/^template<> struct GetStateIsNonTemporalDrifting<mpl_::void_> {$/;"	s	namespace:msf_tmp::__anon17
+GetStateVariable	src/msf_state_inl.h	/^    GenericState_T<stateVector_T, StateDefinition_T>::GetStateVariable() const {$/;"	f	class:msf_core::GenericState_T
+GetStateVariable	src/msf_state_inl.h	/^GenericState_T<stateVector_T, StateDefinition_T>::GetStateVariable() {$/;"	f	class:msf_core::GenericState_T
+GetUserCalc	src/msf_core_inl.h	/^const MSF_SensorManager<EKFState_T>& MSF_Core<EKFState_T>::GetUserCalc() const {$/;"	f	class:msf_core::MSF_Core
+GetValueAt	include/msf_core/msf_sortedContainer.h	/^  inline shared_ptr<T>& GetValueAt(const double& statetime) {$/;"	f	class:msf_core::SortedContainer
+Geta_m	include/msf_core/msf_measurement.h	/^  Eigen::Matrix<double, 3, 1>& Geta_m() {$/;"	f	class:msf_core::MSF_InitMeasurement
+Getw_m	include/msf_core/msf_measurement.h	/^  Eigen::Matrix<double, 3, 1>& Getw_m() {$/;"	f	class:msf_core::MSF_InitMeasurement
+HandlePendingMeasurements	src/msf_core_inl.h	/^void MSF_Core<EKFState_T>::HandlePendingMeasurements() {$/;"	f	class:msf_core::MSF_Core
+Handlers	include/msf_core/msf_sensormanager.h	/^  typedef std::vector<shared_ptr<SensorHandler<EKFState_T> > > Handlers;$/;"	t	class:msf_core::MSF_SensorManager
+IMUHandler	include/msf_core/msf_IMUHandler.h	/^  IMUHandler(MSF_SensorManager<EKFState_T>& mng,$/;"	f	class:msf_core::IMUHandler
+IMUHandler	include/msf_core/msf_IMUHandler.h	/^class IMUHandler : public SensorHandler<EKFState_T> {$/;"	c	namespace:msf_core
+INVALID_ID	include/msf_core/msf_types.h	/^  const static int INVALID_ID = -1;$/;"	m	namespace:msf_core::constants
+INVALID_SEQUENCE	include/msf_core/msf_types.h	/^  const static int INVALID_SEQUENCE = -1;$/;"	m	namespace:msf_core::constants
+INVALID_TIME	include/msf_core/msf_types.h	/^  const static double INVALID_TIME = -1;$/;"	m	namespace:msf_core::constants
+IndexOfBestNonTemporalDriftingState	include/msf_core/msf_tmp.h	/^struct IndexOfBestNonTemporalDriftingState {$/;"	s	namespace:msf_tmp
+Init	src/msf_core_inl.h	/^void MSF_Core<EKFState_T>::Init($/;"	f	class:msf_core::MSF_Core
+InitState	include/msf_core/msf_measurement.h	/^  EKFState_T InitState;  \/\/\/< Values for initialization of the state.$/;"	m	class:msf_core::MSF_InitMeasurement
+Initialize	include/msf_core/msf_IMUHandler.h	/^  virtual bool Initialize() {$/;"	f	class:msf_core::IMUHandler
+Insert	include/msf_core/msf_sortedContainer.h	/^  inline typename ListT::iterator Insert(const shared_ptr<T>& value) {$/;"	f	class:msf_core::SortedContainer
+Inversion_palette	include/msf_core/falsecolor.h	/^    Inversion_palette,$/;"	e	enum:palette::palettetypes
+Inversion_red_palette	include/msf_core/falsecolor.h	/^    Inversion_red_palette,$/;"	e	enum:palette::palettetypes
+IsCurrentStateAQuaternion	include/msf_core/msf_tmp.h	/^    IsCurrentStateAQuaternion = IsQuaternionType<$/;"	e	enum:msf_tmp::__anon17::FindBestNonTemporalDriftingStateImpl::__anon70
+IsCurrentStateNonTemporalDrifting	include/msf_core/msf_tmp.h	/^    IsCurrentStateNonTemporalDrifting = GetStateIsNonTemporalDrifting<$/;"	e	enum:msf_tmp::__anon17::FindBestNonTemporalDriftingStateImpl::__anon70
+IsPointerType	include/msf_core/msf_typetraits.h	/^struct IsPointerType {$/;"	s	namespace:msf_tmp
+IsPointerType	include/msf_core/msf_typetraits.h	/^struct IsPointerType<T*> {$/;"	s	namespace:msf_tmp
+IsPointerType	include/msf_core/msf_typetraits.h	/^struct IsPointerType<const T*> {$/;"	s	namespace:msf_tmp
+IsQuaternionType	include/msf_core/msf_tmp.h	/^struct IsQuaternionType<$/;"	s	namespace:msf_tmp::__anon17
+IsQuaternionType	include/msf_core/msf_tmp.h	/^struct IsQuaternionType<const mpl_::void_&> {$/;"	s	namespace:msf_tmp::__anon17
+IsQuaternionType	include/msf_core/msf_tmp.h	/^struct IsQuaternionType<mpl_::void_> {$/;"	s	namespace:msf_tmp::__anon17
+IsReferenceType	include/msf_core/msf_typetraits.h	/^struct IsReferenceType {$/;"	s	namespace:msf_tmp
+IsReferenceType	include/msf_core/msf_typetraits.h	/^struct IsReferenceType<T&> {$/;"	s	namespace:msf_tmp
+IsReferenceType	include/msf_core/msf_typetraits.h	/^struct IsReferenceType<const T&> {$/;"	s	namespace:msf_tmp
+Last	include/msf_core/msf_tmp.h	/^  typedef typename boost::fusion::result_of::end<Sequence const>::type Last;$/;"	t	struct:msf_tmp::CheckCorrectIndexing
+Last	include/msf_core/msf_tmp.h	/^  typedef typename boost::fusion::result_of::end<Sequence const>::type Last;$/;"	t	struct:msf_tmp::CountStates
+Last	include/msf_core/msf_tmp.h	/^  typedef typename boost::fusion::result_of::end<Sequence const>::type Last;$/;"	t	struct:msf_tmp::GetStartIndex
+Last	include/msf_core/msf_tmp.h	/^  typedef typename boost::fusion::result_of::end<Sequence const>::type Last;$/;"	t	struct:msf_tmp::GetStartIndexInCorrection
+Last	include/msf_core/msf_tmp.h	/^  typedef typename boost::fusion::result_of::end<Sequence const>::type Last;$/;"	t	struct:msf_tmp::IndexOfBestNonTemporalDriftingState
+Linear_palettes	include/msf_core/falsecolor.h	/^    Linear_palettes,$/;"	e	enum:palette::palettetypes
+Linear_red_palettes	include/msf_core/falsecolor.h	/^    Linear_red_palettes,$/;"	e	enum:palette::palettetypes
+ListT	include/msf_core/msf_sortedContainer.h	/^  typedef std::map<double, Ptr_T> ListT;  \/\/\/< The container type in which to store the data.$/;"	t	class:msf_core::SortedContainer
+MEASUREMENT_H_	include/msf_core/msf_measurement.h	18;"	d
+MEASUREMENT_INL_H_	src/msf_measurement_inl.h	18;"	d
+MSF_CHECKFUZZYTRACKING_H_	include/msf_core/msf_checkFuzzyTracking.h	20;"	d
+MSF_CORE_H_	include/msf_core/msf_core.h	34;"	d
+MSF_CORE_INL_H_	src/msf_core_inl.h	20;"	d
+MSF_Core	include/msf_core/msf_core.h	/^class MSF_Core {$/;"	c	namespace:msf_core
+MSF_Core	src/msf_core_inl.h	/^MSF_Core<EKFState_T>::MSF_Core(const MSF_SensorManager<EKFState_T>& GetUserCalc)$/;"	f	class:msf_core::MSF_Core
+MSF_ERROR_STREAM	include/msf_core/msf_macros.h	60;"	d
+MSF_ERROR_STREAM	include/msf_core/msf_macros.h	87;"	d
+MSF_ERROR_STREAM_COND	include/msf_core/msf_macros.h	175;"	d
+MSF_ERROR_STREAM_COND	include/msf_core/msf_macros.h	72;"	d
+MSF_ERROR_STREAM_ONCE	include/msf_core/msf_macros.h	108;"	d
+MSF_ERROR_STREAM_ONCE	include/msf_core/msf_macros.h	64;"	d
+MSF_ERROR_STREAM_THROTTLE	include/msf_core/msf_macros.h	146;"	d
+MSF_ERROR_STREAM_THROTTLE	include/msf_core/msf_macros.h	68;"	d
+MSF_FWD_HPP_	include/msf_core/msf_fwds.h	18;"	d
+MSF_IMU_HANDLER_H_	include/msf_core/msf_IMUHandler.h	18;"	d
+MSF_INFO_STREAM	include/msf_core/msf_macros.h	58;"	d
+MSF_INFO_STREAM	include/msf_core/msf_macros.h	79;"	d
+MSF_INFO_STREAM_COND	include/msf_core/msf_macros.h	161;"	d
+MSF_INFO_STREAM_COND	include/msf_core/msf_macros.h	70;"	d
+MSF_INFO_STREAM_ONCE	include/msf_core/msf_macros.h	62;"	d
+MSF_INFO_STREAM_ONCE	include/msf_core/msf_macros.h	90;"	d
+MSF_InitMeasurement	include/msf_core/msf_measurement.h	/^  EIGEN_MAKE_ALIGNED_OPERATOR_NEW MSF_InitMeasurement($/;"	f	class:msf_core::MSF_InitMeasurement
+MSF_InitMeasurement	include/msf_core/msf_measurement.h	/^class MSF_InitMeasurement : public MSF_MeasurementBase<EKFState_T> {$/;"	c	namespace:msf_core
+MSF_InvalidMeasurement	include/msf_core/msf_measurement.h	/^  MSF_InvalidMeasurement()$/;"	f	class:msf_core::MSF_InvalidMeasurement
+MSF_InvalidMeasurement	include/msf_core/msf_measurement.h	/^class MSF_InvalidMeasurement : public MSF_MeasurementBase<EKFState_T> {$/;"	c	namespace:msf_core
+MSF_LIKELY	include/msf_core/msf_macros.h	49;"	d
+MSF_LIKELY	include/msf_core/msf_macros.h	52;"	d
+MSF_LOG_STREAM_THROTTLE	include/msf_core/msf_macros.h	117;"	d
+MSF_LOG_STREAM_THROTTLE	include/msf_core/msf_macros.h	66;"	d
+MSF_MACROS_H_	include/msf_core/msf_macros.h	18;"	d
+MSF_MAKE_EIGEN_TYPES	include/msf_core/msf_types.h	33;"	d
+MSF_Measurement	include/msf_core/msf_measurement.h	/^  MSF_Measurement(bool isAbsoluteMeasurement, int sensorID,$/;"	f	class:msf_core::MSF_Measurement
+MSF_Measurement	include/msf_core/msf_measurement.h	/^class MSF_Measurement : public MSF_MeasurementBase<EKFState_T> {$/;"	c	namespace:msf_core
+MSF_MeasurementBase	include/msf_core/msf_measurement.h	/^class MSF_MeasurementBase {$/;"	c	namespace:msf_core
+MSF_MeasurementBase	src/msf_measurement_inl.h	/^MSF_MeasurementBase<EKFState_T>::MSF_MeasurementBase(bool isabsoluteMeasurement,$/;"	f	class:msf_core::MSF_MeasurementBase
+MSF_SENSORHANDLER_H_	include/msf_core/msf_sensorhandler.h	18;"	d
+MSF_SENSORHANDLER_INL_H_	src/msf_sensormanager_inl.h	18;"	d
+MSF_SORTEDCONTAINER_H_	include/msf_core/msf_sortedContainer.h	18;"	d
+MSF_STATEVISITOR_H_	include/msf_core/msf_statevisitor.h	18;"	d
+MSF_STATE_H_	include/msf_core/msf_state.h	18;"	d
+MSF_STATE_INL_H_	src/msf_state_inl.h	18;"	d
+MSF_SensorManager	include/msf_core/msf_sensormanager.h	/^class MSF_SensorManager : public StateVisitor<EKFState_T> {$/;"	c	namespace:msf_core
+MSF_SensorManager	src/msf_sensormanager_inl.h	/^MSF_SensorManager<EKFState_T>::MSF_SensorManager() {$/;"	f	class:msf_core::MSF_SensorManager
+MSF_TMP_H_	include/msf_core/msf_tmp.h	27;"	d
+MSF_TOOLS_H_	include/msf_core/msf_tools.h	18;"	d
+MSF_TYPES_HPP_	include/msf_core/msf_types.h	18;"	d
+MSF_TYPETRAITS_H_	include/msf_core/msf_typetraits.h	18;"	d
+MSF_UNITTEST_ENTRYPOINT	include/msf_core/testing_entrypoint.h	29;"	d
+MSF_UNLIKELY	include/msf_core/msf_macros.h	50;"	d
+MSF_UNLIKELY	include/msf_core/msf_macros.h	53;"	d
+MSF_WARN_STREAM	include/msf_core/msf_macros.h	59;"	d
+MSF_WARN_STREAM	include/msf_core/msf_macros.h	83;"	d
+MSF_WARN_STREAM_COND	include/msf_core/msf_macros.h	168;"	d
+MSF_WARN_STREAM_COND	include/msf_core/msf_macros.h	71;"	d
+MSF_WARN_STREAM_ONCE	include/msf_core/msf_macros.h	63;"	d
+MSF_WARN_STREAM_ONCE	include/msf_core/msf_macros.h	99;"	d
+MSF_WARN_STREAM_THROTTLE	include/msf_core/msf_macros.h	131;"	d
+MSF_WARN_STREAM_THROTTLE	include/msf_core/msf_macros.h	67;"	d
+MakeFromSensorReading	include/msf_core/msf_measurement.h	/^  void MakeFromSensorReading(const boost::shared_ptr<T const> reading,$/;"	f	class:msf_core::MSF_Measurement
+MeasurementBuffer_	include/msf_core/msf_core.h	/^  measurementBufferT MeasurementBuffer_;$/;"	m	class:msf_core::MSF_Core
+Measurement_ptr	include/msf_core/msf_measurement.h	/^  typedef boost::shared_ptr<T const> Measurement_ptr;$/;"	t	class:msf_core::MSF_Measurement
+Measurement_type	include/msf_core/msf_measurement.h	/^  typedef T Measurement_type;$/;"	t	class:msf_core::MSF_Measurement
+NUMERIC_PREC	include/msf_core/msf_macros.h	23;"	d
+Next	include/msf_core/msf_tmp.h	/^  typedef typename boost::fusion::result_of::next<First>::type Next;$/;"	t	struct:msf_tmp::__anon17::CheckStateIndexing
+Next	include/msf_core/msf_tmp.h	/^  typedef typename boost::fusion::result_of::next<First>::type Next;$/;"	t	struct:msf_tmp::__anon17::ComputeStartIndex
+Next	include/msf_core/msf_tmp.h	/^  typedef typename boost::fusion::result_of::next<First>::type Next;$/;"	t	struct:msf_tmp::__anon17::CountStatesLinear
+Next	include/msf_core/msf_tmp.h	/^  typedef typename boost::fusion::result_of::next<First>::type Next;$/;"	t	struct:msf_tmp::__anon17::FindBestNonTemporalDriftingStateImpl
+OmegaMatHamilton	include/msf_core/eigen_utils.h	/^inline Eigen::Matrix<typename Derived::Scalar, 4, 4> OmegaMatHamilton($/;"	f
+OmegaMatJPL	include/msf_core/eigen_utils.h	/^inline Eigen::Matrix<typename Derived::Scalar, 4, 4> OmegaMatJPL($/;"	f
+P	include/msf_core/msf_state.h	/^  P_type P;  \/\/\/< Error state covariance.$/;"	m	struct:msf_core::GenericState_T
+P_type	include/msf_core/msf_state.h	/^      nErrorStatesAtCompileTime> P_type;  \/\/\/< Type of the error state$/;"	t	struct:msf_core::GenericState_T
+Pose	include/msf_core/similaritytransform.h	/^typedef geometry_msgs::PoseWithCovariance Pose;$/;"	t	namespace:msf_core::similarity_transform
+PosePair	include/msf_core/similaritytransform.h	/^typedef std::pair<Pose, Pose> PosePair;$/;"	t	namespace:msf_core::similarity_transform
+PosePairVector	include/msf_core/similaritytransform.h	/^typedef std::vector<PosePair> PosePairVector;$/;"	t	namespace:msf_core::similarity_transform
+PredictProcessCovariance	src/msf_core_inl.h	/^void MSF_Core<EKFState_T>::PredictProcessCovariance($/;"	f	class:msf_core::MSF_Core
+Print	src/msf_state_inl.h	/^std::string GenericState_T<stateVector_T, StateDefinition_T>::Print() {$/;"	f	class:msf_core::GenericState_T
+ProcessExternallyPropagatedState	src/msf_core_inl.h	/^void MSF_Core<EKFState_T>::ProcessExternallyPropagatedState($/;"	f	class:msf_core::MSF_Core
+ProcessIMU	include/msf_core/msf_IMUHandler.h	/^  void ProcessIMU(const msf_core::Vector3& linear_acceleration,$/;"	f	class:msf_core::IMUHandler
+ProcessIMU	src/msf_core_inl.h	/^void MSF_Core<EKFState_T>::ProcessIMU($/;"	f	class:msf_core::MSF_Core
+ProcessState	include/msf_core/msf_IMUHandler.h	/^  void ProcessState(const msf_core::Vector3& linear_acceleration,$/;"	f	class:msf_core::IMUHandler
+PropPToState	src/msf_core_inl.h	/^void MSF_Core<EKFState_T>::PropPToState(shared_ptr<EKFState_T>& state) {$/;"	f	class:msf_core::MSF_Core
+PropagatePOneStep	src/msf_core_inl.h	/^void MSF_Core<EKFState_T>::PropagatePOneStep() {$/;"	f	class:msf_core::MSF_Core
+PropagateState	src/msf_core_inl.h	/^void MSF_Core<EKFState_T>::PropagateState(shared_ptr<EKFState_T>& state_old,$/;"	f	class:msf_core::MSF_Core
+PropagatedCoreErrorStateLengthForType	include/msf_core/msf_tmp.h	/^struct PropagatedCoreErrorStateLengthForType<$/;"	s	namespace:msf_tmp::__anon17
+PropagatedCoreErrorStateLengthForType	include/msf_core/msf_tmp.h	/^struct PropagatedCoreErrorStateLengthForType<const mpl_::void_&> {$/;"	s	namespace:msf_tmp::__anon17
+PropagatedCoreStateLengthForType	include/msf_core/msf_tmp.h	/^struct PropagatedCoreStateLengthForType<$/;"	s	namespace:msf_tmp::__anon17
+PropagatedCoreStateLengthForType	include/msf_core/msf_tmp.h	/^struct PropagatedCoreStateLengthForType<const mpl_::void_&> {$/;"	s	namespace:msf_tmp::__anon17
+Ptr_T	include/msf_core/msf_sortedContainer.h	/^  typedef shared_ptr<T> Ptr_T;$/;"	t	class:msf_core::SortedContainer
+Ptr_T	include/msf_core/msf_state.h	/^  typedef StateVar_T<type_T, name_T>* Ptr_T;$/;"	t	struct:msf_core::StateVar_T
+Q	include/msf_core/msf_state.h	/^  Q_T Q;  \/\/\/< The noise covariance matrix block of this state.$/;"	m	struct:msf_core::StateVar_T
+Q_	include/msf_core/msf_tmp.h	/^  Q_T& Q_;$/;"	m	struct:msf_tmp::CopyQBlocksFromAuxiliaryStatesToQ
+Q_T	include/msf_core/msf_state.h	/^  typedef Eigen::Matrix<double, sizeInCorrection_, sizeInCorrection_> Q_T;$/;"	t	struct:msf_core::StateVar_T
+Q_T	include/msf_core/msf_tmp.h	/^      nErrorStatesAtCompileTime> Q_T;$/;"	t	struct:msf_tmp::CopyQBlocksFromAuxiliaryStatesToQ
+Q_type	include/msf_core/msf_state.h	/^  typedef P_type Q_type;$/;"	t	struct:msf_core::GenericState_T
+Qd	include/msf_core/msf_state.h	/^  Q_type Qd;   \/\/\/< Discrete propagation noise matrix.$/;"	m	struct:msf_core::GenericState_T
+Quaternion	include/msf_core/msf_types.h	/^typedef Eigen::Quaternion<double> Quaternion;$/;"	t	namespace:msf_core
+QuaternionFromSmallAngle	include/msf_core/eigen_utils.h	/^Eigen::Quaternion<typename Derived::Scalar> QuaternionFromSmallAngle($/;"	f
+QuaternionToMsg	include/msf_core/eigen_conversions.h	/^inline geometry_msgs::Quaternion QuaternionToMsg($/;"	f	namespace:eigen_conversions
+QuaternionToMsg	include/msf_core/eigen_conversions.h	/^inline void QuaternionToMsg(const Eigen::Quaternion<Scalar>& q_in,$/;"	f	namespace:eigen_conversions
+R_	include/msf_core/msf_measurement.h	/^  RMAT_T R_;$/;"	m	class:msf_core::MSF_Measurement
+ReceivedFirstMeasurement	include/msf_core/msf_sensorhandler.h	/^  bool ReceivedFirstMeasurement() const {return received_first_measurement_;}$/;"	f	class:msf_core::SensorHandler
+Ref_T	include/msf_core/msf_state.h	/^  typedef StateVar_T<type_T, name_T>& Ref_T;$/;"	t	struct:msf_core::StateVar_T
+Reset	include/msf_core/msf_checkFuzzyTracking.h	/^  void Reset() { }$/;"	f	class:msf_core::CheckFuzzyTracking
+Reset	include/msf_core/msf_checkFuzzyTracking.h	/^  void Reset() {$/;"	f	class:msf_core::CheckFuzzyTracking
+Reset	src/msf_state_inl.h	/^void GenericState_T<stateVector_T, StateDefinition_T>::Reset($/;"	f	class:msf_core::GenericState_T
+ResetState	include/msf_core/msf_tmp.h	/^struct ResetState {$/;"	s	namespace:msf_tmp
+ResetStateInitValue	include/msf_core/msf_measurement.h	/^  void ResetStateInitValue() {$/;"	f	class:msf_core::MSF_InitMeasurement
+SENSORMANAGER_H	include/msf_core/msf_sensormanager.h	18;"	d
+SIMILARITYTRANSFORM_H_	include/msf_core/similaritytransform.h	18;"	d
+SINCOS_H_	include/msf_core/sincos.h	18;"	d
+STATIC_ORDERING_ASSERTIONS_CORE_H_	include/msf_core/static_ordering_assertions.h	18;"	d
+STREAMQUAT	include/msf_core/msf_macros.h	40;"	d
+SameType	include/msf_core/msf_typetraits.h	/^template<typename T, typename U> struct SameType {$/;"	s	namespace:msf_tmp
+SameType	include/msf_core/msf_typetraits.h	/^template<typename T> struct SameType<T, T> {$/;"	s	namespace:msf_tmp
+SensorHandler	include/msf_core/msf_sensorhandler.h	/^  SensorHandler(MSF_SensorManager<EKFState_T>& mng,$/;"	f	class:msf_core::SensorHandler
+SensorHandler	include/msf_core/msf_sensorhandler.h	/^class SensorHandler {$/;"	c	namespace:msf_core
+SequenceWatchDog	include/msf_core/msf_sensorhandler.h	/^  void SequenceWatchDog(size_t seq, const std::string& topic) {$/;"	f	class:msf_core::SensorHandler
+Set	src/msf_state_inl.h	/^inline void GenericState_T<stateVector_T, StateDefinition_T>::Set($/;"	f	class:msf_core::GenericState_T
+SetPCore	src/msf_core_inl.h	/^void MSF_Core<EKFState_T>::SetPCore($/;"	f	class:msf_core::MSF_Core
+SetSensorID	include/msf_core/msf_sensorhandler.h	/^  void SetSensorID(int ID) {$/;"	f	class:msf_core::SensorHandler
+SetStateInitValue	include/msf_core/msf_measurement.h	/^  void SetStateInitValue(const T& initvalue) {$/;"	f	class:msf_core::MSF_InitMeasurement
+Size	include/msf_core/msf_sortedContainer.h	/^  inline typename ListT::size_type Size() {$/;"	f	class:msf_core::SortedContainer
+Skew	include/msf_core/eigen_utils.h	/^inline Eigen::Matrix<typename Derived::Scalar, 3, 3> Skew($/;"	f
+SortStates	include/msf_core/msf_state.h	/^class SortStates {$/;"	c	namespace:msf_core
+SortedContainer	include/msf_core/msf_sortedContainer.h	/^  SortedContainer() {$/;"	f	class:msf_core::SortedContainer
+SortedContainer	include/msf_core/msf_sortedContainer.h	/^class SortedContainer {$/;"	c	namespace:msf_core
+StateBuffer_T	include/msf_core/msf_core.h	/^  typedef msf_core::SortedContainer<EKFState_T> StateBuffer_T;$/;"	t	class:msf_core::MSF_Core
+StateDefinition_T	include/msf_core/msf_core.h	/^  typedef typename EKFState_T::StateDefinition_T StateDefinition_T;$/;"	t	class:msf_core::MSF_Core
+StateDefinition_T	include/msf_core/msf_state.h	/^  typedef StateDef_T StateDefinition_T;$/;"	t	struct:msf_core::GenericState_T
+StateDefinition_T	include/msf_core/static_ordering_assertions.h	/^  typedef typename EKFState_T::StateDefinition_T StateDefinition_T;$/;"	t	struct:__anon1::StaticAssertCoreStateOrderingCorrect
+StateLengthForType	include/msf_core/msf_tmp.h	/^struct StateLengthForType<$/;"	s	namespace:msf_tmp::__anon17
+StateLengthForType	include/msf_core/msf_tmp.h	/^struct StateLengthForType<const mpl_::void_&> {$/;"	s	namespace:msf_tmp::__anon17
+StateSequence_T	include/msf_core/msf_core.h	/^  typedef typename EKFState_T::StateSequence_T StateSequence_T;$/;"	t	class:msf_core::MSF_Core
+StateSequence_T	include/msf_core/msf_measurement.h	/^  typedef typename EKFState_T::StateSequence_T StateSequence_T;$/;"	t	class:msf_core::MSF_InitMeasurement
+StateSequence_T	include/msf_core/msf_state.h	/^  typedef StateSeq_T StateSequence_T;$/;"	t	struct:msf_core::GenericState_T
+StateSequence_T	include/msf_core/static_ordering_assertions.h	/^  typedef typename EKFState_T::StateSequence_T StateSequence_T;$/;"	t	struct:__anon1::StaticAssertCoreStateOrderingCorrect
+StateVar_T	include/msf_core/msf_state.h	/^  StateVar_T() {$/;"	f	struct:msf_core::StateVar_T
+StateVar_T	include/msf_core/msf_state.h	/^struct StateVar_T {$/;"	s	namespace:msf_core
+StateVisitor	include/msf_core/msf_statevisitor.h	/^class StateVisitor {$/;"	c	namespace:msf_core
+StaticAssertCoreStateOrderingCorrect	include/msf_core/static_ordering_assertions.h	/^struct StaticAssertCoreStateOrderingCorrect {$/;"	s	namespace:__anon1
+StripConstPtr	include/msf_core/msf_typetraits.h	/^struct StripConstPtr {$/;"	s	namespace:msf_tmp
+StripConstPtr	include/msf_core/msf_typetraits.h	/^struct StripConstPtr<T*> {$/;"	s	namespace:msf_tmp
+StripConstPtr	include/msf_core/msf_typetraits.h	/^struct StripConstPtr<const T*> {$/;"	s	namespace:msf_tmp
+StripConstPtr	include/msf_core/msf_typetraits.h	/^struct StripConstPtr<const T> {$/;"	s	namespace:msf_tmp
+StripConstReference	include/msf_core/msf_typetraits.h	/^struct StripConstReference {$/;"	s	namespace:msf_tmp
+StripConstReference	include/msf_core/msf_typetraits.h	/^struct StripConstReference<T&> {$/;"	s	namespace:msf_tmp
+StripConstReference	include/msf_core/msf_typetraits.h	/^struct StripConstReference<const T&> {$/;"	s	namespace:msf_tmp
+StripConstReference	include/msf_core/msf_typetraits.h	/^struct StripConstReference<const T> {$/;"	s	namespace:msf_tmp
+StripReference	include/msf_core/msf_typetraits.h	/^struct StripReference {$/;"	s	namespace:msf_tmp
+StripReference	include/msf_core/msf_typetraits.h	/^struct StripReference<T&> {$/;"	s	namespace:msf_tmp
+StripReference	include/msf_core/msf_typetraits.h	/^struct StripReference<const T&> {$/;"	s	namespace:msf_tmp
+StripReference	include/msf_core/msf_typetraits.h	/^struct StripReference<const T> {$/;"	s	namespace:msf_tmp
+TEST	include/msf_core/testing_entrypoint.h	26;"	d
+TESTING_ENTRYPOINT_H_	include/msf_core/testing_entrypoint.h	19;"	d
+TESTING_PREDICATES_H_	include/msf_core/testing_predicates.h	19;"	d
+ToEigenVector	src/msf_state_inl.h	/^GenericState_T<stateVector_T, StateDefinition_T>::ToEigenVector() {$/;"	f	class:msf_core::GenericState_T
+ToPoseVectors	src/msf_state_inl.h	/^void GenericState_T<stateVector_T, StateDefinition_T>::ToPoseVectors($/;"	f	class:msf_core::GenericState_T
+Type	include/msf_core/msf_measurement.h	/^  virtual std::string Type() {$/;"	f	class:msf_core::MSF_InitMeasurement
+Type	include/msf_core/msf_measurement.h	/^  virtual std::string Type() {$/;"	f	class:msf_core::MSF_InvalidMeasurement
+UNUSED	include/msf_core/msf_macros.h	36;"	d
+UNUSEDPARAM	include/msf_core/msf_checkFuzzyTracking.h	/^             double UNUSEDPARAM(fuzzythres)) {$/;"	f	class:msf_core::CheckFuzzyTracking
+UNUSEDPARAM	include/msf_core/msf_macros.h	28;"	d
+UNUSEDPARAM	include/msf_core/msf_macros.h	30;"	d
+UNUSEDPARAM	include/msf_core/msf_macros.h	32;"	d
+UNUSEDPARAM	include/msf_core/msf_measurement.h	/^                     MSF_Core<EKFState_T>& UNUSEDPARAM(core)) {$/;"	f	class:msf_core::MSF_InvalidMeasurement
+UNUSEDPARAM	include/msf_core/msf_tmp.h	/^          OPTIONS>& UNUSEDPARAM(t)) const {$/;"	f	struct:msf_tmp::CopyQBlocksFromAuxiliaryStatesToQ
+UNUSEDPARAM	include/msf_core/msf_tmp.h	/^          OPTIONS>& UNUSEDPARAM(t)) const {$/;"	f	struct:msf_tmp::CoreStatetoDoubleArray
+UNUSEDPARAM	include/msf_core/msf_tmp.h	/^          msf_core::Auxiliary, OPTIONS>& UNUSEDPARAM(t)) const {$/;"	f	struct:msf_tmp::CoreStatetoDoubleArray
+UNUSEDPARAM	include/msf_core/msf_tmp.h	/^          msf_core::AuxiliaryNonTemporalDrifting, OPTIONS>& UNUSEDPARAM(t)) const {$/;"	f	struct:msf_tmp::CoreStatetoDoubleArray
+UNUSEDPARAM	include/msf_core/msf_tmp.h	/^      msf_core::StateVar_T<T, NAME, msf_core::CoreStateWithPropagation, OPTIONS>& UNUSEDPARAM(t)) const {$/;"	f	struct:msf_tmp::CopyNonPropagationStates
+UNUSEDPARAM	include/msf_core/msf_tmp.h	/^      msf_core::StateVar_T<T, NAME, msf_core::CoreStateWithPropagation, OPTIONS>& UNUSEDPARAM(t)) const {$/;"	f	struct:msf_tmp::CopyQBlocksFromAuxiliaryStatesToQ
+UNUSEDPARAM	include/msf_core/msf_tmp.h	/^      msf_core::StateVar_T<VALUE_T, NAME, STATE_T, OPTIONS>& UNUSEDPARAM(t)) const {$/;"	f	struct:msf_tmp::GetIndicesInErrorState
+UpdateTime	include/msf_core/msf_sortedContainer.h	/^  inline shared_ptr<T> UpdateTime(double timeOld, double timeNew)$/;"	f	class:msf_core::SortedContainer
+Value	include/msf_core/msf_tmp.h	/^  static std::string Value() {$/;"	f	struct:msf_tmp::EchoStateVarType
+Vector3dToPoint	include/msf_core/eigen_conversions.h	/^inline Point Vector3dToPoint(const Eigen::MatrixBase<Derived>& vec) {$/;"	f	namespace:eigen_conversions
+Vector3dToPoint	include/msf_core/eigen_conversions.h	/^inline void Vector3dToPoint(const Eigen::MatrixBase<Derived>& vec,$/;"	f	namespace:eigen_conversions
+XiMat	include/msf_core/eigen_utils.h	/^inline Eigen::Matrix<typename Derived::Scalar, 4, 3> XiMat($/;"	f
+__INTERNAL_GTEST_NEAR_EIGEN	include/msf_core/testing_predicates.h	24;"	d
+__x87_inline_math__	include/msf_core/sincos.h	24;"	d
+a_m	include/msf_core/msf_state.h	/^  Eigen::Matrix<double, 3, 1> a_m;         \/\/\/< Linear acceleration from IMU.$/;"	m	struct:msf_core::GenericState_T
+bestindex	include/msf_core/msf_tmp.h	/^    bestindex = -1,  \/\/ Must not change this.$/;"	e	enum:msf_tmp::IndexOfBestNonTemporalDriftingState::__anon73
+color	include/msf_core/falsecolor.h	/^  color() {$/;"	f	struct:color
+color	include/msf_core/falsecolor.h	/^struct color {$/;"	s
+colors	include/msf_core/falsecolor.h	/^  color colors[256];$/;"	m	struct:palette
+constPtr_T	include/msf_core/msf_state.h	/^  typedef const StateVar_T<type_T, name_T>* constPtr_T;$/;"	t	struct:msf_core::StateVar_T
+constRef_T	include/msf_core/msf_state.h	/^  typedef const StateVar_T<type_T, name_T>& constRef_T;$/;"	t	struct:msf_core::StateVar_T
+constants	include/msf_core/msf_types.h	/^namespace constants{$/;"	n	namespace:msf_core
+core_	include/msf_core/msf_IMUHandler.h	/^  shared_ptr<MSF_Core<EKFState_T> > core_;$/;"	m	class:msf_core::IMUHandler
+correctionMultiplicative	include/msf_core/msf_fwds.h	/^  correctionMultiplicative = 0x1$/;"	e	enum:msf_core::__anon83
+cov	include/msf_core/similaritytransform.h	/^namespace cov {$/;"	n	namespace:geometry_msgs
+currBestIdx	include/msf_core/msf_tmp.h	/^    currBestIdx = boost::mpl::if_c<isQuaternionAndNonTemporalDrifting,$/;"	e	enum:msf_tmp::__anon17::FindBestNonTemporalDriftingStateImpl::__anon70
+currentType	include/msf_core/msf_tmp.h	/^  typedef typename boost::fusion::result_of::deref<First>::type currentType;$/;"	t	struct:msf_tmp::GetStartIndex
+currentType	include/msf_core/msf_tmp.h	/^  typedef typename boost::fusion::result_of::deref<First>::type currentType;$/;"	t	struct:msf_tmp::GetStartIndexInCorrection
+currentType	include/msf_core/msf_tmp.h	/^  typedef typename boost::fusion::result_of::deref<First>::type currentType;$/;"	t	struct:msf_tmp::__anon17::ComputeStartIndex
+current_Type	include/msf_core/msf_tmp.h	/^  typedef typename boost::fusion::result_of::deref<First>::type current_Type;$/;"	t	struct:msf_tmp::__anon17::CheckStateIndexing
+current_Type	include/msf_core/msf_tmp.h	/^  typedef typename boost::fusion::result_of::deref<First>::type current_Type;$/;"	t	struct:msf_tmp::__anon17::CountStatesLinear
+current_Type	include/msf_core/msf_tmp.h	/^  typedef typename boost::fusion::result_of::deref<First>::type current_Type;$/;"	t	struct:msf_tmp::__anon17::FindBestNonTemporalDriftingStateImpl
+data_	include/msf_core/msf_tmp.h	/^  STREAM& data_;$/;"	m	struct:msf_tmp::FullStatetoString
+data_	include/msf_core/msf_tmp.h	/^  T& data_;$/;"	m	struct:msf_tmp::CoreStatetoDoubleArray
+data_	include/msf_core/msf_tmp.h	/^  T& data_;$/;"	m	struct:msf_tmp::CorrectState
+data_	include/msf_core/msf_tmp.h	/^  T& data_;$/;"	m	struct:msf_tmp::FullStatetoDoubleArray
+data_	include/msf_core/msf_tmp.h	/^  T& data_;$/;"	m	struct:msf_tmp::GetIndicesInErrorState
+data_playback_	include/msf_core/msf_sensormanager.h	/^  bool data_playback_;$/;"	m	class:msf_core::MSF_SensorManager
+ecef_ref_orientation_	include/msf_core/gps_conversion.h	/^  msf_core::Quaternion ecef_ref_orientation_;$/;"	m	class:msf_core::GPSConversion
+ecef_ref_point_	include/msf_core/gps_conversion.h	/^  msf_core::Vector3 ecef_ref_point_;$/;"	m	class:msf_core::GPSConversion
+eigen_conversions	include/msf_core/eigen_conversions.h	/^namespace eigen_conversions {$/;"	n
+enable_mah_outlier_rejection_	include/msf_core/msf_measurement.h	/^  bool enable_mah_outlier_rejection_;$/;"	m	class:msf_core::MSF_MeasurementBase
+enable_mah_outlier_rejection_	include/msf_core/msf_sensorhandler.h	/^  bool enable_mah_outlier_rejection_;$/;"	m	class:msf_core::SensorHandler
+fuzzyTracker_	include/msf_core/msf_core.h	/^  CheckFuzzyTracking<EKFState_T, nonDriftingStateType> fuzzyTracker_;$/;"	m	class:msf_core::MSF_Core
+geometry_msgs	include/msf_core/similaritytransform.h	/^namespace geometry_msgs {$/;"	n
+handlers	include/msf_core/msf_sensormanager.h	/^  Handlers handlers;  \/\/\/< A list of sensor handlers which provide measurements.$/;"	m	class:msf_core::MSF_SensorManager
+hasResetValue	include/msf_core/msf_state.h	/^  bool hasResetValue;  \/\/<Indicating that this statevariable has a reset value$/;"	m	struct:msf_core::StateVar_T
+idxInEnum	include/msf_core/msf_tmp.h	/^    idxInEnum = boost::mpl::if_c<GetEnumStateName<current_Type>::value != -1,$/;"	e	enum:msf_tmp::__anon17::CheckStateIndexing::__anon65
+idxInState	include/msf_core/msf_tmp.h	/^    idxInState = CurrentIdx,$/;"	e	enum:msf_tmp::__anon17::CheckStateIndexing::__anon65
+idxInState	include/msf_core/msf_tmp.h	/^    idxInState = GetEnumStateName<$/;"	e	enum:msf_tmp::__anon17::FindBestNonTemporalDriftingStateImpl::__anon70
+idxstartcorr_b_a_	include/msf_core/static_ordering_assertions.h	/^    idxstartcorr_b_a_ = msf_tmp::GetStartIndex<StateSequence_T,$/;"	e	enum:__anon1::StaticAssertCoreStateOrderingCorrect::__anon3
+idxstartcorr_b_w_	include/msf_core/static_ordering_assertions.h	/^    idxstartcorr_b_w_ = msf_tmp::GetStartIndex<StateSequence_T,$/;"	e	enum:__anon1::StaticAssertCoreStateOrderingCorrect::__anon3
+idxstartcorr_p_	include/msf_core/static_ordering_assertions.h	/^    idxstartcorr_p_ = msf_tmp::GetStartIndex<StateSequence_T,$/;"	e	enum:__anon1::StaticAssertCoreStateOrderingCorrect::__anon3
+idxstartcorr_q_	include/msf_core/static_ordering_assertions.h	/^    idxstartcorr_q_ = msf_tmp::GetStartIndex<StateSequence_T,$/;"	e	enum:__anon1::StaticAssertCoreStateOrderingCorrect::__anon3
+idxstartcorr_v_	include/msf_core/static_ordering_assertions.h	/^    idxstartcorr_v_ = msf_tmp::GetStartIndex<StateSequence_T,$/;"	e	enum:__anon1::StaticAssertCoreStateOrderingCorrect::__anon3
+indexOfStateWithoutTemporalDrift	include/msf_core/msf_core.h	/^    indexOfStateWithoutTemporalDrift = msf_tmp::IndexOfBestNonTemporalDriftingState<$/;"	e	enum:msf_core::MSF_Core::__anon15
+indexingerrors	include/msf_core/msf_tmp.h	/^    indexingerrors = 0$/;"	e	enum:msf_tmp::__anon17::CheckStateIndexing::__anon64
+indexingerrors	include/msf_core/msf_tmp.h	/^    indexingerrors = CheckStateIndexing<Sequence, First, Last, startindex,$/;"	e	enum:msf_tmp::CheckCorrectIndexing::__anon72
+indexingerrors	include/msf_core/msf_tmp.h	/^    indexingerrors = boost::mpl::if_c<idxInEnum == idxInState,$/;"	e	enum:msf_tmp::__anon17::CheckStateIndexing::__anon65
+initialized_	include/msf_core/msf_core.h	/^  bool initialized_;$/;"	m	class:msf_core::MSF_Core
+invalid	include/msf_core/msf_sortedContainer.h	/^  Ptr_T invalid;  \/\/\/< A object to signal requests which cannot be satisfied.$/;"	m	class:msf_core::SortedContainer
+isNonTemporalDriftingPositionAndNoQuaternionHasBeenFound	include/msf_core/msf_tmp.h	/^    isNonTemporalDriftingPositionAndNoQuaternionHasBeenFound = IsCurrentStateNonTemporalDrifting$/;"	e	enum:msf_tmp::__anon17::FindBestNonTemporalDriftingStateImpl::__anon70
+isQuaternionAndNonTemporalDrifting	include/msf_core/msf_tmp.h	/^    isQuaternionAndNonTemporalDrifting = IsCurrentStateAQuaternion == true$/;"	e	enum:msf_tmp::__anon17::FindBestNonTemporalDriftingStateImpl::__anon70
+isabsolute_	include/msf_core/msf_measurement.h	/^  bool isabsolute_;$/;"	m	class:msf_core::MSF_MeasurementBase
+isfuzzyState_	include/msf_core/msf_core.h	/^  bool isfuzzyState_;$/;"	m	class:msf_core::MSF_Core
+it_last_IMU	include/msf_core/msf_core.h	/^  typename StateBuffer_T::iterator_T it_last_IMU;$/;"	m	class:msf_core::MSF_Core
+iterator_T	include/msf_core/msf_sortedContainer.h	/^  typedef typename ListT::iterator iterator_T;$/;"	t	class:msf_core::SortedContainer
+kDefaultMahThreshold_	include/msf_core/msf_sensorhandler.h	/^  static constexpr double kDefaultMahThreshold_ = 100.0;$/;"	m	namespace:msf_core
+lastseq_	include/msf_core/msf_sensorhandler.h	/^  int lastseq_;$/;"	m	class:msf_core::SensorHandler
+mah_threshold_	include/msf_core/msf_measurement.h	/^  double mah_threshold_;$/;"	m	class:msf_core::MSF_MeasurementBase
+mah_threshold_	include/msf_core/msf_sensorhandler.h	/^  double mah_threshold_;$/;"	m	class:msf_core::SensorHandler
+manager_	include/msf_core/msf_sensorhandler.h	/^  MSF_SensorManager<EKFState_T>& manager_;$/;"	m	class:msf_core::SensorHandler
+measurementBufferT	include/msf_core/msf_core.h	/^      typename msf_core::MSF_InvalidMeasurement<EKFState_T> > measurementBufferT;$/;"	t	class:msf_core::MSF_Core
+measurements_	include/msf_core/similaritytransform.h	/^  PosePairVector measurements_;$/;"	m	class:msf_core::similarity_transform::From6DoF
+msf_core	include/msf_core/gps_conversion.h	/^namespace msf_core {$/;"	n
+msf_core	include/msf_core/msf_IMUHandler.h	/^namespace msf_core {$/;"	n
+msf_core	include/msf_core/msf_checkFuzzyTracking.h	/^namespace msf_core {$/;"	n
+msf_core	include/msf_core/msf_core.h	/^namespace msf_core {$/;"	n
+msf_core	include/msf_core/msf_fwds.h	/^namespace msf_core {$/;"	n
+msf_core	include/msf_core/msf_measurement.h	/^namespace msf_core {$/;"	n
+msf_core	include/msf_core/msf_sensorhandler.h	/^namespace msf_core {$/;"	n
+msf_core	include/msf_core/msf_sensormanager.h	/^namespace msf_core {$/;"	n
+msf_core	include/msf_core/msf_sortedContainer.h	/^namespace msf_core {$/;"	n
+msf_core	include/msf_core/msf_state.h	/^namespace msf_core {$/;"	n
+msf_core	include/msf_core/msf_statevisitor.h	/^namespace msf_core {$/;"	n
+msf_core	include/msf_core/msf_tools.h	/^namespace msf_core {$/;"	n
+msf_core	include/msf_core/msf_types.h	/^namespace msf_core {$/;"	n
+msf_core	include/msf_core/similaritytransform.h	/^namespace msf_core {$/;"	n
+msf_core	src/msf_core_inl.h	/^namespace msf_core {$/;"	n
+msf_core	src/msf_measurement_inl.h	/^namespace msf_core {$/;"	n
+msf_core	src/msf_sensormanager_inl.h	/^namespace msf_core {$/;"	n
+msf_core	src/msf_state_inl.h	/^namespace msf_core {$/;"	n
+msf_core_	include/msf_core/msf_sensormanager.h	/^  shared_ptr<MSF_Core<EKFState_T> > msf_core_;  \/\/\/< The ekf core instance.$/;"	m	class:msf_core::MSF_SensorManager
+msf_tmp	include/msf_core/msf_tmp.h	/^namespace msf_tmp {$/;"	n
+msf_tmp	include/msf_core/msf_typetraits.h	/^namespace msf_tmp {$/;"	n
+nBuff_	include/msf_core/msf_checkFuzzyTracking.h	/^    nBuff_ = 30  \/\/\/< Buffer size for median non drifting state values.$/;"	e	enum:msf_core::CheckFuzzyTracking::__anon16
+nCoreErrorStatesAtCompileTime	include/msf_core/msf_state.h	/^    nCoreErrorStatesAtCompileTime = msf_tmp::CountStates<StateSequence_T,$/;"	e	enum:msf_core::GenericState_T::__anon13
+nCoreStatesAtCompileTime	include/msf_core/msf_state.h	/^    nCoreStatesAtCompileTime = msf_tmp::CountStates<StateSequence_T,$/;"	e	enum:msf_core::GenericState_T::__anon13
+nErrorStatesAtCompileTime	include/msf_core/msf_core.h	/^    nErrorStatesAtCompileTime = EKFState_T::nErrorStatesAtCompileTime,$/;"	e	enum:msf_core::MSF_Core::__anon14
+nErrorStatesAtCompileTime	include/msf_core/msf_state.h	/^    nErrorStatesAtCompileTime = msf_tmp::CountStates<StateSequence_T,$/;"	e	enum:msf_core::GenericState_T::__anon13
+nErrorStatesAtCompileTime	include/msf_core/msf_tmp.h	/^    nErrorStatesAtCompileTime = msf_tmp::CountStates<stateList_T,$/;"	e	enum:msf_tmp::CopyQBlocksFromAuxiliaryStatesToQ::__anon78
+nPropagatedCoreErrorStatesAtCompileTime	include/msf_core/msf_state.h	/^    nPropagatedCoreErrorStatesAtCompileTime = msf_tmp::CountStates<$/;"	e	enum:msf_core::GenericState_T::__anon13
+nPropagatedCoreStatesAtCompileTime	include/msf_core/msf_state.h	/^    nPropagatedCoreStatesAtCompileTime = msf_tmp::CountStates<StateSequence_T,$/;"	e	enum:msf_core::GenericState_T::__anon13
+nStateVarsAtCompileTime	include/msf_core/msf_state.h	/^    nStateVarsAtCompileTime = boost::fusion::result_of::size < StateSequence_T$/;"	e	enum:msf_core::GenericState_T::__anon13
+nStatesAtCompileTime	include/msf_core/msf_core.h	/^    nStatesAtCompileTime = EKFState_T::nStatesAtCompileTime$/;"	e	enum:msf_core::MSF_Core::__anon14
+nStatesAtCompileTime	include/msf_core/msf_state.h	/^    nStatesAtCompileTime = msf_tmp::CountStates<StateSequence_T,$/;"	e	enum:msf_core::GenericState_T::__anon13
+name_	include/msf_core/msf_state.h	/^    name_ = name_T,$/;"	e	enum:msf_core::StateVar_T::__anon12
+noise_acc	include/msf_core/msf_state.h	/^  msf_core::Vector3 noise_acc;$/;"	m	struct:msf_core::GenericState_T
+noise_gyr	include/msf_core/msf_state.h	/^  msf_core::Vector3 noise_gyr;$/;"	m	struct:msf_core::GenericState_T
+nonDriftingStateType	include/msf_core/msf_core.h	/^      indexOfStateWithoutTemporalDrift>::value nonDriftingStateType;$/;"	t	class:msf_core::MSF_Core
+none	include/msf_core/msf_fwds.h	/^  none = 0x0,$/;"	e	enum:msf_core::__anon83
+nontemporaldrifting_inittimer_	include/msf_core/msf_checkFuzzyTracking.h	/^  int nontemporaldrifting_inittimer_;  \/\/\/< A counter for fuzzy tracking detection$/;"	m	class:msf_core::CheckFuzzyTracking
+oldstate_	include/msf_core/msf_tmp.h	/^    const stateVarT& oldstate_;$/;"	m	struct:msf_tmp::CopyInitStates
+oldstate_	include/msf_core/msf_tmp.h	/^  const stateVarT& oldstate_;$/;"	m	struct:msf_tmp::CopyNonPropagationStates
+operator ()	include/msf_core/msf_measurement.h	/^  bool operator()(const MSF_MeasurementBase<EKFState_T>& lhs,$/;"	f	class:msf_core::sortMeasurements
+operator ()	include/msf_core/msf_state.h	/^  bool operator()($/;"	f	class:msf_core::SortStates
+operator ()	include/msf_core/msf_tmp.h	/^  void operator()($/;"	f	struct:msf_tmp::CoreStatetoDoubleArray
+operator ()	include/msf_core/msf_tmp.h	/^  void operator()($/;"	f	struct:msf_tmp::CorrectState
+operator ()	include/msf_core/msf_tmp.h	/^  void operator()($/;"	f	struct:msf_tmp::FullStatetoDoubleArray
+operator ()	include/msf_core/msf_tmp.h	/^  void operator()($/;"	f	struct:msf_tmp::FullStatetoString
+operator ()	include/msf_core/msf_tmp.h	/^  void operator()($/;"	f	struct:msf_tmp::ResetState
+operator ()	include/msf_core/msf_tmp.h	/^  void operator()(msf_core::StateVar_T<T, NAME, STATE_T, OPTIONS>& t) const {$/;"	f	struct:msf_tmp::CopyInitStates
+operator ()	include/msf_core/msf_tmp.h	/^  void operator()(msf_core::StateVar_T<T, NAME, STATE_T, OPTIONS>& t) const {$/;"	f	struct:msf_tmp::CopyNonPropagationStates
+operator ()	include/msf_core/msf_tmp.h	/^  void operator()(msf_core::StateVar_T<T, NAME, STATE_T, OPTIONS>& t) const {$/;"	f	struct:msf_tmp::CopyQBlocksFromAuxiliaryStatesToQ
+operator char	include/msf_core/msf_tmp.h	/^  operator char() {$/;"	f	struct:msf_tmp::overflow
+options_	include/msf_core/msf_state.h	/^    options_ = OPTIONS,$/;"	e	enum:msf_core::StateVar_T::__anon12
+overflow	include/msf_core/msf_tmp.h	/^struct overflow {$/;"	s	namespace:msf_tmp
+p	include/msf_core/similaritytransform.h	/^  p = 0,$/;"	e	enum:geometry_msgs::cov::__anon81
+palette	include/msf_core/falsecolor.h	/^struct palette {$/;"	s
+palettetypes	include/msf_core/falsecolor.h	/^  enum palettetypes {$/;"	g	struct:palette
+parameternamespace_	include/msf_core/msf_sensorhandler.h	/^  std::string parameternamespace_;$/;"	m	class:msf_core::SensorHandler
+predictionMade_	include/msf_core/msf_core.h	/^  bool predictionMade_;$/;"	m	class:msf_core::MSF_Core
+q	include/msf_core/similaritytransform.h	/^  q = 3$/;"	e	enum:geometry_msgs::cov::__anon81
+qbuffRowsAtCompiletime	include/msf_core/msf_checkFuzzyTracking.h	/^    qbuffRowsAtCompiletime = msf_tmp::StateLengthForType<$/;"	e	enum:msf_core::CheckFuzzyTracking::__anon16
+qbuff_	include/msf_core/msf_checkFuzzyTracking.h	/^  Eigen::Matrix<double, nBuff_, qbuffRowsAtCompiletime> qbuff_;$/;"	m	class:msf_core::CheckFuzzyTracking
+queueFutureMeasurements_	include/msf_core/msf_core.h	/^  std::queue<shared_ptr<MSF_MeasurementBase<EKFState_T> > > queueFutureMeasurements_;$/;"	m	class:msf_core::MSF_Core
+received_first_measurement_	include/msf_core/msf_sensorhandler.h	/^  bool received_first_measurement_;$/;"	m	class:msf_core::SensorHandler
+result_t	include/msf_core/msf_typetraits.h	/^  typedef T result_t;$/;"	t	struct:msf_tmp::StripConstPtr
+result_t	include/msf_core/msf_typetraits.h	/^  typedef T result_t;$/;"	t	struct:msf_tmp::StripConstReference
+result_t	include/msf_core/msf_typetraits.h	/^  typedef T result_t;$/;"	t	struct:msf_tmp::StripReference
+result_t	include/msf_core/msf_typetraits.h	/^  typedef T& result_t;$/;"	t	struct:msf_tmp::AddReference
+result_t	include/msf_core/msf_typetraits.h	/^  typedef T* result_t;$/;"	t	struct:msf_tmp::AddPtr
+result_t	include/msf_core/msf_typetraits.h	/^  typedef const T result_t;$/;"	t	struct:msf_tmp::StripReference
+result_t	include/msf_core/msf_typetraits.h	/^  typedef const T& result_t;$/;"	t	struct:msf_tmp::AddConstReference
+result_t	include/msf_core/msf_typetraits.h	/^  typedef const T& result_t;$/;"	t	struct:msf_tmp::AddReference
+result_t	include/msf_core/msf_typetraits.h	/^  typedef const T* result_t;$/;"	t	struct:msf_tmp::AddConstPtr
+result_t	include/msf_core/msf_typetraits.h	/^  typedef const T* result_t;$/;"	t	struct:msf_tmp::AddPtr
+rgbBlue	include/msf_core/falsecolor.h	/^  unsigned char rgbBlue;$/;"	m	struct:color
+rgbGreen	include/msf_core/falsecolor.h	/^  unsigned char rgbGreen;$/;"	m	struct:color
+rgbRed	include/msf_core/falsecolor.h	/^  unsigned char rgbRed;$/;"	m	struct:color
+sensorID	include/msf_core/msf_sensorhandler.h	/^  int sensorID;$/;"	m	class:msf_core::SensorHandler
+sensorID_	include/msf_core/msf_measurement.h	/^  int sensorID_;$/;"	m	class:msf_core::MSF_MeasurementBase
+sensorID_	include/msf_core/msf_sensormanager.h	/^  int sensorID_;$/;"	m	class:msf_core::MSF_SensorManager
+similarity_transform	include/msf_core/similaritytransform.h	/^namespace similarity_transform {$/;"	n	namespace:msf_core
+sincos	include/msf_core/sincos.h	34;"	d
+sincos	include/msf_core/sincos.h	41;"	d
+sincos_x87_inline	include/msf_core/sincos.h	/^extern __inline__ void sincos_x87_inline(double x,double *s,double *c)$/;"	f
+sizeInCorrection_	include/msf_core/msf_state.h	/^    sizeInCorrection_ = msf_tmp::CorrectionStateLengthForType<$/;"	e	enum:msf_core::StateVar_T::__anon12
+sizeInState_	include/msf_core/msf_state.h	/^    sizeInState_ = msf_tmp::StateLengthForType<const StateVar_T<type_T,$/;"	e	enum:msf_core::StateVar_T::__anon12
+sortMeasurements	include/msf_core/msf_measurement.h	/^class sortMeasurements {$/;"	c	namespace:msf_core
+startindex	include/msf_core/msf_tmp.h	/^    startindex = 0,  \/\/ Must not change this.$/;"	e	enum:msf_tmp::CheckCorrectIndexing::__anon71
+stateBuffer_	include/msf_core/msf_core.h	/^  StateBuffer_T stateBuffer_;$/;"	m	class:msf_core::MSF_Core
+stateList	include/msf_core/msf_sortedContainer.h	/^  ListT stateList;  \/\/\/< The container in which all the data is stored.$/;"	m	class:msf_core::SortedContainer
+state_	include/msf_core/msf_state.h	/^  value_t state_;  \/\/\/< The state variable of this state.$/;"	m	struct:msf_core::StateVar_T
+state_type	include/msf_core/msf_tmp.h	/^  typedef typename msf_tmp::GetEnumStateType<stateVector_T, INDEX>::value state_type;$/;"	t	struct:msf_tmp::GetStateIndexInErrorState
+state_type	include/msf_core/msf_tmp.h	/^  typedef typename msf_tmp::GetEnumStateType<stateVector_T, INDEX>::value state_type;$/;"	t	struct:msf_tmp::GetStateIndexInState
+statetype_	include/msf_core/msf_state.h	/^    statetype_ = STATETYPE,$/;"	e	enum:msf_core::StateVar_T::__anon12
+statevars	include/msf_core/msf_state.h	/^  StateSequence_T statevars;  \/\/\/< The actual state variables.$/;"	m	struct:msf_core::GenericState_T
+time	include/msf_core/msf_measurement.h	/^  double time;  \/\/\/< The time_ this measurement was taken.$/;"	m	class:msf_core::MSF_MeasurementBase
+time	include/msf_core/msf_state.h	/^  double time; 	\/\/\/< Time of this state estimate.$/;"	m	struct:msf_core::GenericState_T
+time_P_propagated	include/msf_core/msf_core.h	/^  double time_P_propagated;$/;"	m	class:msf_core::MSF_Core
+topic_namespace_	include/msf_core/msf_sensorhandler.h	/^  std::string topic_namespace_;$/;"	m	class:msf_core::SensorHandler
+usercalc_	include/msf_core/msf_core.h	/^  const MSF_SensorManager<EKFState_T>& usercalc_;$/;"	m	class:msf_core::MSF_Core
+value	include/msf_core/msf_tmp.h	/^    value = -1$/;"	e	enum:msf_tmp::__anon17::ComputeStartIndex::__anon66
+value	include/msf_core/msf_tmp.h	/^    value = -1$/;"	e	enum:msf_tmp::__anon17::GetEnumStateName::__anon50
+value	include/msf_core/msf_tmp.h	/^    value = -1$/;"	e	enum:msf_tmp::__anon17::GetEnumStateName::__anon51
+value	include/msf_core/msf_tmp.h	/^    value = 0$/;"	e	enum:msf_tmp::__anon17::ComputeStartIndex::__anon67
+value	include/msf_core/msf_tmp.h	/^    value = 0$/;"	e	enum:msf_tmp::__anon17::CoreErrorStateLengthForType::__anon31
+value	include/msf_core/msf_tmp.h	/^    value = 0$/;"	e	enum:msf_tmp::__anon17::CoreErrorStateLengthForType::__anon32
+value	include/msf_core/msf_tmp.h	/^    value = 0$/;"	e	enum:msf_tmp::__anon17::CoreErrorStateLengthForType::__anon37
+value	include/msf_core/msf_tmp.h	/^    value = 0$/;"	e	enum:msf_tmp::__anon17::CoreStateLengthForType::__anon24
+value	include/msf_core/msf_tmp.h	/^    value = 0$/;"	e	enum:msf_tmp::__anon17::CoreStateLengthForType::__anon25
+value	include/msf_core/msf_tmp.h	/^    value = 0$/;"	e	enum:msf_tmp::__anon17::CoreStateLengthForType::__anon30
+value	include/msf_core/msf_tmp.h	/^    value = 0$/;"	e	enum:msf_tmp::__anon17::CorrectionStateLengthForType::__anon20
+value	include/msf_core/msf_tmp.h	/^    value = 0$/;"	e	enum:msf_tmp::__anon17::CountStatesLinear::__anon62
+value	include/msf_core/msf_tmp.h	/^    value = 0$/;"	e	enum:msf_tmp::__anon17::PropagatedCoreErrorStateLengthForType::__anon43
+value	include/msf_core/msf_tmp.h	/^    value = 0$/;"	e	enum:msf_tmp::__anon17::PropagatedCoreErrorStateLengthForType::__anon44
+value	include/msf_core/msf_tmp.h	/^    value = 0$/;"	e	enum:msf_tmp::__anon17::PropagatedCoreErrorStateLengthForType::__anon47
+value	include/msf_core/msf_tmp.h	/^    value = 0$/;"	e	enum:msf_tmp::__anon17::PropagatedCoreStateLengthForType::__anon38
+value	include/msf_core/msf_tmp.h	/^    value = 0$/;"	e	enum:msf_tmp::__anon17::PropagatedCoreStateLengthForType::__anon39
+value	include/msf_core/msf_tmp.h	/^    value = 0$/;"	e	enum:msf_tmp::__anon17::PropagatedCoreStateLengthForType::__anon42
+value	include/msf_core/msf_tmp.h	/^    value = 0$/;"	e	enum:msf_tmp::__anon17::StateLengthForType::__anon23
+value	include/msf_core/msf_tmp.h	/^    value = 3$/;"	e	enum:msf_tmp::__anon17::CoreErrorStateLengthForType::__anon34
+value	include/msf_core/msf_tmp.h	/^    value = 3$/;"	e	enum:msf_tmp::__anon17::CoreErrorStateLengthForType::__anon36
+value	include/msf_core/msf_tmp.h	/^    value = 3$/;"	e	enum:msf_tmp::__anon17::CorrectionStateLengthForType::__anon19
+value	include/msf_core/msf_tmp.h	/^    value = 3$/;"	e	enum:msf_tmp::__anon17::PropagatedCoreErrorStateLengthForType::__anon46
+value	include/msf_core/msf_tmp.h	/^    value = 4$/;"	e	enum:msf_tmp::__anon17::CoreStateLengthForType::__anon27
+value	include/msf_core/msf_tmp.h	/^    value = 4$/;"	e	enum:msf_tmp::__anon17::CoreStateLengthForType::__anon29
+value	include/msf_core/msf_tmp.h	/^    value = 4$/;"	e	enum:msf_tmp::__anon17::PropagatedCoreStateLengthForType::__anon41
+value	include/msf_core/msf_tmp.h	/^    value = 4$/;"	e	enum:msf_tmp::__anon17::StateLengthForType::__anon22
+value	include/msf_core/msf_tmp.h	/^    value = ComputeStartIndex<Sequence, StateVarT, Counter, First, Last,$/;"	e	enum:msf_tmp::GetStartIndex::__anon76
+value	include/msf_core/msf_tmp.h	/^    value = CountStatesLinear<Sequence, Counter, First, Last,$/;"	e	enum:msf_tmp::CountStates::__anon75
+value	include/msf_core/msf_tmp.h	/^    value = Counter<current_Type>::value$/;"	e	enum:msf_tmp::__anon17::CountStatesLinear::__anon63
+value	include/msf_core/msf_tmp.h	/^    value = CurrentBestIdx$/;"	e	enum:msf_tmp::__anon17::FindBestNonTemporalDriftingStateImpl::__anon69
+value	include/msf_core/msf_tmp.h	/^    value = CurrentVal$/;"	e	enum:msf_tmp::__anon17::ComputeStartIndex::__anon68
+value	include/msf_core/msf_tmp.h	/^    value = FindBestNonTemporalDriftingStateImpl<Sequence, First, Last,$/;"	e	enum:msf_tmp::IndexOfBestNonTemporalDriftingState::__anon74
+value	include/msf_core/msf_tmp.h	/^    value = FindBestNonTemporalDriftingStateImpl<Sequence, Next, Last,$/;"	e	enum:msf_tmp::__anon17::FindBestNonTemporalDriftingStateImpl::__anon70
+value	include/msf_core/msf_tmp.h	/^    value = N$/;"	e	enum:msf_tmp::__anon17::CoreErrorStateLengthForType::__anon33
+value	include/msf_core/msf_tmp.h	/^    value = N$/;"	e	enum:msf_tmp::__anon17::CoreErrorStateLengthForType::__anon35
+value	include/msf_core/msf_tmp.h	/^    value = N$/;"	e	enum:msf_tmp::__anon17::CoreStateLengthForType::__anon26
+value	include/msf_core/msf_tmp.h	/^    value = N$/;"	e	enum:msf_tmp::__anon17::CoreStateLengthForType::__anon28
+value	include/msf_core/msf_tmp.h	/^    value = N$/;"	e	enum:msf_tmp::__anon17::CorrectionStateLengthForType::__anon18
+value	include/msf_core/msf_tmp.h	/^    value = N$/;"	e	enum:msf_tmp::__anon17::PropagatedCoreErrorStateLengthForType::__anon45
+value	include/msf_core/msf_tmp.h	/^    value = N$/;"	e	enum:msf_tmp::__anon17::PropagatedCoreStateLengthForType::__anon40
+value	include/msf_core/msf_tmp.h	/^    value = N$/;"	e	enum:msf_tmp::__anon17::StateLengthForType::__anon21
+value	include/msf_core/msf_tmp.h	/^    value = NAME$/;"	e	enum:msf_tmp::__anon17::GetEnumStateName::__anon48
+value	include/msf_core/msf_tmp.h	/^    value = NAME$/;"	e	enum:msf_tmp::__anon17::GetEnumStateName::__anon49
+value	include/msf_core/msf_tmp.h	/^    value = false$/;"	e	enum:msf_tmp::__anon17::GetStateIsNonTemporalDrifting::__anon60
+value	include/msf_core/msf_tmp.h	/^    value = false$/;"	e	enum:msf_tmp::__anon17::GetStateIsNonTemporalDrifting::__anon61
+value	include/msf_core/msf_tmp.h	/^    value = false$/;"	e	enum:msf_tmp::__anon17::IsQuaternionType::__anon52
+value	include/msf_core/msf_tmp.h	/^    value = false$/;"	e	enum:msf_tmp::__anon17::IsQuaternionType::__anon53
+value	include/msf_core/msf_tmp.h	/^    value = false$/;"	e	enum:msf_tmp::__anon17::IsQuaternionType::__anon56
+value	include/msf_core/msf_tmp.h	/^    value = false$/;"	e	enum:msf_tmp::__anon17::IsQuaternionType::__anon57
+value	include/msf_core/msf_tmp.h	/^    value = msf_tmp::GetStartIndex<Sequence,$/;"	e	enum:msf_tmp::GetStartIndexInCorrection::__anon77
+value	include/msf_core/msf_tmp.h	/^    value = msf_tmp::GetStartIndex<stateVector_T, state_type,$/;"	e	enum:msf_tmp::GetStateIndexInErrorState::__anon80
+value	include/msf_core/msf_tmp.h	/^    value = msf_tmp::GetStartIndex<stateVector_T, state_type,$/;"	e	enum:msf_tmp::GetStateIndexInState::__anon79
+value	include/msf_core/msf_tmp.h	/^    value = static_cast<int>(msf_core::StateVar_T<U, NAME, STATE_T, OPTIONS>::statetype_)$/;"	e	enum:msf_tmp::__anon17::GetStateIsNonTemporalDrifting::__anon58
+value	include/msf_core/msf_tmp.h	/^    value = static_cast<int>(msf_core::StateVar_T<U, NAME, STATE_T, OPTIONS>::statetype_)$/;"	e	enum:msf_tmp::__anon17::GetStateIsNonTemporalDrifting::__anon59
+value	include/msf_core/msf_tmp.h	/^    value = true$/;"	e	enum:msf_tmp::__anon17::IsQuaternionType::__anon54
+value	include/msf_core/msf_tmp.h	/^    value = true$/;"	e	enum:msf_tmp::__anon17::IsQuaternionType::__anon55
+value	include/msf_core/msf_tmp.h	/^  typedef mpl_::void_ value;$/;"	t	struct:msf_tmp::__anon17::GetEnumStateType
+value	include/msf_core/msf_tmp.h	/^  typedef typename boost::fusion::result_of::at_c<TypeList, INDEX>::type value;$/;"	t	struct:msf_tmp::__anon17::GetEnumStateType
+value	include/msf_core/msf_typetraits.h	/^    value = false$/;"	e	enum:msf_tmp::IsPointerType::__anon9
+value	include/msf_core/msf_typetraits.h	/^    value = false$/;"	e	enum:msf_tmp::IsReferenceType::__anon6
+value	include/msf_core/msf_typetraits.h	/^    value = false$/;"	e	enum:msf_tmp::SameType::__anon4
+value	include/msf_core/msf_typetraits.h	/^    value = true$/;"	e	enum:msf_tmp::IsPointerType::__anon10
+value	include/msf_core/msf_typetraits.h	/^    value = true$/;"	e	enum:msf_tmp::IsPointerType::__anon11
+value	include/msf_core/msf_typetraits.h	/^    value = true$/;"	e	enum:msf_tmp::IsReferenceType::__anon7
+value	include/msf_core/msf_typetraits.h	/^    value = true$/;"	e	enum:msf_tmp::IsReferenceType::__anon8
+value	include/msf_core/msf_typetraits.h	/^    value = true$/;"	e	enum:msf_tmp::SameType::__anon5
+value	include/msf_core/static_ordering_assertions.h	/^    value$/;"	e	enum:__anon1::StaticAssertCoreStateOrderingCorrect::__anon2
+value_t	include/msf_core/msf_state.h	/^  typedef type_T value_t;$/;"	t	struct:msf_core::StateVar_T
+w_m	include/msf_core/msf_state.h	/^  Eigen::Matrix<double, 3, 1> w_m;         \/\/\/< Angular velocity from IMU.$/;"	m	struct:msf_core::GenericState_T
+~IMUHandler	include/msf_core/msf_IMUHandler.h	/^  virtual ~IMUHandler() {$/;"	f	class:msf_core::IMUHandler
+~MSF_Core	src/msf_core_inl.h	/^MSF_Core<EKFState_T>::~MSF_Core() {$/;"	f	class:msf_core::MSF_Core
+~MSF_InitMeasurement	include/msf_core/msf_measurement.h	/^  virtual ~MSF_InitMeasurement() {$/;"	f	class:msf_core::MSF_InitMeasurement
+~MSF_InvalidMeasurement	include/msf_core/msf_measurement.h	/^  virtual ~MSF_InvalidMeasurement() {$/;"	f	class:msf_core::MSF_InvalidMeasurement
+~MSF_Measurement	include/msf_core/msf_measurement.h	/^  virtual ~MSF_Measurement() { }$/;"	f	class:msf_core::MSF_Measurement
+~MSF_MeasurementBase	include/msf_core/msf_measurement.h	/^  virtual ~MSF_MeasurementBase() {}$/;"	f	class:msf_core::MSF_MeasurementBase
+~MSF_SensorManager	include/msf_core/msf_sensormanager.h	/^  virtual ~MSF_SensorManager() {$/;"	f	class:msf_core::MSF_SensorManager
+~SensorHandler	include/msf_core/msf_sensorhandler.h	/^  virtual ~SensorHandler() {$/;"	f	class:msf_core::SensorHandler
+~StateVisitor	include/msf_core/msf_statevisitor.h	/^  virtual ~StateVisitor() {$/;"	f	class:msf_core::StateVisitor

@@ -2,6 +2,7 @@ package at.jku.ptam;
 
 import android.app.Activity;
 import android.hardware.SensorManager;
+import android.util.Log;
 
 import com.citrus.slam.MahonyAHRS.QuaternionEventListener;
 import com.citrus.slam.MahonyAHRS.QuaternionSensor;
@@ -42,6 +43,7 @@ public class SensorController implements QuaternionEventListener {
             this.q[2] = q[2];
             this.q[3] = q[3];
         }
+        //Log.i("SensorController", "q: " + q[0] + " " + q[1] + " " + q[2] + " " + q[3]);
     }
 
     @Override
